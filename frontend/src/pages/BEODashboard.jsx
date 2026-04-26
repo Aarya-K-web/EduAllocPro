@@ -1,0 +1,203 @@
+// ============================================================
+// EduAllocPro — BEO Dashboard (/beo)
+// Mobile-first Marathi BEO dashboard (360px viewport).
+// Top 5 schools, defaults to Marathi language.
+// ============================================================
+
+import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
+import { useSchools } from '../hooks/useSchools'
+import { setDefaultLangForRole } from '../i18n/config'
+import { getDIColors, getDITier } from '../lib/diColors'
+import { staggerContainer, cardEntrance } from '../lib/motion'
+import { DEFAULT_DISTRICT_ID } from '../config'
+import DIBadge from '../components/DIBadge'
+import FreshnessIndicator from '../components/FreshnessIndicator'
+import SkeletonCard from '../components/SkeletonCard'
+
+const BEODashboard = ({ user }) => {
+  const { t } = useTranslation()
+  const { schools, loading, error } = useSchools(DEFAULT_DISTRICT_ID)
+
+  // BEO defaults to Marathi
+  useEffect(() => {
+    setDefaultLangForRole('beo')
+  }, [])
+
+  // Top 5 by DI score
+  const top5 = schools
+    .filter(s => s.di_score !== null && s.di_score !== undefined)
+    .sort((a, b) => b.di_score - a.di_score)
+    .slice(0, 5)
+
+  const criticalCount = schools.filter(s => s.di_score >= 80).length
+  const totalVacancies = schools.reduce((sum, s) => sum + (s.total_vacancies || 0), 0)
+
+  return (
+    <div className="min-h-screen bg-surface-bg">
+      {/* Hero banner */}
+      <div className="bg-surface-sidebar px-4 py-5">
+        <h1 className="text-lg font-bold text-white">{t('beo.title')}</h1>
+        <p className="text-sm text-white/60 mt-0.5">{t('beo.subtitle')}</p>
+
+        {/* Quick stats */}
+        <div className="grid grid-cols-2 gap-3 mt-4">
+          <div className="bg-white/10 rounded-xl p-3">
+            <p className="text-2xl font-bold font-mono text-di-critical" data-numeric="true">
+              {criticalCount}
+            </p>
+            <p className="text-xs text-white/60 mt-0.5">{t('dashboard.criticalSchools')}</p>
+          </div>
+          <div className="bg-white/10 rounded-xl p-3">
+            <p className="text-2xl font-bold font-mono text-amber-400" data-numeric="true">
+              {totalVacancies}
+            </p>
+            <p className="text-xs text-white/60 mt-0.5">{t('dashboard.totalVacancies')}</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Alert banner if critical schools exist */}
+      {criticalCount > 0 && (
+        <div className="mx-4 mt-4 bg-red-50 border border-red-200 rounded-xl p-3 flex items-start gap-2">
+          <span className="text-red-500 text-lg flex-shrink-0" aria-hidden="true">⚠</span>
+          <div>
+            <p className="text-sm font-semibold text-red-800">
+              {t('beo.urgentAction')}
+            </p>
+            <p className="text-xs text-red-600 mt-0.5">
+              {criticalCount} {t('beo.schoolsNeedAttention')}
+            </p>
+          </div>
+        </div>
+      )}
+
+      {/* Top 5 schools */}
+      <div className="px-4 py-4">
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="text-sm font-bold text-ink-primary">{t('beo.top5Schools')}</h2>
+          <Link
+            to="/dashboard"
+            className="text-xs text-brand font-medium hover:underline"
+          >
+            {t('beo.viewAll')} →
+          </Link>
+        </div>
+
+        {loading ? (
+          <SkeletonCard count={5} variant="school" />
+        ) : error ? (
+          <div className="text-center py-8">
+            <p className="text-sm text-ink-muted">{error}</p>
+          </div>
+        ) : (
+          <motion.div
+            variants={staggerContainer}
+            initial="initial"
+            animate="animate"
+            className="space-y-3"
+          >
+            {top5.map((school, idx) => (
+              <BEOSchoolCard
+                key={school.school_id}
+                school={school}
+                rank={idx + 1}
+              />
+            ))}
+          </motion.div>
+        )}
+      </div>
+    </div>
+  )
+}
+
+// ── BEO School Card (mobile-optimised) ─────────────────────
+const BEOSchoolCard = ({ school, rank }) => {
+  const { t } = useTranslation()
+  const colors = getDIColors(school.di_score)
+  const tier   = getDITier(school.di_score)
+
+  return (
+    <motion.article
+      variants={cardEntrance}
+      className={`bg-white rounded-xl border border-border border-l-4 shadow-card ${colors.border}`}
+    >
+      <div className="p-4">
+        {/* Rank + name */}
+        <div className="flex items-start gap-3 mb-3">
+          <div
+            className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0 font-mono`}
+            style={{ backgroundColor: colors.hex }}
+            aria-label={`Rank ${rank}`}
+            data-numeric="true"
+          >
+            {rank}
+          </div>
+          <div className="flex-1 min-w-0">
+            <h3 className="text-sm font-semibold text-ink-primary leading-tight">
+              {school.name}
+            </h3>
+            <p className="text-xs text-ink-muted mt-0.5">{school.block}</p>
+          </div>
+          <DIBadge score={school.di_score} size="sm" showLabel={false} />
+        </div>
+
+        {/* Key metrics */}
+        <div className="grid grid-cols-3 gap-2 mb-3">
+          <MiniStat
+            label={t('di.score')}
+            value={Math.round(school.di_score ?? 0)}
+            color={colors.text}
+          />
+          <MiniStat
+            label={t('school.vacancies')}
+            value={school.total_vacancies}
+            color="text-amber-600"
+          />
+          <MiniStat
+            label={t('school.enrollment')}
+            value={school.enrollment_total}
+            color="text-ink-primary"
+          />
+        </div>
+
+        {/* Freshness + RTE */}
+        <div className="flex items-center justify-between">
+          <FreshnessIndicator
+            isStale={school.is_data_stale}
+            ageMonths={school.data_age_months}
+            variant="inline"
+          />
+          {!school.rte_compliant && (
+            <span className="text-2xs bg-red-50 text-red-700 border border-red-200 px-2 py-0.5 rounded-full font-medium">
+              {t('school.rteViolation')}
+            </span>
+          )}
+        </div>
+
+        {/* Find teachers CTA */}
+        {school.total_vacancies > 0 && (
+          <Link
+            to={`/deploy?school_id=${school.school_id}`}
+            className="mt-3 flex items-center justify-center gap-1.5 w-full py-2 px-3 bg-brand/10 text-brand rounded-lg text-xs font-semibold hover:bg-brand/20 transition-colors"
+          >
+            {t('school.findTeachers')} →
+          </Link>
+        )}
+      </div>
+    </motion.article>
+  )
+}
+
+const MiniStat = ({ label, value, color }) => (
+  <div className="bg-gray-50 rounded-lg p-2 text-center">
+    <p className="text-2xs text-ink-muted mb-0.5 leading-tight">{label}</p>
+    <p className={`text-base font-bold font-mono ${color}`} data-numeric="true">
+      {value ?? '—'}
+    </p>
+  </div>
+)
+
+export default BEODashboard

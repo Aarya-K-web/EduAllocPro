@@ -1,0 +1,200 @@
+/* ============================================================
+   EduAllocPro — Global CSS Custom Properties & Base Styles
+   ============================================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Design Tokens ─────────────────────────────────────────── */
+:root {
+  /* Surfaces */
+  --surface-bg:      #F8FAFC;
+  --surface-card:    #FFFFFF;
+  --surface-sidebar: #0A0F1E;
+
+  /* Brand */
+  --brand:           #2563EB;
+  --brand-light:     #EFF6FF;
+
+  /* DI Urgency Tiers */
+  --di-critical:     #E11D48;
+  --di-high:         #D97706;
+  --di-moderate:     #2563EB;
+  --di-stable:       #059669;
+
+  /* Text */
+  --text-primary:    #0F172A;
+  --text-secondary:  #475569;
+  --text-muted:      #94A3B8;
+  --text-inverse:    #F8FAFC;
+
+  /* Border */
+  --border:          #E2E8F0;
+  --border-strong:   #CBD5E1;
+
+  /* DVS Segment Colors */
+  --dvs-di:          #2563EB;
+  --dvs-match:       #0D9488;
+  --dvs-retention:   #D97706;
+
+  /* Typography */
+  --body-line-height: 1.6;
+  --font-sans:        'Inter', system-ui, sans-serif;
+  --font-devanagari:  'Noto Sans Devanagari', 'Inter', sans-serif;
+  --font-mono:        'JetBrains Mono', monospace;
+
+  /* Layout */
+  --sidebar-width:   240px;
+  --topbar-height:   56px;
+}
+
+/* ── Marathi Language Overrides ────────────────────────────── */
+.lang-mr {
+  --body-line-height: 1.85;
+  font-family: var(--font-devanagari);
+}
+
+.lang-mr body,
+.lang-mr p,
+.lang-mr span,
+.lang-mr h1,
+.lang-mr h2,
+.lang-mr h3,
+.lang-mr h4,
+.lang-mr h5,
+.lang-mr h6,
+.lang-mr button,
+.lang-mr label,
+.lang-mr a {
+  font-family: var(--font-devanagari);
+  line-height: var(--body-line-height);
+}
+
+/* Numbers always in JetBrains Mono regardless of language */
+.lang-mr .font-mono,
+.lang-mr [data-numeric="true"] {
+  font-family: var(--font-mono) !important;
+}
+
+/* ── Base Styles ───────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: var(--body-line-height);
+  color: var(--text-primary);
+  background-color: var(--surface-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Shimmer Animation ─────────────────────────────────────── */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    #E2E8F0 25%,
+    #F1F5F9 50%,
+    #E2E8F0 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* ── Ring Pulse (DI Critical Map Markers) ──────────────────── */
+@keyframes ringPulse {
+  0%   { transform: scale(1);   opacity: 1; }
+  70%  { transform: scale(2.4); opacity: 0; }
+  100% { transform: scale(2.4); opacity: 0; }
+}
+
+.ring-pulse {
+  animation: ringPulse 2s ease-out infinite;
+}
+
+/* ── Scrollbar Styling ─────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* ── Focus Visible ─────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ── Utility Classes ───────────────────────────────────────── */
+.font-numeric {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.text-di-critical { color: var(--di-critical); }
+.text-di-high     { color: var(--di-high); }
+.text-di-moderate { color: var(--di-moderate); }
+.text-di-stable   { color: var(--di-stable); }
+
+.bg-di-critical { background-color: var(--di-critical); }
+.bg-di-high     { background-color: var(--di-high); }
+.bg-di-moderate { background-color: var(--di-moderate); }
+.bg-di-stable   { background-color: var(--di-stable); }
+
+.border-di-critical { border-color: var(--di-critical); }
+.border-di-high     { border-color: var(--di-high); }
+.border-di-moderate { border-color: var(--di-moderate); }
+.border-di-stable   { border-color: var(--di-stable); }
+
+/* ── Map Container ─────────────────────────────────────────── */
+.map-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* ── Slide Panel ───────────────────────────────────────────── */
+.slide-panel-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.slide-panel-overlay > * {
+  pointer-events: auto;
+}
+
+/* ── Print Styles ──────────────────────────────────────────── */
+@media print {
+  .no-print { display: none !important; }
+}

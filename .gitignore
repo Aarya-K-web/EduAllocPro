@@ -1,0 +1,58 @@
+# ==============================================================================
+# EduAllocPro — .gitignore
+# ==============================================================================
+
+# ── Environment files ──────────────────────────────────────────────────────────
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+*.env
+**/.env
+**/.env.*
+
+# ── Secret keys ────────────────────────────────────────────────────────────────
+service-account.json
+service-account-key.json
+*-service-account*.json
+*.pem
+*.key
+secrets/
+**/secrets/
+
+# ── Raw data files (UDISE data is government data — do not commit) ─────────────
+backend/data/sample/udise_*.csv
+backend/data/sample/teachers_*.csv
+backend/data/sample/schools_*.csv
+!backend/data/sample/.gitkeep
+!backend/data/sample/README.md
+
+# ── Python ─────────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+.coverage
+htmlcov/
+
+# ── Node / React ───────────────────────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/build/
+
+# ── IDE ────────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

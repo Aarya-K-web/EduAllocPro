@@ -1,0 +1,192 @@
+{
+  "app": {
+    "name": "EduAllocPro",
+    "tagline": "शाळा बुद्धिमत्ता आणि शिक्षक तैनाती"
+  },
+  "nav": {
+    "dashboard":    "जिल्हा डॅशबोर्ड",
+    "deploy":       "शिक्षक तैनाती",
+    "plan":         "जिल्हा योजना",
+    "briefing":     "ब्रीफिंग",
+    "beo":          "BEO दृश्य",
+    "logout":       "साइन आउट"
+  },
+  "dashboard": {
+    "title":            "जिल्हा डॅशबोर्ड",
+    "subtitle":         "नंदुरबार जिल्हा — शाळा बुद्धिमत्ता आढावा",
+    "criticalSchools":  "गंभीर शाळा",
+    "totalVacancies":   "एकूण रिक्त जागा",
+    "rteViolations":    "आरटीई उल्लंघन",
+    "schoolsMonitored": "देखरेख केलेल्या शाळा",
+    "mapTitle":         "शाळा वंचितता नकाशा",
+    "schoolList":       "वंचितता निर्देशांकानुसार शाळा",
+    "noSchools":        "या जिल्ह्यासाठी कोणत्याही शाळा आढळल्या नाहीत.",
+    "loadMore":         "अधिक लोड करा"
+  },
+  "di": {
+    "label":       "वंचितता निर्देशांक",
+    "score":       "DI गुण",
+    "critical":    "गंभीर",
+    "high":        "उच्च",
+    "moderate":    "मध्यम",
+    "stable":      "स्थिर",
+    "ariaLabel":   "वंचितता निर्देशांक गुण {{score}} पैकी 100 — {{tier}}"
+  },
+  "dvs": {
+    "label":       "तैनाती मूल्य गुण",
+    "di":          "वंचितता",
+    "match":       "विषय जुळणी",
+    "retention":   "टिकाव",
+    "ariaLabel":   "तैनाती मूल्य गुण: वंचितता {{di}}%, जुळणी {{match}}%, टिकाव {{retention}}%"
+  },
+  "school": {
+    "udiseCode":       "UDISE कोड",
+    "name":            "शाळेचे नाव",
+    "block":           "तालुका",
+    "cluster":         "क्लस्टर",
+    "medium":          "माध्यम",
+    "category":        "श्रेणी",
+    "enrollment":      "नोंदणी",
+    "vacancies":       "रिक्त जागा",
+    "rteCompliant":    "आरटीई अनुपालन",
+    "rteViolation":    "आरटीई उल्लंघन",
+    "toiletStatus":    "शौचालय",
+    "electricityStatus": "वीज",
+    "classroomRatio":  "वर्गखोली प्रमाण",
+    "urbanDistance":   "शहरी अंतर",
+    "enrollmentTrend": "नोंदणी कल",
+    "lastUpdated":     "शेवटचे अद्यतन",
+    "viewDetail":      "तपशील पहा",
+    "findTeachers":    "शिक्षक शोधा",
+    "diBreakdown":     "DI विश्लेषण",
+    "available":       "उपलब्ध",
+    "notAvailable":    "उपलब्ध नाही"
+  },
+  "teacher": {
+    "name":            "शिक्षकाचे नाव",
+    "employeeId":      "कर्मचारी आयडी",
+    "subject":         "विषय",
+    "qualification":   "पात्रता",
+    "experience":      "अनुभव",
+    "currentPosting":  "सध्याची नियुक्ती",
+    "proposedPosting": "प्रस्तावित नियुक्ती",
+    "commuteDistance": "प्रवास अंतर",
+    "matchScore":      "जुळणी गुण",
+    "retentionScore":  "टिकाव गुण",
+    "consentForm":     "संमती फॉर्म",
+    "consentGiven":    "मी या तैनातीस संमती देतो/देते",
+    "consentSubmit":   "संमती सादर करा",
+    "years":           "वर्षे",
+    "km":              "किमी"
+  },
+  "deploy": {
+    "title":           "शिक्षक तैनाती",
+    "subtitle":        "रिक्त पदांसाठी AI-क्रमांकित शिक्षक जुळणी",
+    "selectSchool":    "जुळणी शोधण्यासाठी शाळा निवडा",
+    "selectVacancy":   "रिक्त पद विषय निवडा",
+    "findMatches":     "जुळणी शोधा",
+    "approveDeployment": "तैनाती मंजूर करा",
+    "approved":        "मंजूर",
+    "pending":         "प्रलंबित",
+    "rank":            "क्रमांक",
+    "noMatches":       "या रिक्त पदासाठी कोणतेही शिक्षक जुळणी आढळली नाही.",
+    "optimizeDistrict": "जिल्हा योजना अनुकूलित करा"
+  },
+  "plan": {
+    "title":           "जिल्हा नियुक्ती योजना",
+    "subtitle":        "OR-Tools अनुकूलित तैनाती नियुक्त्या",
+    "runOptimizer":    "अनुकूलक चालवा",
+    "running":         "अनुकूलन सुरू...",
+    "status":          "स्थिती",
+    "optimal":         "इष्टतम",
+    "feasible":        "व्यवहार्य (आंशिक)",
+    "solverTime":      "सोल्व्हर वेळ",
+    "totalAssignments": "एकूण नियुक्त्या",
+    "school":          "शाळा",
+    "teacher":         "शिक्षक",
+    "subject":         "विषय",
+    "dvs":             "DVS",
+    "distance":        "अंतर",
+    "noAssignments":   "अद्याप कोणत्याही नियुक्त्या तयार केल्या नाहीत. सुरू करण्यासाठी अनुकूलक चालवा."
+  },
+  "briefing": {
+    "title":           "जिल्हा ब्रीफिंग",
+    "subtitle":        "AI-निर्मित साप्ताहिक बुद्धिमत्ता अहवाल",
+    "generatePDF":     "आदेश PDF तयार करा",
+    "downloadPDF":     "PDF डाउनलोड करा",
+    "generating":      "तयार होत आहे...",
+    "englishSummary":  "इंग्रजी सारांश",
+    "marathiSummary":  "मराठी सारांश",
+    "keyInsights":     "मुख्य अंतर्दृष्टी",
+    "urgentActions":   "तातडीच्या कृती",
+    "generatedAt":     "तयार केले",
+    "noData":          "कोणतेही ब्रीफिंग उपलब्ध नाही. डॅशबोर्डवरून तयार करा."
+  },
+  "beo": {
+    "title":           "BEO डॅशबोर्ड",
+    "subtitle":        "गट शिक्षण अधिकारी — प्राधान्य शाळा",
+    "top5Schools":     "शीर्ष 5 प्राधान्य शाळा",
+    "viewAll":         "सर्व शाळा पहा",
+    "urgentAction":    "तातडीची कृती आवश्यक",
+    "schoolsNeedAttention": "शाळांना लक्ष आवश्यक"
+  },
+  "freshness": {
+    "fieldVerifyRequired": "क्षेत्र पडताळणी आवश्यक",
+    "dataAge":             "डेटा वय",
+    "months":              "महिने",
+    "staleWarning":        "UDISE डेटा {{months}} महिने जुना आहे — क्षेत्र पडताळणी शिफारस केली जाते",
+    "fresh":               "डेटा अद्ययावत"
+  },
+  "auth": {
+    "signIn":          "साइन इन करा",
+    "signOut":         "साइन आउट",
+    "email":           "ईमेल पत्ता",
+    "password":        "पासवर्ड",
+    "signingIn":       "साइन इन होत आहे...",
+    "welcomeBack":     "पुन्हा स्वागत आहे",
+    "role":            "भूमिका",
+    "roles": {
+      "collector":     "जिल्हाधिकारी",
+      "beo":           "गट शिक्षण अधिकारी",
+      "secretary":     "शिक्षण सचिव"
+    },
+    "errors": {
+      "invalidCredentials": "अवैध ईमेल किंवा पासवर्ड",
+      "networkError":       "नेटवर्क त्रुटी — कृपया पुन्हा प्रयत्न करा",
+      "unknown":            "एक त्रुटी आली. कृपया पुन्हा प्रयत्न करा."
+    }
+  },
+  "common": {
+    "loading":         "लोड होत आहे...",
+    "error":           "त्रुटी",
+    "retry":           "पुन्हा प्रयत्न करा",
+    "close":           "बंद करा",
+    "back":            "मागे",
+    "save":            "जतन करा",
+    "cancel":          "रद्द करा",
+    "confirm":         "पुष्टी करा",
+    "search":          "शोधा",
+    "filter":          "फिल्टर",
+    "all":             "सर्व",
+    "none":            "काहीही नाही",
+    "yes":             "होय",
+    "no":              "नाही",
+    "na":              "लागू नाही",
+    "of":              "पैकी",
+    "schools":         "शाळा",
+    "teachers":        "शिक्षक",
+    "vacancies":       "रिक्त जागा",
+    "district":        "जिल्हा",
+    "block":           "तालुका",
+    "village":         "गाव",
+    "urban":           "शहरी",
+    "rural":           "ग्रामीण"
+  },
+  "errors": {
+    "notFound":        "पृष्ठ सापडले नाही",
+    "unauthorized":    "आपल्याला हे पृष्ठ पाहण्याचा अधिकार नाही",
+    "serverError":     "सर्व्हर त्रुटी — कृपया पुन्हा प्रयत्न करा",
+    "networkError":    "नेटवर्क त्रुटी — आपले कनेक्शन तपासा",
+    "mapUnavailable":  "नकाशा अनुपलब्ध — API की कॉन्फिगर केलेली नाही"
+  }
+}

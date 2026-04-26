@@ -1,0 +1,192 @@
+{
+  "app": {
+    "name": "EduAllocPro",
+    "tagline": "School Intelligence & Teacher Deployment"
+  },
+  "nav": {
+    "dashboard":    "Dashboard",
+    "deploy":       "Deploy Teachers",
+    "plan":         "District Plan",
+    "briefing":     "Briefing",
+    "beo":          "BEO View",
+    "logout":       "Sign Out"
+  },
+  "dashboard": {
+    "title":            "District Dashboard",
+    "subtitle":         "Nandurbar District — School Intelligence Overview",
+    "criticalSchools":  "Critical Schools",
+    "totalVacancies":   "Total Vacancies",
+    "rteViolations":    "RTE Violations",
+    "schoolsMonitored": "Schools Monitored",
+    "mapTitle":         "School Deprivation Heatmap",
+    "schoolList":       "Schools by Deprivation Index",
+    "noSchools":        "No schools found for this district.",
+    "loadMore":         "Load More"
+  },
+  "di": {
+    "label":       "Deprivation Index",
+    "score":       "DI Score",
+    "critical":    "Critical",
+    "high":        "High",
+    "moderate":    "Moderate",
+    "stable":      "Stable",
+    "ariaLabel":   "Deprivation Index score {{score}} out of 100 — {{tier}}"
+  },
+  "dvs": {
+    "label":       "Deployment Value Score",
+    "di":          "Deprivation",
+    "match":       "Subject Match",
+    "retention":   "Retention",
+    "ariaLabel":   "Deployment Value Score: Deprivation {{di}}%, Match {{match}}%, Retention {{retention}}%"
+  },
+  "school": {
+    "udiseCode":       "UDISE Code",
+    "name":            "School Name",
+    "block":           "Block",
+    "cluster":         "Cluster",
+    "medium":          "Medium",
+    "category":        "Category",
+    "enrollment":      "Enrollment",
+    "vacancies":       "Vacancies",
+    "rteCompliant":    "RTE Compliant",
+    "rteViolation":    "RTE Violation",
+    "toiletStatus":    "Toilet",
+    "electricityStatus": "Electricity",
+    "classroomRatio":  "Classroom Ratio",
+    "urbanDistance":   "Urban Distance",
+    "enrollmentTrend": "Enrollment Trend",
+    "lastUpdated":     "Last Updated",
+    "viewDetail":      "View Details",
+    "findTeachers":    "Find Teachers",
+    "diBreakdown":     "DI Breakdown",
+    "available":       "Available",
+    "notAvailable":    "Not Available"
+  },
+  "teacher": {
+    "name":            "Teacher Name",
+    "employeeId":      "Employee ID",
+    "subject":         "Subject",
+    "qualification":   "Qualification",
+    "experience":      "Experience",
+    "currentPosting":  "Current Posting",
+    "proposedPosting": "Proposed Posting",
+    "commuteDistance": "Commute Distance",
+    "matchScore":      "Match Score",
+    "retentionScore":  "Retention Score",
+    "consentForm":     "Consent Form",
+    "consentGiven":    "I consent to this deployment",
+    "consentSubmit":   "Submit Consent",
+    "years":           "years",
+    "km":              "km"
+  },
+  "deploy": {
+    "title":           "Teacher Deployment",
+    "subtitle":        "AI-ranked teacher matches for vacant positions",
+    "selectSchool":    "Select a school to find matches",
+    "selectVacancy":   "Select vacancy subject",
+    "findMatches":     "Find Matches",
+    "approveDeployment": "Approve Deployment",
+    "approved":        "Approved",
+    "pending":         "Pending",
+    "rank":            "Rank",
+    "noMatches":       "No teacher matches found for this vacancy.",
+    "optimizeDistrict": "Optimize District Plan"
+  },
+  "plan": {
+    "title":           "District Assignment Plan",
+    "subtitle":        "OR-Tools optimized deployment assignments",
+    "runOptimizer":    "Run Optimizer",
+    "running":         "Optimizing...",
+    "status":          "Status",
+    "optimal":         "Optimal",
+    "feasible":        "Feasible (Partial)",
+    "solverTime":      "Solver Time",
+    "totalAssignments": "Total Assignments",
+    "school":          "School",
+    "teacher":         "Teacher",
+    "subject":         "Subject",
+    "dvs":             "DVS",
+    "distance":        "Distance",
+    "noAssignments":   "No assignments generated yet. Run the optimizer to begin."
+  },
+  "briefing": {
+    "title":           "District Briefing",
+    "subtitle":        "AI-generated weekly intelligence report",
+    "generatePDF":     "Generate Order PDF",
+    "downloadPDF":     "Download PDF",
+    "generating":      "Generating...",
+    "englishSummary":  "English Summary",
+    "marathiSummary":  "Marathi Summary",
+    "keyInsights":     "Key Insights",
+    "urgentActions":   "Urgent Actions",
+    "generatedAt":     "Generated at",
+    "noData":          "No briefing available. Generate one from the dashboard."
+  },
+  "beo": {
+    "title":           "BEO Dashboard",
+    "subtitle":        "Block Education Officer — Priority Schools",
+    "top5Schools":     "Top 5 Priority Schools",
+    "viewAll":         "View All Schools",
+    "urgentAction":    "Urgent Action Required",
+    "schoolsNeedAttention": "Schools Need Attention"
+  },
+  "freshness": {
+    "fieldVerifyRequired": "Field Verify Required",
+    "dataAge":             "Data Age",
+    "months":              "months",
+    "staleWarning":        "UDISE data is {{months}} months old — field verification recommended",
+    "fresh":               "Data current"
+  },
+  "auth": {
+    "signIn":          "Sign In",
+    "signOut":         "Sign Out",
+    "email":           "Email Address",
+    "password":        "Password",
+    "signingIn":       "Signing in...",
+    "welcomeBack":     "Welcome back",
+    "role":            "Role",
+    "roles": {
+      "collector":     "District Collector",
+      "beo":           "Block Education Officer",
+      "secretary":     "Education Secretary"
+    },
+    "errors": {
+      "invalidCredentials": "Invalid email or password",
+      "networkError":       "Network error — please try again",
+      "unknown":            "An error occurred. Please try again."
+    }
+  },
+  "common": {
+    "loading":         "Loading...",
+    "error":           "Error",
+    "retry":           "Retry",
+    "close":           "Close",
+    "back":            "Back",
+    "save":            "Save",
+    "cancel":          "Cancel",
+    "confirm":         "Confirm",
+    "search":          "Search",
+    "filter":          "Filter",
+    "all":             "All",
+    "none":            "None",
+    "yes":             "Yes",
+    "no":              "No",
+    "na":              "N/A",
+    "of":              "of",
+    "schools":         "schools",
+    "teachers":        "teachers",
+    "vacancies":       "vacancies",
+    "district":        "District",
+    "block":           "Block",
+    "village":         "Village",
+    "urban":           "Urban",
+    "rural":           "Rural"
+  },
+  "errors": {
+    "notFound":        "Page not found",
+    "unauthorized":    "You are not authorized to view this page",
+    "serverError":     "Server error — please try again",
+    "networkError":    "Network error — check your connection",
+    "mapUnavailable":  "Map unavailable — API key not configured"
+  }
+}

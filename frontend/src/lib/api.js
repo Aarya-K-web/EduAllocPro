@@ -128,13 +128,75 @@ export async function fetchSchoolDetail(schoolId) {
 
 export async function fetchTeacherMatches(schoolId, vacancySubject) {
   try {
-    return await apiGet(
+    const data = await apiGet(
       `/api/deploy/matches?school_id=${schoolId}&vacancy_subject=${encodeURIComponent(vacancySubject)}`
     )
+    // Normalize flat backend TeacherMatch → nested shape expected by TeacherMatchCard
+    const diScore = data.school_di_score ?? 0
+    return {
+      ...data,
+      matches: (data.matches || []).map(m => normalizeMatch(m, diScore)),
+    }
   } catch {
-    return { matches: MOCK_TEACHER_MATCHES }
+    // Dynamic mock logic to ensure accurate filtering by subject
+    const { MOCK_TEACHERS, MOCK_SCHOOLS } = await import('./mockData')
+    const school = MOCK_SCHOOLS.find(s => s.school_id === schoolId)
+    const diScore = school?.di_score || 87
+    
+    const matchingTeachers = MOCK_TEACHERS.filter(t => 
+      t.subject_specialization?.includes(vacancySubject)
+    )
+    
+    const syntheticMatches = matchingTeachers.map((teacher, index) => ({
+      rank: index + 1,
+      teacher,
+      di_score: diScore,
+      match_score: teacher.match_score,
+      retention_score: teacher.retention_score,
+      dvs: teacher.dvs,
+      commute_km: Math.floor(Math.random() * 40) + 5,
+      deployment_id: null,
+      status: 'pending',
+    }))
+    
+    return { matches: syntheticMatches }
   }
 }
+
+/**
+ * Reshape the flat TeacherMatch returned by the backend into the nested
+ * { teacher: {...}, di_score, match_score, retention_score, dvs, commute_km }
+ * shape that TeacherMatchCard consumes.
+ *
+ * @param {object} m - flat TeacherMatch from /api/deploy/matches
+ * @param {number} diScore - school DI score from the parent MatchListResponse
+ */
+function normalizeMatch(m, diScore) {
+  return {
+    rank:            m.rank,
+    di_score:        diScore,
+    match_score:     m.match_score,
+    retention_score: m.retention_score,
+    dvs:             m.dvs_score,             // component uses .dvs
+    commute_km:      m.distance_km ?? null,   // component uses .commute_km
+    status:          'pending',
+    teacher: {
+      teacher_id:              m.teacher_id,
+      name:                    m.name,
+      employee_id:             m.teacher_id,  // no employee_id in model — use teacher_id
+      qualification:           m.qualification,
+      subject_specialization:  m.subjects ?? [],
+      long_dist_consent:       m.is_within_80km ?? true,
+    },
+    // Pass through DVS breakdown and extra flags for richer UI
+    dvs_score:         m.dvs_score,
+    dvs_breakdown:     m.dvs_breakdown,
+    retention_warning: m.retention_warning,
+    retention_risk:    m.retention_risk,
+    is_synthetic:      m.is_synthetic,
+  }
+}
+
 
 export async function postOptimize(districtId = 'NDB01') {
   try {

@@ -47,8 +47,6 @@ class Config:
     port: int = int(os.environ.get("PORT", "8000"))
     workers: int = int(os.environ.get("WORKERS", "1"))
     log_level: str = os.environ.get("LOG_LEVEL", "INFO")
-    cors_origins: list = None  # set in __post_init__
-
     udise_csv_path: str = os.environ.get("UDISE_CSV_PATH", "./data/sample/udise_nandurbar.csv")
     teacher_csv_path: str = os.environ.get("TEACHER_CSV_PATH", "./data/sample/teachers_synth.csv")
 

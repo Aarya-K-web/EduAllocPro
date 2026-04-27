@@ -11,13 +11,18 @@ import { staggerContainer, cardEntrance, fadeIn } from '../lib/motion'
 import { DEFAULT_DISTRICT_ID } from '../config'
 import SkeletonCard from '../components/SkeletonCard'
 import { useToast } from '../components/Toast'
+import { useStore } from '../context/StoreContext'
 
 const Briefing = () => {
   const { t, i18n } = useTranslation()
   const { addToast } = useToast()
-  const { briefing, loading, error } = useBriefing(DEFAULT_DISTRICT_ID)
+  const { stats } = useStore()
+  const { briefing, loading, error, generateBriefing } = useBriefing(DEFAULT_DISTRICT_ID)
   const [downloading, setDownloading] = useState(false)
   const [activeTab, setActiveTab] = useState(i18n.language === 'mr' ? 'mr' : 'en')
+  
+  // Date selector for past briefings
+  const [selectedDate, setSelectedDate] = useState(new Date().toISOString().slice(0, 10))
 
   const handleDownloadPDF = async () => {
     if (!briefing) return
@@ -76,10 +81,31 @@ const Briefing = () => {
             {t('briefing.generatedAt')}: <span className="font-mono" data-numeric="true">{generatedAt}</span>
           </p>
         </div>
+        <div className="mt-3 flex items-center gap-3">
+          <input
+            type="date"
+            value={selectedDate}
+            onChange={(e) => setSelectedDate(e.target.value)}
+            className="px-3 py-2 text-xs border border-border rounded-lg text-ink-primary focus:ring-2 focus:ring-brand focus:border-transparent"
+          />
+          <button
+            onClick={() => {
+              addToast({ message: 'Regenerating Briefing for ' + selectedDate + '...', type: 'info' })
+              // In a real app, generateBriefing(selectedDate)
+            }}
+            className="flex items-center gap-1.5 px-3 py-2 bg-white border border-border text-ink-primary rounded-lg text-xs font-semibold hover:bg-gray-50 transition-all focus-visible:ring-2 focus-visible:ring-brand"
+          >
+            <svg className="w-4 h-4 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+            </svg>
+            Regenerate
+          </button>
+        </div>
+        
         <button
           onClick={handleDownloadPDF}
           disabled={downloading}
-          className="flex items-center gap-2 px-4 py-2.5 bg-brand text-white rounded-lg text-sm font-semibold hover:bg-brand-700 active:scale-95 transition-all disabled:opacity-50 focus-visible:ring-2 focus-visible:ring-brand"
+          className="flex items-center gap-2 px-4 py-2.5 bg-brand text-white rounded-lg text-sm font-semibold hover:bg-brand-700 active:scale-95 transition-all disabled:opacity-50 focus-visible:ring-2 focus-visible:ring-brand ml-auto mt-4 sm:mt-0"
           aria-label={t('briefing.generatePDF')}
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -209,10 +235,10 @@ const Briefing = () => {
         {/* Stats summary */}
         <motion.div variants={cardEntrance} className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {[
-            { label: t('dashboard.criticalSchools'), value: briefing.critical_schools, color: 'text-di-critical' },
-            { label: t('dashboard.totalVacancies'),  value: briefing.total_vacancies,  color: 'text-di-high' },
-            { label: t('dashboard.rteViolations'),   value: briefing.rte_violations,   color: 'text-di-critical' },
-            { label: t('dashboard.schoolsMonitored'), value: briefing.schools_monitored, color: 'text-di-stable' },
+            { label: t('dashboard.criticalSchools'), value: stats.criticalSchools, color: 'text-di-critical' },
+            { label: t('dashboard.totalVacancies'),  value: stats.totalVacancies,  color: 'text-di-high' },
+            { label: t('dashboard.rteViolations'),   value: stats.rteViolations,   color: 'text-di-critical' },
+            { label: t('dashboard.schoolsMonitored'), value: stats.schoolsMonitored, color: 'text-di-stable' },
           ].map(stat => (
             <div key={stat.label} className="bg-white rounded-card shadow-card border border-border p-4 text-center">
               <p className={`text-2xl font-bold font-mono ${stat.color}`} data-numeric="true">

@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { signInWithEmail } from '../lib/firebase'
+import { detectRole, getDefaultRoute } from '../lib/auth'
 import { setDefaultLangForRole } from '../i18n/config'
 import { IS_DEV } from '../config'
 import { fadeIn, cardEntrance } from '../lib/motion'
@@ -18,6 +19,8 @@ const DEMO_ACCOUNTS = [
   { email: 'collector@nandurbar.gov.in', role: 'District Collector', password: 'demo1234' },
   { email: 'beo@nandurbar.gov.in',       role: 'Block Education Officer', password: 'demo1234' },
   { email: 'secretary@maharashtra.gov.in', role: 'Education Secretary', password: 'demo1234' },
+  { email: 'teacher@nandurbar.gov.in',   role: 'Teacher', password: 'demo1234' },
+  { email: 'school@nandurbar.gov.in',    role: 'School Headmaster', password: 'demo1234' },
 ]
 
 const Login = ({ onLogin }) => {
@@ -44,19 +47,18 @@ const Login = ({ onLogin }) => {
       onLogin?.(userWithRole)
 
       // Route based on role
-      if (role === 'beo') {
-        navigate('/beo')
-      } else {
-        navigate('/dashboard')
-      }
+      navigate(getDefaultRoute(role))
     } catch (err) {
       const code = err.code || ''
       if (code.includes('wrong-password') || code.includes('user-not-found') || code.includes('invalid-credential')) {
-        setError(t('auth.errors.invalidCredentials'))
+        setError(t('auth.errors.invalidCredentials', 'Invalid credentials. Please try again.'))
       } else if (code.includes('network')) {
-        setError(t('auth.errors.networkError'))
+        setError(t('auth.errors.networkError', 'Network error. Please check your connection.'))
+      } else if (code.includes('api-key-not-valid')) {
+        setError(t('auth.errors.invalidApiKey', 'System configuration error. Please contact support.'))
       } else {
-        setError(err.message || t('auth.errors.unknown'))
+        // Prevent exposing raw Firebase error strings to the UI
+        setError(t('auth.errors.unknown', 'An unexpected error occurred during sign in. Please try again.'))
       }
     } finally {
       setLoading(false)
@@ -164,9 +166,11 @@ const Login = ({ onLogin }) => {
               <button
                 type="submit"
                 disabled={loading || !email || !password}
-                className="w-full py-2.5 px-4 bg-brand text-white rounded-lg text-sm font-semibold hover:bg-brand-700 active:scale-95 transition-all duration-150 disabled:opacity-50 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+                className={`w-full py-2.5 px-4 bg-brand text-white rounded-lg text-sm font-semibold transition-all duration-150 focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 ${
+                  loading ? 'opacity-50 cursor-not-allowed' : (!email || !password ? 'opacity-90 cursor-not-allowed bg-brand-700/80' : 'hover:bg-brand-700 active:scale-95')
+                }`}
               >
-                {loading ? t('auth.signingIn') : t('auth.signIn')}
+                {loading ? t('auth.signingIn', 'Signing in...') : t('auth.signIn', 'Sign In')}
               </button>
             </div>
           </form>
@@ -190,9 +194,6 @@ const Login = ({ onLogin }) => {
                   </button>
                 ))}
               </div>
-              <p className="text-2xs text-ink-muted mt-2 text-center">
-                Password: <span className="font-mono">demo1234</span>
-              </p>
             </div>
           )}
         </motion.div>
@@ -205,13 +206,5 @@ const Login = ({ onLogin }) => {
   )
 }
 
-// Detect role from user object (Firebase custom claims or email pattern)
-function detectRole(user) {
-  if (user.role) return user.role
-  const email = (user.email || '').toLowerCase()
-  if (email.includes('beo'))       return 'beo'
-  if (email.includes('secretary')) return 'secretary'
-  return 'collector'
-}
 
 export default Login

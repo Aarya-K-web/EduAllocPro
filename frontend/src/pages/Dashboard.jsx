@@ -7,13 +7,14 @@
 import { useState, useCallback, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, useMap, Popup } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 
+import { useStore } from '../context/StoreContext'
 import { useSchools } from '../hooks/useSchools'
 import { MAPS_DEFAULT_CENTER, MAPS_DEFAULT_ZOOM, DEFAULT_DISTRICT_ID } from '../config'
-import { getDIHex, getDITier } from '../lib/diColors'
+import { getDIHex, getDITier, DI_COLORS } from '../lib/diColors'
 import { staggerContainer, slideInRight } from '../lib/motion'
 import { MOCK_STATS } from '../lib/mockData'
 
@@ -57,9 +58,34 @@ const SchoolMarker = ({ school, isSelected, onClick }) => {
       position={[school.lat, school.lng]}
       icon={customIcon}
       eventHandlers={{
-        click: () => onClick(school.school_id)
+        // Only trigger click if we want to programmatically open the panel right away, 
+        // but now we'll rely on the Popup to show details.
+        click: () => {}
       }}
-    />
+    >
+      <Popup className="custom-popup">
+        <div className="p-1 min-w-[200px]">
+          <h3 className="font-bold text-ink-primary text-sm mb-1">{school.name}</h3>
+          <div className="flex items-center gap-2 mb-2">
+            <span className="text-2xs font-semibold px-2 py-0.5 rounded-full" style={{ backgroundColor: color + '20', color: color }}>
+              DI {school.di_score} • {tier.toUpperCase()}
+            </span>
+          </div>
+          <p className="text-xs text-ink-muted mb-3">
+            {school.total_vacancies} {school.total_vacancies === 1 ? 'Vacancy' : 'Vacancies'}
+          </p>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              onClick(school.school_id);
+            }}
+            className="w-full text-center text-xs font-semibold text-brand hover:text-brand-700 py-1.5 bg-brand/5 rounded-lg transition-colors"
+          >
+            View Details
+          </button>
+        </div>
+      </Popup>
+    </Marker>
   )
 }
 
@@ -114,13 +140,8 @@ const Dashboard = () => {
     setSelectedSchoolId(null)
   }, [])
 
-  // Compute stats
-  const stats = {
-    criticalSchools:  schools.filter(s => s.di_score >= 80).length || MOCK_STATS.criticalSchools,
-    totalVacancies:   schools.reduce((sum, s) => sum + (s.total_vacancies || 0), 0) || MOCK_STATS.totalVacancies,
-    rteViolations:    schools.filter(s => !s.rte_compliant).length || MOCK_STATS.rteViolations,
-    schoolsMonitored: schools.length || MOCK_STATS.schoolsMonitored,
-  }
+  // Use shared global stats
+  const { stats } = useStore()
 
   return (
     <div className="flex flex-col h-screen overflow-hidden">
@@ -198,10 +219,10 @@ const Dashboard = () => {
               {t('di.label')}
             </p>
             {[
-              { label: t('di.critical'), color: '#E11D48', range: '80-100' },
-              { label: t('di.high'),     color: '#D97706', range: '60-79' },
-              { label: t('di.moderate'), color: '#2563EB', range: '40-59' },
-              { label: t('di.stable'),   color: '#059669', range: '0-39' },
+              { label: t('di.critical'), color: DI_COLORS.critical.hex, range: '80-100' },
+              { label: t('di.high'),     color: DI_COLORS.high.hex,     range: '60-79' },
+              { label: t('di.moderate'), color: DI_COLORS.moderate.hex, range: '40-59' },
+              { label: t('di.stable'),   color: DI_COLORS.stable.hex,   range: '0-39' },
             ].map(item => (
               <div key={item.range} className="flex items-center gap-2 mb-1 last:mb-0">
                 <span

@@ -87,10 +87,8 @@ async def setup():
         ]
         for view_name, view_query in views:
             try:
-                view_ref = bq._client.dataset(bq._dataset).table(view_name)
-                view = bq._client.get_table(view_ref) if False else None
-                # Create view
-                from google.cloud.bigquery import Table, TableReference
+                # create_table with exists_ok=True is idempotent — safe to re-run
+                from google.cloud.bigquery import Table
                 view_table = Table(f"{bq._project_id}.{bq._dataset}.{view_name}")
                 view_table.view_query = view_query
                 bq._client.create_table(view_table, exists_ok=True)

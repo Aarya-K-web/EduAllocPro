@@ -4,15 +4,16 @@
 // Top 5 schools, defaults to Marathi language.
 // ============================================================
 
-import { useEffect } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { useSchools } from '../hooks/useSchools'
 import { setDefaultLangForRole } from '../i18n/config'
 import { getDIColors, getDITier } from '../lib/diColors'
 import { staggerContainer, cardEntrance } from '../lib/motion'
 import { DEFAULT_DISTRICT_ID } from '../config'
+import { useStore } from '../context/StoreContext'
 import DIBadge from '../components/DIBadge'
 import FreshnessIndicator from '../components/FreshnessIndicator'
 import SkeletonCard from '../components/SkeletonCard'
@@ -26,14 +27,44 @@ const BEODashboard = ({ user }) => {
     setDefaultLangForRole('beo')
   }, [])
 
-  // Top 5 by DI score
-  const top5 = schools
-    .filter(s => s.di_score !== null && s.di_score !== undefined)
-    .sort((a, b) => b.di_score - a.di_score)
-    .slice(0, 5)
+  const { stats } = useStore()
+  const criticalCount = stats.criticalSchools
+  const totalVacancies = stats.totalVacancies
 
-  const criticalCount = schools.filter(s => s.di_score >= 80).length
-  const totalVacancies = schools.reduce((sum, s) => sum + (s.total_vacancies || 0), 0)
+  // Filtering and Pagination State
+  const [statusFilter, setStatusFilter] = useState('All') // All, Critical, High, Moderate, Stable
+  const [blockFilter, setBlockFilter] = useState('')
+  const [searchQuery, setSearchQuery] = useState('')
+  const [visibleCount, setVisibleCount] = useState(5)
+
+  // Get unique blocks for filter
+  const blocks = useMemo(() => {
+    return [...new Set(schools.map(s => s.block).filter(Boolean))]
+  }, [schools])
+
+  // Apply filters
+  const filteredSchools = useMemo(() => {
+    return schools.filter(s => {
+      // Status Filter
+      if (statusFilter !== 'All') {
+        const tier = getDITier(s.di_score)
+        if (tier.toLowerCase() !== statusFilter.toLowerCase()) return false
+      }
+      // Block Filter
+      if (blockFilter && s.block !== blockFilter) return false
+      // Search Filter
+      if (searchQuery && !s.name?.toLowerCase().includes(searchQuery.toLowerCase())) return false
+      
+      return true
+    }).sort((a, b) => (b.di_score ?? 0) - (a.di_score ?? 0))
+  }, [schools, statusFilter, blockFilter, searchQuery])
+
+  // Pagination
+  const displayedSchools = filteredSchools.slice(0, visibleCount)
+
+  const handleLoadMore = () => {
+    setVisibleCount(prev => prev + 5)
+  }
 
   return (
     <div className="min-h-screen bg-surface-bg">
@@ -74,16 +105,45 @@ const BEODashboard = ({ user }) => {
         </div>
       )}
 
-      {/* Top 5 schools */}
-      <div className="px-4 py-4">
-        <div className="flex items-center justify-between mb-3">
-          <h2 className="text-sm font-bold text-ink-primary">{t('beo.top5Schools')}</h2>
-          <Link
-            to="/dashboard"
-            className="text-xs text-brand font-medium hover:underline"
+      {/* Filters Section */}
+      <div className="px-4 py-4 space-y-3">
+        <input
+          type="text"
+          placeholder="Search schools by name..."
+          value={searchQuery}
+          onChange={e => setSearchQuery(e.target.value)}
+          className="w-full px-3 py-2 border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand"
+        />
+        <div className="grid grid-cols-2 gap-3">
+          <select
+            value={statusFilter}
+            onChange={e => { setStatusFilter(e.target.value); setVisibleCount(5); }}
+            className="w-full px-2 py-2 border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand bg-white"
           >
-            {t('beo.viewAll')} →
-          </Link>
+            <option value="All">All Statuses</option>
+            <option value="Critical">Critical (80-100)</option>
+            <option value="High">High (60-79)</option>
+            <option value="Moderate">Moderate (40-59)</option>
+            <option value="Stable">Stable (0-39)</option>
+          </select>
+          <select
+            value={blockFilter}
+            onChange={e => { setBlockFilter(e.target.value); setVisibleCount(5); }}
+            className="w-full px-2 py-2 border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand bg-white"
+          >
+            <option value="">All Blocks</option>
+            {blocks.map(b => <option key={b} value={b}>{b}</option>)}
+          </select>
+        </div>
+      </div>
+
+      {/* School List */}
+      <div className="px-4 pb-6">
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="text-sm font-bold text-ink-primary">School Priorities</h2>
+          <span className="text-xs text-ink-muted">
+            Showing {displayedSchools.length} of {filteredSchools.length}
+          </span>
         </div>
 
         {loading ? (
@@ -92,21 +152,38 @@ const BEODashboard = ({ user }) => {
           <div className="text-center py-8">
             <p className="text-sm text-ink-muted">{error}</p>
           </div>
+        ) : filteredSchools.length === 0 ? (
+          <div className="text-center py-8 bg-white rounded-xl border border-border">
+            <p className="text-sm text-ink-muted">No schools found matching filters.</p>
+          </div>
         ) : (
-          <motion.div
-            variants={staggerContainer}
-            initial="initial"
-            animate="animate"
-            className="space-y-3"
-          >
-            {top5.map((school, idx) => (
-              <BEOSchoolCard
-                key={school.school_id}
-                school={school}
-                rank={idx + 1}
-              />
-            ))}
-          </motion.div>
+          <>
+            <motion.div
+              variants={staggerContainer}
+              initial="initial"
+              animate="animate"
+              className="space-y-3"
+            >
+              <AnimatePresence>
+                {displayedSchools.map((school, idx) => (
+                  <BEOSchoolCard
+                    key={school.school_id}
+                    school={school}
+                    rank={idx + 1}
+                  />
+                ))}
+              </AnimatePresence>
+            </motion.div>
+            
+            {visibleCount < filteredSchools.length && (
+              <button
+                onClick={handleLoadMore}
+                className="w-full mt-4 py-2.5 bg-brand/10 text-brand rounded-lg text-sm font-semibold hover:bg-brand/20 transition-colors"
+              >
+                Load More
+              </button>
+            )}
+          </>
         )}
       </div>
     </div>

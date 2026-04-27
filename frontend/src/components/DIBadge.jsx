@@ -20,6 +20,7 @@ const DIBadge = ({
   size      = 'md',
   showScore = true,
   showLabel = true,
+  factors   = [],
   className = '',
 }) => {
   const { t } = useTranslation()
@@ -41,15 +42,22 @@ const DIBadge = ({
     lg: 'w-2.5 h-2.5',
   }
 
-  const ariaLabel = t('di.ariaLabel', {
+  let ariaLabel = t('di.ariaLabel', {
     score: displayScore,
     tier:  label,
   })
+  
+  let titleAttr = undefined
+  if (factors && factors.length > 0) {
+    titleAttr = `Deprivation Factors:\n• ${factors.join('\n• ')}`
+    ariaLabel += `. Factors: ${factors.join(', ')}`
+  }
 
   return (
     <span
       role="img"
       aria-label={ariaLabel}
+      title={titleAttr}
       className={[
         'inline-flex items-center rounded-full font-medium border',
         colors.badgeBg,

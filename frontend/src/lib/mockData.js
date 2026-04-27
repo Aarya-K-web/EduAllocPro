@@ -18,6 +18,7 @@ export const MOCK_SCHOOLS = [
     lat: 21.3661,
     lng: 74.2167,
     di_score: 87,
+    di_factors: ['Missing separate girls toilet', 'PTR > 40:1', 'No electricity connection'],
     enrollment_total: 142,
     enrollment_boys: 74,
     enrollment_girls: 68,

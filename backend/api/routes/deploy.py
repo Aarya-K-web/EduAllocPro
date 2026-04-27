@@ -76,8 +76,21 @@ async def optimize_district(
         from tests.fixtures.sample_schools import SAMPLE_SCHOOLS_NDB
         schools = [s for s in SAMPLE_SCHOOLS_NDB if s.get("total_vacancies", 0) > 0]
 
-    # Load teachers
-    teachers = await bq.get_teachers_by_subject("Mathematics", limit=300)
+    # Collect all subjects required by the loaded school vacancies
+    subjects_needed: set[str] = set()
+    for school in schools:
+        for vac in school.get("vacancies_detail", school.get("vacancies", [])):
+            subj = vac.get("subject", "") if isinstance(vac, dict) else str(vac)
+            if subj:
+                subjects_needed.add(subj)
+
+    # Load teachers for every required subject, deduplicate by teacher_id
+    teachers_by_id: dict[str, dict] = {}
+    for subject in subjects_needed:
+        for t in await bq.get_teachers_by_subject(subject, limit=200):
+            teachers_by_id[t.get("teacher_id", "")] = t
+    teachers = list(teachers_by_id.values())
+
     if not teachers:
         from tests.fixtures.sample_teachers import SAMPLE_TEACHERS_NDB
         teachers = SAMPLE_TEACHERS_NDB

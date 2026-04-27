@@ -48,19 +48,21 @@ export async function signInWithEmail(email, password) {
  * Sign out the current user.
  */
 export async function signOutUser() {
-  if (!auth) {
-    // Clear mock session
-    sessionStorage.removeItem('mock_user')
-    return
+  // Always clear mock session
+  sessionStorage.removeItem('mock_user')
+  
+  if (auth) {
+    await signOut(auth)
   }
-  await signOut(auth)
 }
 
 // ── Mock Auth (dev only) ────────────────────────────────────
 const MOCK_USERS = {
-  'collector@nandurbar.gov.in': { role: 'collector', name: 'District Collector' },
-  'beo@nandurbar.gov.in':       { role: 'beo',       name: 'Block Education Officer' },
+  'collector@nandurbar.gov.in':   { role: 'collector', name: 'District Collector' },
+  'beo@nandurbar.gov.in':         { role: 'beo',       name: 'Block Education Officer' },
   'secretary@maharashtra.gov.in': { role: 'secretary', name: 'Education Secretary' },
+  'teacher@nandurbar.gov.in':     { role: 'teacher',   name: 'Arjun Patil' },
+  'school@nandurbar.gov.in':      { role: 'school',    name: 'Government High School, Shahada' },
 }
 
 function mockSignIn(email, password) {

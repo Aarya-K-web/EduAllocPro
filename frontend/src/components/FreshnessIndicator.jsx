@@ -16,6 +16,7 @@ const FreshnessIndicator = ({
   isStale   = false,
   ageMonths = 0,
   variant   = 'badge',
+  overrideText,
 }) => {
   const { t } = useTranslation()
 
@@ -40,7 +41,7 @@ const FreshnessIndicator = ({
         title={warning}
       >
         <span aria-hidden="true">⚠</span>
-        {t('freshness.fieldVerifyRequired')}
+        {overrideText || t('freshness.fieldVerifyRequired')}
       </span>
     )
   }
@@ -54,7 +55,7 @@ const FreshnessIndicator = ({
         <span className="text-amber-500 text-sm mt-0.5 flex-shrink-0" aria-hidden="true">⚠</span>
         <div>
           <p className="text-xs font-semibold text-amber-800">
-            {t('freshness.fieldVerifyRequired')}
+            {overrideText || t('freshness.fieldVerifyRequired')}
           </p>
           <p className="text-xs text-amber-700 mt-0.5">{warning}</p>
         </div>
@@ -69,7 +70,7 @@ const FreshnessIndicator = ({
       title={warning}
     >
       <span aria-hidden="true">⚠</span>
-      {t('freshness.fieldVerifyRequired')}
+      {overrideText || t('freshness.fieldVerifyRequired')}
     </span>
   )
 }

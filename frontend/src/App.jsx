@@ -15,21 +15,26 @@ import AppShell    from './layouts/AppShell'
 import MobileShell from './layouts/MobileShell'
 
 // Pages
-import Login         from './pages/Login'
-import Dashboard     from './pages/Dashboard'
-import SchoolDetail  from './pages/SchoolDetail'
-import Deploy        from './pages/Deploy'
-import DistrictPlan  from './pages/DistrictPlan'
-import Briefing      from './pages/Briefing'
-import BEODashboard  from './pages/BEODashboard'
-import TeacherView   from './pages/TeacherView'
+import Login            from './pages/Login'
+import Dashboard        from './pages/Dashboard'
+import SchoolDetail     from './pages/SchoolDetail'
+import Deploy           from './pages/Deploy'
+import DistrictPlan     from './pages/DistrictPlan'
+import Briefing         from './pages/Briefing'
+import BEODashboard     from './pages/BEODashboard'
+import TeacherView      from './pages/TeacherView'
+import TeacherDashboard from './pages/TeacherDashboard'
+import SchoolDashboard  from './pages/SchoolDashboard'
+import SecretaryDashboard from './pages/SecretaryDashboard'
 
 // Components
 import { ToastProvider } from './components/Toast'
+import { StoreProvider } from './context/StoreContext'
 
 // Firebase
 import { auth, getMockUser } from './lib/firebase'
 import { IS_DEV } from './config'
+import { detectRole, getDefaultRoute } from './lib/auth'
 
 // ── Auth Guard ──────────────────────────────────────────────
 const ProtectedRoute = ({ user, children }) => {
@@ -91,63 +96,63 @@ function App() {
   }
 
   return (
-    <ToastProvider>
-      <BrowserRouter>
-        <Routes>
-          {/* Public */}
-          <Route
-            path="/login"
-            element={
-              user
-                ? <Navigate to={user.role === 'beo' ? '/beo' : '/dashboard'} replace />
-                : <Login onLogin={handleLogin} />
-            }
-          />
+    <StoreProvider>
+      <ToastProvider>
+        <BrowserRouter>
+          <Routes>
+            {/* Public */}
+            <Route
+              path="/login"
+              element={
+                user
+                  ? <Navigate to={getDefaultRoute(user.role)} replace />
+                  : <Login onLogin={handleLogin} />
+              }
+            />
 
-          {/* Mobile BEO shell */}
-          <Route
-            path="/beo"
-            element={
-              <ProtectedRoute user={user}>
-                <MobileShell user={user} />
-              </ProtectedRoute>
-            }
-          >
-            <Route index element={<BEODashboard user={user} />} />
-          </Route>
+            {/* Mobile BEO shell */}
+            <Route
+              path="/beo"
+              element={
+                <ProtectedRoute user={user}>
+                  {/* Phase 3, Item 15: Use AppShell instead of MobileShell on desktop, but for now we replace it with AppShell */}
+                  <AppShell user={user} onLogout={handleLogout} />
+                </ProtectedRoute>
+              }
+            >
+              <Route index element={<BEODashboard user={user} />} />
+            </Route>
 
-          {/* Desktop app shell */}
-          <Route
-            path="/"
-            element={
-              <ProtectedRoute user={user}>
-                <AppShell user={user} />
-              </ProtectedRoute>
-            }
-          >
-            <Route index element={<Navigate to="/dashboard" replace />} />
-            <Route path="dashboard"    element={<Dashboard />} />
-            <Route path="schools/:id"  element={<SchoolDetail />} />
-            <Route path="deploy"       element={<Deploy />} />
-            <Route path="plan"         element={<DistrictPlan />} />
-            <Route path="briefing"     element={<Briefing />} />
-            <Route path="teacher/:id"  element={<TeacherView />} />
-          </Route>
+            {/* Desktop app shell */}
+            <Route
+              path="/"
+              element={
+                <ProtectedRoute user={user}>
+                  <AppShell user={user} onLogout={handleLogout} />
+                </ProtectedRoute>
+              }
+            >
+              <Route index element={<Navigate to="/dashboard" replace />} />
+              <Route path="dashboard"          element={<Dashboard />} />
+              <Route path="schools/:id"        element={<SchoolDetail />} />
+              <Route path="deploy"             element={<Deploy />} />
+              <Route path="plan"               element={<DistrictPlan />} />
+              <Route path="briefing"           element={<Briefing />} />
+              <Route path="teacher/:id"        element={<TeacherView />} />
+              <Route path="teacher-dashboard"  element={<TeacherDashboard />} />
+              <Route path="school-dashboard"   element={<SchoolDashboard />} />
+              <Route path="secretary"          element={<SecretaryDashboard />} />
+            </Route>
 
-          {/* Catch-all */}
-          <Route path="*" element={<Navigate to={user ? '/dashboard' : '/login'} replace />} />
-        </Routes>
-      </BrowserRouter>
-    </ToastProvider>
+            {/* Catch-all */}
+            <Route path="*" element={<Navigate to={user ? getDefaultRoute(user.role) : '/login'} replace />} />
+          </Routes>
+        </BrowserRouter>
+      </ToastProvider>
+    </StoreProvider>
   )
 }
 
-function detectRole(user) {
-  if (user?.role) return user.role
-  const email = (user?.email || '').toLowerCase()
-  if (email.includes('beo'))       return 'beo'
-  if (email.includes('secretary')) return 'secretary'
-  return 'collector'
-}
+
 
 export default App

@@ -4,10 +4,12 @@
 // NEVER use index as key — always school_id.
 // ============================================================
 
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { cardEntrance } from '../lib/motion'
 import { getDIColors, getDITier } from '../lib/diColors'
+import { useToast } from './Toast'
 import DIBadge from './DIBadge'
 import EnrollmentSparkline from './EnrollmentSparkline'
 import FreshnessIndicator from './FreshnessIndicator'
@@ -20,7 +22,10 @@ import FreshnessIndicator from './FreshnessIndicator'
  */
 const SchoolCard = ({ school, onClick, isSelected = false }) => {
   const { t } = useTranslation()
+  const { addToast } = useToast()
   const colors = getDIColors(school.di_score)
+  
+  const [verifyRequested, setVerifyRequested] = useState(false)
 
   const handleClick = () => onClick?.(school.school_id)
   const handleKeyDown = (e) => {
@@ -58,7 +63,7 @@ const SchoolCard = ({ school, onClick, isSelected = false }) => {
               {school.block} · {school.cluster}
             </p>
           </div>
-          <DIBadge score={school.di_score} size="sm" />
+          <DIBadge score={school.di_score} factors={school.di_factors} size="sm" />
         </div>
 
         {/* Vacancy pills + RTE badge */}
@@ -81,7 +86,10 @@ const SchoolCard = ({ school, onClick, isSelected = false }) => {
             </span>
           )}
           {!school.rte_compliant && (
-            <span className="inline-flex items-center gap-1 bg-red-50 text-red-700 border border-red-200 text-2xs font-medium px-2 py-0.5 rounded-full">
+            <span 
+              className="inline-flex items-center gap-1 bg-red-50 text-red-700 border border-red-200 text-2xs font-medium px-2 py-0.5 rounded-full cursor-help"
+              title="RTE Act 2009 Violation: Pupil-Teacher Ratio exceeds 30:1 or critical infrastructure missing."
+            >
               RTE ✗
             </span>
           )}
@@ -100,11 +108,27 @@ const SchoolCard = ({ school, onClick, isSelected = false }) => {
               <EnrollmentSparkline data={school.enrollment_trend} width={60} height={24} />
             )}
           </div>
-          <FreshnessIndicator
-            isStale={school.is_data_stale}
-            ageMonths={school.data_age_months}
-            variant="inline"
-          />
+          <div className="flex flex-col items-end gap-2">
+            <FreshnessIndicator
+              isStale={school.is_data_stale}
+              ageMonths={school.data_age_months}
+              variant="inline"
+              overrideText={verifyRequested ? 'Verification Requested' : undefined}
+            />
+            {school.is_data_stale && (
+              <button
+                onClick={(e) => {
+                  e.stopPropagation()
+                  setVerifyRequested(true)
+                  addToast({ message: 'Field verification request sent to block office.', type: 'info' })
+                }}
+                disabled={verifyRequested}
+                className="text-2xs font-semibold px-2 py-1 rounded bg-amber-50 text-amber-700 border border-amber-200 hover:bg-amber-100 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              >
+                {verifyRequested ? 'Requested ✓' : 'Request Verification'}
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </motion.article>

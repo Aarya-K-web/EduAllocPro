@@ -20,4 +20,4 @@ services:
       - key: MAPS_API_KEY
         sync: false
       - key: UDISE_CSV_PATH
-        value: ./data/sample/udise_nandurbar_demo.csv
+        value: ./udise_nandurbar_demo.csv

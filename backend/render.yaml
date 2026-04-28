@@ -5,7 +5,7 @@ services:
     region: oregon
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    startCommand: python -m data.setup_bq --mode full && uvicorn api.main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: APP_ENV
         value: development
@@ -19,3 +19,5 @@ services:
         sync: false
       - key: MAPS_API_KEY
         sync: false
+      - key: UDISE_CSV_PATH
+        value: ./data/sample/udise_nandurbar_demo.csv

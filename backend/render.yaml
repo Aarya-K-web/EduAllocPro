@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: edualloc-api
+    runtime: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: APP_ENV
+        value: development
+      - key: PYTHON_VERSION
+        value: "3.11.0"
+      - key: GOOGLE_CLOUD_PROJECT
+        value: eduallocpro
+      - key: FIREBASE_PROJECT_ID
+        value: eduallocpro
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: MAPS_API_KEY
+        sync: false

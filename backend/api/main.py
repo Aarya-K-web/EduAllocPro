@@ -99,8 +99,8 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=config.get_cors_origins() + [
+        "https://frontend-flax-two-1atipqo8ee.vercel.app",
         "https://*.vercel.app",
-        "https://edualloc-pro.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],

@@ -63,6 +63,7 @@ async def main():
     from services.maps_client import MapsClient
     
     bq = BigQueryClient.from_env()
+    await bq.initialize()
     vertex = VertexClient.from_env()
     maps = MapsClient.from_env()
 

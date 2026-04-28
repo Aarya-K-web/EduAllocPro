@@ -11,58 +11,85 @@ from utils.di_formula import UDISESchoolData, compute_deprivation_index
 
 logger = structlog.get_logger()
 
-# Subject inference by grade range
-_GRADE_SUBJECT_MAP = {
-    "1-5":  ["Marathi", "Mathematics", "English", "EVS"],
-    "6-8":  ["Marathi", "Mathematics", "English", "Science", "Social Studies", "Hindi"],
-    "9-10": ["Mathematics", "Science", "English", "Social Studies", "Hindi", "Marathi"],
-    "11-12": ["Physics", "Chemistry", "Biology", "Mathematics", "English"],
-}
-
-
-def _infer_required_subjects(grade_range: str) -> list[str]:
-    """Infer required subjects from grade range string."""
-    for key, subjects in _GRADE_SUBJECT_MAP.items():
-        if key in grade_range:
-            return subjects
-    return ["Mathematics", "Science", "English"]
-
-
 async def compute_di_for_district(bq, district_id: str) -> int:
     """
-    Compute DI scores for all schools in a district.
-    Writes results back to BigQuery via bq.batch_update_di_scores().
-    Returns count of schools processed.
+    Compute DI scores for all schools in a district (Task 3).
+    Uses pagination (200 at a time) and immediate batch updates.
     """
     log = logger.bind(fn="compute_di_for_district", district_id=district_id)
     log.info("di.compute.start")
 
-    rows = await bq.get_raw_school_data(district_id)
-    log.info("di.compute.fetched", count=len(rows))
+    batch_size = 200
+    offset = 0
+    total_processed = 0
+    
+    # Summary stats
+    scored_count = 0
+    null_count = 0
+    critical_count = 0
+    high_count = 0
+    sum_di = 0.0
 
-    updates = []
-    for row in rows:
-        school = UDISESchoolData(
-            school_id=str(row.get("school_id", "")),
-            stu_tea_ratio=row.get("stu_tea_ratio"),
-            num_subject_vacancies=int(row.get("total_vacancies", 0)),
-            num_required_subjects=max(1, int(row.get("required_subjects_count", 1))),
-            toilet_boys=bool(row.get("toilet_boys", False)),
-            toilet_girls=bool(row.get("toilet_girls", False)),
-            has_electricity=bool(row.get("has_electricity", False)),
-            num_classrooms=max(1, int(row.get("num_classrooms", 1))),
-            enrollment_total=int(row.get("enrollment_total", 0)),
-            nearest_town_km=row.get("nearest_town_km"),
-            enrollment_3yr_ago=row.get("enrollment_3yr_ago"),
-            district_aser_pct=row.get("district_aser_pct"),
-        )
+    while True:
+        # Task 3.1: Pagination
+        rows = await bq.get_raw_school_data(district_id, limit=batch_size, offset=offset)
+        if not rows:
+            break
+            
+        updates = []
+        for row in rows:
+            school = UDISESchoolData(
+                school_id=str(row.get("school_id", "")),
+                stu_tea_ratio=row.get("stu_tea_ratio"),
+                num_subject_vacancies=int(row.get("total_vacancies", 0)),
+                num_required_subjects=max(1, int(row.get("required_subjects_count", 1))),
+                toilet_boys=bool(row.get("toilet_boys", False)),
+                toilet_girls=bool(row.get("toilet_girls", False)),
+                has_electricity=bool(row.get("has_electricity", False)),
+                num_classrooms=max(1, int(row.get("num_classrooms", 1))),
+                enrollment_total=int(row.get("enrollment_total", 0)),
+                nearest_town_km=row.get("nearest_town_km"),
+                enrollment_3yr_ago=row.get("enrollment_3yr_ago"),
+                district_aser_pct=row.get("district_aser_pct"),
+            )
 
-        result = compute_deprivation_index(school)
-        result["school_id"] = school.school_id
-        updates.append(result)
+            result = compute_deprivation_index(school)
+            result["school_id"] = school.school_id
+            updates.append(result)
+            
+            # Update summary stats
+            if result.get("composite_di") is not None:
+                scored_count += 1
+                sum_di += result["composite_di"]
+                if result["composite_di"] >= 80:
+                    critical_count += 1
+                elif result["composite_di"] >= 60:
+                    high_count += 1
+            else:
+                null_count += 1
 
-    if updates:
-        await bq.batch_update_di_scores(updates)
+        # Task 3.2: Immediate batch update
+        if updates:
+            await bq.batch_update_di_scores(updates)
+            total_processed += len(updates)
+            
+        # Task 3.3: Progress log
+        log.info("di.batch.done", 
+                 batch=offset // batch_size + 1, 
+                 total_batched=total_processed, 
+                 district=district_id)
+        
+        offset += batch_size
 
-    log.info("di.compute.done", count=len(updates))
-    return len(updates)
+    # Task 3.4: District summary log
+    avg_di = (sum_di / scored_count) if scored_count > 0 else 0
+    log.info("di.district.summary", 
+             district=district_id,
+             total_schools=total_processed,
+             scored=scored_count, 
+             null_quality=null_count,
+             avg_di=round(avg_di, 1),
+             critical_count=critical_count,
+             high_count=high_count)
+
+    return total_processed

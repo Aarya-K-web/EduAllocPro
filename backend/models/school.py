@@ -89,8 +89,19 @@ class SchoolDetail(SchoolSummary):
     cluster: Optional[str] = None
 
 
+class DistrictStats(BaseModel):
+    """Task 5: District-level aggregation summary."""
+    total_schools: int = 0
+    scored_schools: int = 0
+    critical_count: int = 0
+    high_count: int = 0
+    rte_violation_count: int = 0
+    total_vacancies: int = 0
+    data_stale_count: int = 0
+
+
 class SchoolListResponse(BaseModel):
-    """Paginated list of schools."""
+    """Paginated list of schools with district stats (Task 5)."""
 
     schools: list[SchoolSummary]
     total: int
@@ -99,9 +110,4 @@ class SchoolListResponse(BaseModel):
     has_more: bool
     district_id: str
     filters_applied: dict = {}
-
-
-class SchoolDetailResponse(BaseModel):
-    """Single school detail response."""
-
-    school: SchoolDetail
+    district_stats: Optional[DistrictStats] = None

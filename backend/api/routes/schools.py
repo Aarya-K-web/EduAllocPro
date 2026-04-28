@@ -48,6 +48,11 @@ async def list_schools(
         offset=offset,
     )
 
+    # Get district stats for the header summary (Task 5.2)
+    stats_row = await bq.get_district_stats(district_id)
+    from models.school import DistrictStats
+    district_stats = DistrictStats(**stats_row) if stats_row else None
+
     # If BQ returns nothing, use mock data
     if not rows:
         from tests.fixtures.sample_schools import SAMPLE_SCHOOLS_NDB
@@ -70,6 +75,7 @@ async def list_schools(
             "vacancies_only": vacancies_only,
             "block_code": block_code,
         },
+        district_stats=district_stats,
     )
 
 

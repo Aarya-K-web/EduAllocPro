@@ -156,7 +156,41 @@ class BigQueryClient:
             return rows
         except Exception as e:
             logger.error("bq.get_schools.error", error=str(e), district_id=district_id)
-            return []
+    async def get_district_stats(self, district_id: str) -> dict:
+        """Task 5.2: Get district-level summary stats via single aggregation query."""
+        if not self._client:
+            return {}
+
+        # Data staleness threshold (365 days)
+        stale_date = (datetime.utcnow() - timedelta(days=365)).isoformat()
+
+        query = f"""
+            SELECT
+                count(*) as total_schools,
+                countif(di_score IS NOT NULL) as scored_schools,
+                countif(di_score >= 80) as critical_count,
+                countif(di_score >= 60 AND di_score < 80) as high_count,
+                countif(rte_violation = TRUE) as rte_violation_count,
+                sum(total_vacancies) as total_vacancies,
+                countif(data_updated_at < @stale_date OR data_updated_at IS NULL) as data_stale_count
+            FROM {self._table('schools')}
+            WHERE district_code = @district_id
+        """
+        params = [
+            bigquery.ScalarQueryParameter("district_id", "STRING", district_id),
+            bigquery.ScalarQueryParameter("stale_date", "STRING", stale_date),
+        ]
+
+        def _query():
+            job_config = bigquery.QueryJobConfig(query_parameters=params)
+            rows = list(self._client.query(query, job_config=job_config).result())
+            return dict(rows[0]) if rows else {}
+
+        try:
+            return await self._run(_query)
+        except Exception as e:
+            logger.error("bq.get_district_stats.error", error=str(e))
+            return {}
 
     async def get_school_by_id(self, school_id: str) -> Optional[dict]:
         """Get full school detail by UDISE code (always STRING)."""
@@ -202,8 +236,10 @@ class BigQueryClient:
             logger.error("bq.get_school_by_id.error", error=str(e), school_id=school_id)
             return None
 
-    async def get_raw_school_data(self, district_id: str) -> list[dict]:
-        """Get raw UDISE data for DI computation."""
+    async def get_raw_school_data(
+        self, district_id: str, limit: int = 1000, offset: int = 0
+    ) -> list[dict]:
+        """Get raw UDISE data for DI computation with pagination."""
         if not self._client:
             return []
 
@@ -215,8 +251,15 @@ class BigQueryClient:
                 enrollment_3yr_ago, district_aser_pct
             FROM {self._table('schools')}
             WHERE district_code = @district_id
+            ORDER BY school_id
+            LIMIT @limit_val
+            OFFSET @offset_val
         """
-        params = [bigquery.ScalarQueryParameter("district_id", "STRING", district_id)]
+        params = [
+            bigquery.ScalarQueryParameter("district_id", "STRING", district_id),
+            bigquery.ScalarQueryParameter("limit_val", "INT64", limit),
+            bigquery.ScalarQueryParameter("offset_val", "INT64", offset),
+        ]
 
         def _query():
             job_config = bigquery.QueryJobConfig(query_parameters=params)

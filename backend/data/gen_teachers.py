@@ -1,6 +1,7 @@
 """
 EduAllocPro — Synthetic Teacher Generator
-Generates 300 realistic Maharashtra teacher profiles for Nandurbar district.
+Generates exactly 300 realistic Maharashtra teacher profiles for Nandurbar district.
+Uses Faker for realistic Indian names.
 Run: python -m data.gen_teachers
 """
 import json
@@ -9,46 +10,24 @@ import uuid
 from datetime import datetime
 
 import structlog
+from faker import Faker
+from ai.matching import build_teacher_embedding_str
 
 logger = structlog.get_logger()
+fake = Faker('en_IN')
 
-# Maharashtra teacher name components
-FIRST_NAMES_M = [
-    "Rajesh", "Suresh", "Pradeep", "Anil", "Ramesh", "Vijay", "Santosh",
-    "Mahesh", "Dinesh", "Ganesh", "Nilesh", "Umesh", "Yogesh", "Rakesh",
-    "Naresh", "Girish", "Harish", "Manish", "Paresh", "Rupesh",
-]
-FIRST_NAMES_F = [
-    "Sunita", "Kavita", "Anita", "Meena", "Priya", "Rekha", "Sushma",
-    "Vandana", "Archana", "Madhuri", "Swati", "Pooja", "Neha", "Sneha",
-    "Manisha", "Varsha", "Deepa", "Shobha", "Usha", "Lata",
-]
-SURNAMES = [
-    "Patil", "Desai", "Jadhav", "Bhosale", "Shinde", "Pawar", "Kulkarni",
-    "Chaudhari", "Wagh", "Nikam", "More", "Gaikwad", "Salve", "Gavit",
-    "Tadvi", "Valvi", "Pawara", "Naik", "Borse", "Sonawane",
-]
-MIDDLE_NAMES = [
-    "Kumar", "Ramesh", "Vishnu", "Suresh", "Dattatray", "Mohan",
-    "Prakash", "Shankar", "Govind", "Narayan", "Balu", "Kisan",
-]
-
-SUBJECTS = [
-    "Mathematics", "Science", "Physics", "Chemistry", "Biology",
-    "English", "Marathi", "Hindi", "Social Studies", "History",
-]
-SUBJECT_COMBOS = [
-    ["Mathematics", "Science"],
-    ["Physics", "Chemistry"],
-    ["Biology", "Chemistry"],
-    ["Mathematics", "Physics"],
-    ["English", "History"],
-    ["Marathi", "Hindi"],
-    ["Social Studies", "History"],
-    ["Science", "Mathematics"],
-    ["English", "Social Studies"],
-    ["Mathematics"],
-]
+# Task 2 Requirements: Subject Distribution
+SUBJECT_COUNTS = (
+    ["Science"] * 35 +
+    ["Mathematics"] * 40 +
+    ["Hindi"] * 30 +
+    ["English"] * 30 +
+    ["Marathi"] * 25 +
+    ["Social Science"] * 25 +
+    ["General Science"] * 40 +
+    ["Primary"] * 75
+)
+random.shuffle(SUBJECT_COUNTS)
 
 QUALIFICATIONS = [
     ("BSc BEd", 0.30),
@@ -57,71 +36,64 @@ QUALIFICATIONS = [
     ("MA BEd",  0.15),
 ]
 
-DISTRICTS = [
-    ("Nandurbar", 0.40),
-    ("Dhule",     0.20),
-    ("Nashik",    0.20),
-    ("Jalgaon",   0.10),
-    ("Pune",      0.05),
-    ("Mumbai",    0.05),
-]
-
-
 def _weighted_choice(choices):
     items, weights = zip(*choices)
     return random.choices(items, weights=weights, k=1)[0]
 
-
 def generate_teacher(idx: int) -> dict:
     gender = random.choice(["M", "F"])
-    first = random.choice(FIRST_NAMES_M if gender == "M" else FIRST_NAMES_F)
-    middle = random.choice(MIDDLE_NAMES)
-    surname = random.choice(SURNAMES)
-    name = f"{first} {middle} {surname}"
+    name = fake.name_male() if gender == "M" else fake.name_female()
 
     qualification = _weighted_choice(QUALIFICATIONS)
-    subjects = random.choice(SUBJECT_COMBOS)
-    current_district = _weighted_choice(DISTRICTS)
-    home_district = _weighted_choice(DISTRICTS)
+    subjects = [SUBJECT_COUNTS[idx]] # Each teacher gets exactly one primary subject from the pool
+    
+    # District logic (Task 2)
+    # home_district: 40% Nandurbar, 30% Dhule, 15% Nashik, 15% other
+    home_dist = random.choices(
+        ["Nandurbar", "Dhule", "Nashik", "Other"],
+        weights=[0.40, 0.30, 0.15, 0.15],
+        k=1
+    )[0]
+    
+    # current_district: 50% Nandurbar, 50% spread across neighbouring
+    current_dist = random.choices(
+        ["Nandurbar", "Dhule", "Nashik", "Jalgaon"],
+        weights=[0.50, 0.20, 0.20, 0.10],
+        k=1
+    )[0]
 
-    years_service = random.randint(1, 28)
-    rural_years = random.randint(0, min(years_service, 10))
-    transfer_count = max(0, int(random.expovariate(1.5)))  # Poisson-like
-    transfer_count = min(transfer_count, 4)
+    # Service years: weighted toward 0-3 for rural avoidance (Task 2)
+    rural_years = random.choices(
+        [0, 1, 2, 3, 5, 8],
+        weights=[0.40, 0.20, 0.15, 0.10, 0.10, 0.05],
+        k=1
+    )[0]
+    years_service = rural_years + random.randint(0, 15)
+    
+    # transfer_request_count: Poisson distribution, lambda=1.2 (Task 2)
+    import numpy as np
+    transfer_count = np.random.poisson(1.2)
+    
+    # long_dist_consent: 15% True (Task 2)
+    long_dist_consent = random.random() < 0.15
 
-    long_dist_consent = random.random() < 0.20
-
-    # Languages: mr always, hi often, gn for tribal area teachers
+    # Languages (Task 2)
+    # ALL must include 'mr'. 60% include 'hi'. 20% include 'gn'.
     languages = ["mr"]
-    if random.random() < 0.70:
+    if random.random() < 0.60:
         languages.append("hi")
-    if random.random() < 0.15:
-        languages.append("en")
-    if current_district == "Nandurbar" and random.random() < 0.25:
-        languages.append("gn")  # Gondi
+    if random.random() < 0.20:
+        languages.append("gn")
 
-    # Approximate lat/lng for current district
-    district_coords = {
-        "Nandurbar": (21.3661, 74.2167),
-        "Dhule":     (20.9042, 74.7749),
-        "Nashik":    (20.0059, 73.7898),
-        "Jalgaon":   (21.0077, 75.5626),
-        "Pune":      (18.5204, 73.8567),
-        "Mumbai":    (19.0760, 72.8777),
-    }
-    base_lat, base_lng = district_coords.get(current_district, (21.0, 74.0))
-    lat = base_lat + random.uniform(-0.5, 0.5)
-    lng = base_lng + random.uniform(-0.5, 0.5)
-
-    return {
+    teacher = {
         "teacher_id": str(uuid.uuid4()),
         "teacher_name": name,
         "gender": gender,
         "qualification": qualification,
         "subject_specialization": json.dumps(subjects),
         "languages_known": json.dumps(languages),
-        "current_district": current_district,
-        "home_district": home_district,
+        "current_district": current_dist,
+        "home_district": home_dist,
         "years_of_service": years_service,
         "rural_posting_years": rural_years,
         "transfer_request_count": transfer_count,
@@ -129,49 +101,78 @@ def generate_teacher(idx: int) -> dict:
         "is_synthetic": True,
         "consent_given": True,
         "current_school_id": None,
-        "lat": round(lat, 4),
-        "lng": round(lng, 4),
         "created_at": datetime.utcnow().isoformat(),
     }
+    
+    # Generate and store embedding text (Task 2)
+    teacher["embedding_text"] = build_teacher_embedding_str({
+        **teacher,
+        "subject_specialization": subjects,
+        "languages_known": languages
+    })
+    
+    return teacher
 
+async def compute_all_embeddings(bq, vertex):
+    """Generate Vertex AI vectors for all teachers and store in BigQuery."""
+    logger.info("gen_teachers.compute_embeddings.start")
+    
+    # 1. Fetch all teachers missing embeddings
+    query = f"SELECT teacher_id, embedding_text FROM {bq._table('teachers')} WHERE embedding IS NULL"
+    rows = await bq._run(lambda: [dict(r) for r in bq._client.query(query).result()])
+    
+    if not rows:
+        logger.info("gen_teachers.compute_embeddings.none_needed")
+        return
 
-def generate_teachers(count: int = 300) -> list[dict]:
-    """Generate `count` synthetic teacher profiles."""
-    random.seed(42)  # Reproducible for Phase 1
-    teachers = [generate_teacher(i) for i in range(count)]
-    logger.info("gen_teachers.done", count=len(teachers))
-    return teachers
-
+    # 2. Batch embed in chunks of 50 (Vertex limit is usually around 50-100)
+    batch_size = 50
+    for i in range(0, len(rows), batch_size):
+        batch = rows[i : i + batch_size]
+        texts = [r["embedding_text"] for r in batch]
+        vectors = await vertex.embed(texts)
+        
+        # 3. Update BQ
+        # BigQuery doesn't support easy batch UPDATEs, so we use a temp table or CASE
+        # For 300 rows, individual updates in the thread pool is acceptable if throttled
+        for r, vec in zip(batch, vectors):
+            update_query = f"UPDATE {bq._table('teachers')} SET embedding = @vec WHERE teacher_id = @id"
+            params = [
+                bq.bigquery.ScalarQueryParameter("vec", "JSON", json.dumps(vec)),
+                bq.bigquery.ScalarQueryParameter("id", "STRING", r["teacher_id"])
+            ]
+            await bq._run(bq._client.query, update_query, bq.bigquery.QueryJobConfig(query_parameters=params))
+            
+    logger.info("gen_teachers.compute_embeddings.done", count=len(rows))
 
 async def load_to_bigquery(teachers: list[dict], bq) -> None:
-    """Load generated teachers to BigQuery teachers table."""
+    """Load generated teachers to BigQuery teachers table in batches."""
     logger.info("gen_teachers.bq_load.start", count=len(teachers))
-    # BQ streaming insert in batches of 100
+    
+    # Ensure idempotency by clearing existing synthetic teachers first
+    delete_query = f"DELETE FROM {bq._table('teachers')} WHERE is_synthetic = TRUE"
+    await bq._run(bq._client.query, delete_query)
+
     batch_size = 100
+    table_ref = bq._client.dataset(bq._dataset).table("teachers")
     for i in range(0, len(teachers), batch_size):
         batch = teachers[i : i + batch_size]
-        try:
-            table_ref = bq._client.dataset(bq._dataset).table("teachers")
-            errors = bq._client.insert_rows_json(table_ref, batch)
-            if errors:
-                logger.error("gen_teachers.bq_load.errors", errors=str(errors[:3]))
-        except Exception as e:
-            logger.error("gen_teachers.bq_load.error", error=str(e))
-    logger.info("gen_teachers.bq_load.done")
-
+        errors = await bq._run(bq._client.insert_rows_json, table_ref, batch)
+        if errors:
+            logger.error("gen_teachers.bq_load.errors", errors=str(errors[:3]))
+        logger.info("gen_teachers.bq_load.progress", loaded=min(i+batch_size, len(teachers)), total=len(teachers))
 
 if __name__ == "__main__":
-    import csv
-    import os
-
-    teachers = generate_teachers(300)
-    output_path = os.environ.get("TEACHER_CSV_PATH", "./data/sample/teachers_synth.csv")
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
-
-    with open(output_path, "w", newline="", encoding="utf-8") as f:
-        if teachers:
-            writer = csv.DictWriter(f, fieldnames=teachers[0].keys())
-            writer.writeheader()
-            writer.writerows(teachers)
-
-    print(f"Generated {len(teachers)} teachers → {output_path}")
+    import asyncio
+    from services.bigquery_client import BigQueryClient
+    from services.vertex_client import VertexClient
+    
+    async def main():
+        bq = BigQueryClient.from_env()
+        vertex = VertexClient.from_env()
+        
+        teachers = [generate_teacher(i) for i in range(300)]
+        await load_to_bigquery(teachers, bq)
+        await compute_all_embeddings(bq, vertex)
+        
+    asyncio.run(main())

@@ -116,6 +116,11 @@ def process_csv(path: str) -> list[dict]:
             cleaned["geocode_status"] = "PENDING"
             cleaned["is_synthetic"] = False
             
+            # Task 1.1 fix: Ensure district_code exists for cluster pruning
+            if not cleaned.get("district_code"):
+                from config import config
+                cleaned["district_code"] = config.district_code
+            
             # Ensure JSON serialization for lists
             cleaned["vacancy_subjects"] = json.dumps(cleaned["vacancy_subjects"])
             

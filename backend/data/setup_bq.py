@@ -107,9 +107,15 @@ async def main():
         for step in results["steps"]:
             print(f" - {step}")
         print("="*60)
-        bq.close()
-        vertex.close()
-        maps.close()
+        
+        # Proper cleanup
+        try:
+            bq.close()
+            vertex.close()
+            if maps:
+                await maps.close()
+        except Exception as e:
+            logger.warning("setup.cleanup.error", error=str(e))
 
 if __name__ == "__main__":
     asyncio.run(main())

@@ -84,10 +84,7 @@ async def main():
 
         if args.mode in ["full", "teachers-only"]:
             print("\nStep 3: Generating Teachers & Embeddings...")
-            from data.gen_teachers import generate_teachers, load_to_bigquery, compute_all_embeddings
-            teachers = [generate_teachers(300)] # Wait, gen_teachers.py's generate_teachers(300) returns list[dict]
-            # My bad, I'll fix the call
-            from data.gen_teachers import generate_teacher
+            from data.gen_teachers import generate_teacher, load_to_bigquery, compute_all_embeddings
             teacher_list = [generate_teacher(i) for i in range(300)]
             await load_to_bigquery(teacher_list, bq)
             await compute_all_embeddings(bq, vertex)

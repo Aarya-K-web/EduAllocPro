@@ -49,6 +49,93 @@ class BigQueryClient:
     def _table(self, name: str) -> str:
         return f"`{self._project_id}.{self._dataset}.{name}`"
 
+    async def initialize(self) -> None:
+        """Initialize the client and ensure dataset/tables exist (Task 4 fix)."""
+        try:
+            from google.cloud import bigquery
+            self._client = bigquery.Client(project=self._project)
+            await self.ensure_tables_exist()
+            logger.info("bq.init.ok", project=self._project, dataset=self._dataset)
+        except Exception as e:
+            logger.error("bq.init.failed", error=str(e))
+            self._client = None
+
+    async def ensure_tables_exist(self) -> None:
+        """Create dataset and tables if they don't exist."""
+        if not self._client:
+            return
+
+        from google.cloud import bigquery
+        
+        # 1. Ensure Dataset
+        dataset_id = f"{self._project}.{self._dataset}"
+        dataset = bigquery.Dataset(dataset_id)
+        dataset.location = self._location
+        try:
+            self._client.create_dataset(dataset, exists_ok=True)
+        except Exception:
+            pass
+
+        # 2. Define Table Schemas
+        tables = {
+            "schools": [
+                bigquery.SchemaField("school_id", "STRING", mode="REQUIRED"),
+                bigquery.SchemaField("school_name", "STRING"),
+                bigquery.SchemaField("district_code", "STRING"),
+                bigquery.SchemaField("district_name", "STRING"),
+                bigquery.SchemaField("block_name", "STRING"),
+                bigquery.SchemaField("lat", "FLOAT"),
+                bigquery.SchemaField("lng", "FLOAT"),
+                bigquery.SchemaField("di_score", "FLOAT"),
+                bigquery.SchemaField("di_tier", "STRING"),
+                bigquery.SchemaField("total_vacancies", "INTEGER"),
+                bigquery.SchemaField("vacancy_subjects", "STRING"),
+                bigquery.SchemaField("enrollment_total", "INTEGER"),
+                bigquery.SchemaField("data_updated_at", "STRING"),
+                bigquery.SchemaField("is_synthetic", "BOOLEAN"),
+                bigquery.SchemaField("geocode_status", "STRING"),
+                bigquery.SchemaField("di_data_quality", "STRING"),
+                bigquery.SchemaField("rte_violation", "BOOLEAN"),
+                bigquery.SchemaField("required_subjects_count", "INTEGER"),
+                bigquery.SchemaField("stu_tea_ratio", "FLOAT"),
+                bigquery.SchemaField("toilet_boys", "BOOLEAN"),
+                bigquery.SchemaField("toilet_girls", "BOOLEAN"),
+                bigquery.SchemaField("has_electricity", "BOOLEAN"),
+                bigquery.SchemaField("num_classrooms", "INTEGER"),
+                bigquery.SchemaField("nearest_town_km", "FLOAT"),
+                bigquery.SchemaField("enrollment_3yr_ago", "INTEGER"),
+                bigquery.SchemaField("district_aser_pct", "FLOAT"),
+            ],
+            "teachers": [
+                bigquery.SchemaField("teacher_id", "STRING", mode="REQUIRED"),
+                bigquery.SchemaField("teacher_name", "STRING"),
+                bigquery.SchemaField("gender", "STRING"),
+                bigquery.SchemaField("qualification", "STRING"),
+                bigquery.SchemaField("subject_specialization", "STRING"),
+                bigquery.SchemaField("languages_known", "STRING"),
+                bigquery.SchemaField("current_district", "STRING"),
+                bigquery.SchemaField("home_district", "STRING"),
+                bigquery.SchemaField("years_of_service", "INTEGER"),
+                bigquery.SchemaField("rural_posting_years", "INTEGER"),
+                bigquery.SchemaField("transfer_request_count", "INTEGER"),
+                bigquery.SchemaField("long_dist_consent", "BOOLEAN"),
+                bigquery.SchemaField("is_synthetic", "BOOLEAN"),
+                bigquery.SchemaField("consent_given", "BOOLEAN"),
+                bigquery.SchemaField("embedding", "JSON"),
+                bigquery.SchemaField("embedding_text", "STRING"),
+                bigquery.SchemaField("created_at", "STRING"),
+            ]
+        }
+
+        for table_name, schema in tables.items():
+            table_id = f"{dataset_id}.{table_name}"
+            table = bigquery.Table(table_id, schema=schema)
+            try:
+                self._client.create_table(table, exists_ok=True)
+                logger.info("bq.table.ensured", table=table_name)
+            except Exception as e:
+                logger.error("bq.table.failed", table=table_name, error=str(e))
+
     async def ping(self) -> bool:
         """Health check — SELECT 1."""
         if not self._client:

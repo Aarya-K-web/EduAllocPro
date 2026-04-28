@@ -65,12 +65,29 @@ def _parse_vacancies(row: dict) -> list[str]:
 
 
 def process_csv(path: str) -> list[dict]:
-    """Read, normalize and validate UDISE CSV."""
-    if not os.path.exists(path):
-        raise FileNotFoundError(f"UDISE CSV not found: {path}")
+    """Read, normalize and validate UDISE CSV. Resilient to multiple paths."""
+    # Task 4 fix: Try multiple paths if the provided one fails
+    search_paths = [path, f"./backend/{path}", f"./{path}", f"../{path}"]
+    actual_path = None
+    for p in search_paths:
+        if os.path.exists(p):
+            actual_path = p
+            break
+            
+    if not actual_path:
+        # Last resort: search recursively for the filename in the current directory
+        filename = os.path.basename(path)
+        for root, dirs, files in os.walk("."):
+            if filename in files:
+                actual_path = os.path.join(root, filename)
+                break
 
+    if not actual_path:
+        raise FileNotFoundError(f"UDISE CSV not found in search paths: {path}")
+
+    logger.info("ingest.file_found", path=actual_path)
     rows = []
-    with open(path, encoding="utf-8-sig") as f:
+    with open(actual_path, encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
         
         for i, raw_row in enumerate(reader):

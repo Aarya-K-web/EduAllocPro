@@ -84,7 +84,7 @@ class BigQueryClient:
         # 1. Ensure Dataset
         dataset_id = f"{self._project_id}.{self._dataset}"
         dataset = bigquery.Dataset(dataset_id)
-        dataset.location = self._location
+        dataset.location = "us-central1"
         try:
             self._client.create_dataset(dataset, exists_ok=True)
         except Exception:

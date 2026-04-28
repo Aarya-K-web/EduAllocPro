@@ -66,9 +66,9 @@ class BigQueryClient:
                     temp_path = f.name
                 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = temp_path
             
-            self._client = bigquery.Client(project=self._project)
+            self._client = bigquery.Client(project=self._project_id)
             await self.ensure_tables_exist()
-            logger.info("bq.init.ok", project=self._project, dataset=self._dataset)
+            logger.info("bq.init.ok", project=self._project_id, dataset=self._dataset)
         except Exception as e:
             logger.error("bq.init.failed", error=str(e))
             self._client = None

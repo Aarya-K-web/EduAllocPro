@@ -161,19 +161,25 @@ async def ingest_udise(bq, maps=None) -> dict:
             )
             await bq._run(bq._client.query, delete_query, job_config)
 
-            # 2. Batch Insert (Task 1.5)
-            table_ref = bq._client.dataset(bq._dataset).table("schools")
-            batch_size = 100
-            for i in range(0, len(rows), batch_size):
-                batch = rows[i : i + batch_size]
-                errors = await bq._run(bq._client.insert_rows_json, table_ref, batch)
-                if errors:
-                    logger.error("ingest.bq_errors", batch=i//batch_size, errors=str(errors[:3]))
-                else:
-                    rows_loaded += len(batch)
-                
-                # Task 1.5: Log progress every 100 rows
-                logger.info("ingest.progress", loaded=rows_loaded, total=len(rows))
+            # 2. Free-Tier Friendly Load Job (Task 1 fix)
+            # Streaming inserts (insert_rows_json) are blocked in BigQuery Sandbox.
+            # Load jobs are allowed and free.
+            table_id = f"{bq._project_id}.{bq._dataset}.schools"
+            job_config = bigquery.LoadJobConfig(
+                schema=[
+                    bigquery.SchemaField("school_id", "STRING"),
+                    # ... rest of schema is auto-detected or ensured by initialize()
+                ],
+                write_disposition="WRITE_APPEND",
+                source_format=bigquery.SourceFormat.NEWLINE_DELIMITED_JSON,
+            )
+            
+            # BigQuery load jobs require newline-delimited JSON or a list of dicts for some methods
+            # Here we use the client's direct load_table_from_json
+            job = bq._client.load_table_from_json(rows, table_id, job_config=job_config)
+            await bq._run(job.result) # Wait for completion
+            rows_loaded = len(rows)
+            logger.info("ingest.load_job.done", loaded=rows_loaded)
 
         except Exception as e:
             logger.error("ingest.bq_error", error=str(e))

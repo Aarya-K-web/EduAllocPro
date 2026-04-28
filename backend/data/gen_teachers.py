@@ -153,14 +153,18 @@ async def load_to_bigquery(teachers: list[dict], bq) -> None:
     delete_query = f"DELETE FROM {bq._table('teachers')} WHERE is_synthetic = TRUE"
     await bq._run(bq._client.query, delete_query)
 
-    batch_size = 100
-    table_ref = bq._client.dataset(bq._dataset).table("teachers")
-    for i in range(0, len(teachers), batch_size):
-        batch = teachers[i : i + batch_size]
-        errors = await bq._run(bq._client.insert_rows_json, table_ref, batch)
-        if errors:
-            logger.error("gen_teachers.bq_load.errors", errors=str(errors[:3]))
-        logger.info("gen_teachers.bq_load.progress", loaded=min(i+batch_size, len(teachers)), total=len(teachers))
+    # Free-Tier Friendly Load Job (Task 2 fix)
+    # Streaming inserts (insert_rows_json) are blocked in BigQuery Sandbox.
+    table_id = f"{bq._project_id}.{bq._dataset}.teachers"
+    from google.cloud import bigquery
+    job_config = bigquery.LoadJobConfig(
+        write_disposition="WRITE_APPEND",
+        source_format=bigquery.SourceFormat.NEWLINE_DELIMITED_JSON,
+    )
+    
+    job = bq._client.load_table_from_json(teachers, table_id, job_config=job_config)
+    await bq._run(job.result) # Wait for completion
+    logger.info("gen_teachers.load_job.done", loaded=len(teachers))
 
 if __name__ == "__main__":
     import asyncio

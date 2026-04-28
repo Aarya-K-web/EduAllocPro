@@ -160,6 +160,8 @@ async def load_to_bigquery(teachers: list[dict], bq) -> None:
     job_config = bigquery.LoadJobConfig(
         write_disposition="WRITE_APPEND",
         source_format=bigquery.SourceFormat.NEWLINE_DELIMITED_JSON,
+        ignore_unknown_values=True,
+        autodetect=True,
     )
     
     job = bq._client.load_table_from_json(teachers, table_id, job_config=job_config)

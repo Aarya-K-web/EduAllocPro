@@ -135,6 +135,7 @@ class BigQueryClient:
                 bigquery.SchemaField("long_dist_consent", "BOOLEAN"),
                 bigquery.SchemaField("is_synthetic", "BOOLEAN"),
                 bigquery.SchemaField("consent_given", "BOOLEAN"),
+                bigquery.SchemaField("current_school_id", "STRING"),
                 bigquery.SchemaField("embedding", "JSON"),
                 bigquery.SchemaField("embedding_text", "STRING"),
                 bigquery.SchemaField("created_at", "STRING"),

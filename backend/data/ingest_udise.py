@@ -172,6 +172,8 @@ async def ingest_udise(bq, maps=None) -> dict:
                 ],
                 write_disposition="WRITE_APPEND",
                 source_format=bigquery.SourceFormat.NEWLINE_DELIMITED_JSON,
+                ignore_unknown_values=True,
+                autodetect=True,
             )
             
             # BigQuery load jobs require newline-delimited JSON or a list of dicts for some methods

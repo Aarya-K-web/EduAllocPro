@@ -82,7 +82,7 @@ class BigQueryClient:
         from google.cloud import bigquery
         
         # 1. Ensure Dataset
-        dataset_id = f"{self._project}.{self._dataset}"
+        dataset_id = f"{self._project_id}.{self._dataset}"
         dataset = bigquery.Dataset(dataset_id)
         dataset.location = self._location
         try:

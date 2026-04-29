@@ -45,8 +45,8 @@ class FirebaseAuthMiddleware(BaseHTTPMiddleware):
         _init_firebase(project_id)
 
     async def dispatch(self, request: Request, call_next):
-        # Skip auth for public paths
-        if request.url.path in PUBLIC_PATHS or request.url.path.startswith("/api/docs"):
+        # Skip auth for OPTIONS and public paths
+        if request.method == "OPTIONS" or request.url.path in PUBLIC_PATHS or request.url.path.startswith("/api/docs"):
             return await call_next(request)
 
         auth_header = request.headers.get("Authorization", "")

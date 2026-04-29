@@ -1,4 +1,0 @@
-school_id,school_name,district_code,district_name,block_name,enrollment_total,lat,lng,stu_tea_ratio,toilet_boys,toilet_girls,has_electricity,num_classrooms,nearest_town_km,enrollment_boys,enrollment_girls,enrollment_3yr_ago,district_aser_pct,medium,category,management,cluster_name
-27020100101,Zilla Parishad Primary School Nandurbar,NDB01,Nandurbar,Nandurbar Urban,142,21.368,74.241,35,true,true,true,5,2,70,72,130,45.2,Marathi,Primary,Government,Nandurbar Center
-27020200202,Government High School Shahada,NDB01,Nandurbar,Shahada Rural,218,21.543,74.472,45,true,true,true,8,5,110,108,200,42.1,English,High School,Government,Shahada Center
-27020300303,ZP School Taloda,NDB01,Nandurbar,Taloda Block,89,21.564,74.218,25,false,true,false,3,12,45,44,95,38.5,Marathi,Primary,Government,Taloda Center

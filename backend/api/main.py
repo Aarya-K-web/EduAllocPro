@@ -36,28 +36,45 @@ async def lifespan(app: FastAPI):
     logger.info("app.startup.begin", env=config.app_env)
 
     # BigQuery client
-    from services.bigquery_client import BigQueryClient
-    bq = BigQueryClient(project_id=config.gcp_project, dataset=config.bq_dataset)
-    app.state.bq = bq
+    try:
+        from services.bigquery_client import BigQueryClient
+        bq = BigQueryClient(project_id=config.gcp_project, dataset=config.bq_dataset)
+        await bq.initialize()
+        app.state.bq = bq
+    except Exception as e:
+        logger.error("app.startup.bq_failed", error=str(e))
+        app.state.bq = None
 
     # Vertex AI client
-    from services.vertex_client import VertexClient
-    vertex = VertexClient(
-        project_id=config.gcp_project,
-        location=config.vertex_location,
-        model_name=config.vertex_model,
-    )
-    app.state.vertex = vertex
+    try:
+        from services.vertex_client import VertexClient
+        vertex = VertexClient(
+            project_id=config.gcp_project,
+            location=config.vertex_location,
+            model_name=config.vertex_model,
+        )
+        app.state.vertex = vertex
+    except Exception as e:
+        logger.error("app.startup.vertex_failed", error=str(e))
+        app.state.vertex = None
 
     # Gemini client
-    from services.gemini_client import GeminiClient
-    gemini = GeminiClient(api_key=config.gemini_key, model=config.gemini_model)
-    app.state.gemini = gemini
+    try:
+        from services.gemini_client import GeminiClient
+        gemini = GeminiClient(api_key=config.gemini_key, model=config.gemini_model)
+        app.state.gemini = gemini
+    except Exception as e:
+        logger.error("app.startup.gemini_failed", error=str(e))
+        app.state.gemini = None
 
     # Maps client
-    from services.maps_client import MapsClient
-    maps = MapsClient(api_key=config.maps_key, distance_mode=config.maps_distance_mode)
-    app.state.maps = maps
+    try:
+        from services.maps_client import MapsClient
+        maps = MapsClient(api_key=config.maps_key, distance_mode=config.maps_distance_mode)
+        app.state.maps = maps
+    except Exception as e:
+        logger.error("app.startup.maps_failed", error=str(e))
+        app.state.maps = None
 
     # Embeddings cache
     from ai.embeddings_cache import EmbeddingsCache

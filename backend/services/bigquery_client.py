@@ -50,29 +50,18 @@ class BigQueryClient:
         return f"`{self._project_id}.{self._dataset}.{name}`"
 
     async def initialize(self) -> None:
-        """Initialize the client and ensure dataset/tables exist."""
-        try:
-            from google.cloud import bigquery
-            import os
-            import json
-            import tempfile
+        """Ensure dataset/tables exist (Central auth handled by config.py)."""
+        if not self._client:
+            # Try to re-init if client is None (maybe auth was set after __init__)
+            try:
+                from google.cloud import bigquery
+                self._client = bigquery.Client(project=self._project_id)
+            except Exception as e:
+                logger.error("bq.init.retry_failed", error=str(e))
+                return
 
-            # Task 4 fix: Support direct JSON string from env var
-            json_str = os.environ.get("GCP_SERVICE_ACCOUNT_JSON")
-            if json_str:
-                logger.info("bq.init.using_env_json")
-                with tempfile.NamedTemporaryFile(mode='w', delete=False, suffix='.json') as f:
-                    f.write(json_str)
-                    temp_path = f.name
-                os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = temp_path
-            
-            self._client = bigquery.Client(project=self._project_id)
-            await self.ensure_tables_exist()
-            logger.info("bq.init.ok", project=self._project_id, dataset=self._dataset)
-        except Exception as e:
-            logger.error("bq.init.failed", error=str(e))
-            self._client = None
-            raise  # Re-raise so the setup script stops and shows the error
+        await self.ensure_tables_exist()
+        logger.info("bq.init.ok", project=self._project_id, dataset=self._dataset)
 
     async def ensure_tables_exist(self) -> None:
         """Create dataset and tables if they don't exist."""

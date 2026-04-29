@@ -1,0 +1,848 @@
+school_id,school_name,district_code,district_name,block_name,enrollment_total,lat,lng,stu_tea_ratio,toilet_boys,toilet_girls,has_electricity,num_classrooms,nearest_town_km,enrollment_boys,enrollment_girls,enrollment_3yr_ago,district_aser_pct,medium,category,management,cluster_name,Vac_Math,Vac_Sci,Vac_Eng,Vac_Mar,Vac_Hin,Vac_SST
+27028166022,ZP School BhorPura 0,NDB01,Nandurbar,Navapur,100,21.3348,74.0816,43,true,true,true,9,29,50,50,88,45.5,Marathi,Primary,Government,Navapur Center,0,0,1,0,0,0
+27026169242,ZP School MaliGaon 1,NDB01,Nandurbar,Akrani,242,21.589,74.3551,32,false,true,false,9,39,121,121,288,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27022033316,ZP School AmbaWadi 2,NDB01,Nandurbar,Shahada Rural,287,21.5293,73.9473,42,true,true,false,5,13,143,143,270,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27021015761,ZP School MaliPura 3,NDB01,Nandurbar,Navapur,386,21.6782,74.6576,48,true,true,true,9,4,193,193,410,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27028959932,ZP School KoliKhed 4,NDB01,Nandurbar,Taloda Block,337,21.449,74.695,21,true,false,true,10,4,168,168,348,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,0,0
+27028487044,ZP School MaliWadi 5,NDB01,Nandurbar,Navapur,164,21.5959,73.7153,56,true,false,true,3,9,82,82,193,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,1
+27022713424,ZP School KoliWadi 6,NDB01,Nandurbar,Shahada Rural,231,21.6832,73.768,26,false,false,false,6,30,115,115,255,45.5,Marathi,Primary,Government,Shahada Rural Center,0,1,0,0,0,0
+27028388424,ZP School PimpalKhed 7,NDB01,Nandurbar,Akkalkuwa,389,21.2671,74.6715,53,false,true,false,6,6,194,194,413,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27026006465,ZP School PimpalNagar 8,NDB01,Nandurbar,Navapur,381,20.885,74.1402,22,true,true,false,3,37,190,190,396,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27028272442,ZP School PimpalPura 9,NDB01,Nandurbar,Taloda Block,396,21.181,74.3819,49,false,false,true,4,5,198,198,354,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27029373837,ZP School MaliPura 10,NDB01,Nandurbar,Akkalkuwa,58,21.2931,74.1739,21,true,true,true,9,30,29,29,63,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,1,0,0,0,0
+27028318690,ZP School WaghGaon 11,NDB01,Nandurbar,Shahada Rural,199,20.9208,73.985,48,false,true,true,6,31,99,99,181,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,1,0
+27027231569,ZP School DhanNagar 12,NDB01,Nandurbar,Navapur,281,21.2567,74.0919,25,true,true,false,9,32,140,140,266,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27024995116,ZP School KoliKhed 13,NDB01,Nandurbar,Shahada Rural,194,21.406,74.6719,33,false,false,false,10,30,97,97,189,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27026319400,ZP School AmbaPura 14,NDB01,Nandurbar,Taloda Block,388,21.0897,74.1045,23,false,false,true,2,15,194,194,425,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27023570704,ZP School DhanNagar 15,NDB01,Nandurbar,Navapur,319,21.3237,74.4737,28,true,false,false,6,20,159,159,360,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27028722020,ZP School MaliPura 16,NDB01,Nandurbar,Taloda Block,241,21.694,74.2484,28,false,true,true,10,11,120,120,280,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27025749609,ZP School DhanGaon 17,NDB01,Nandurbar,Shahada Rural,137,21.6629,74.3265,34,false,false,false,8,29,68,68,131,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,1,0,1,0
+27027469826,ZP School PimpalWadi 18,NDB01,Nandurbar,Nandurbar Urban,240,20.9181,74.0241,37,true,false,false,4,16,120,120,282,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27026197930,ZP School AmbaPura 19,NDB01,Nandurbar,Akrani,131,21.348,74.6461,34,true,false,true,3,16,65,65,127,45.5,Marathi,Primary,Government,Akrani Center,0,1,0,0,0,0
+27022740884,ZP School AmbaGaon 20,NDB01,Nandurbar,Akkalkuwa,400,20.837,73.9737,23,true,false,false,4,23,200,200,428,45.5,Marathi,Primary,Government,Akkalkuwa Center,1,0,0,0,1,0
+27027255591,ZP School KoliGaon 21,NDB01,Nandurbar,Navapur,347,21.2155,74.5836,32,false,true,false,9,14,173,173,389,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27023992445,ZP School AmbaWadi 22,NDB01,Nandurbar,Shahada Rural,394,21.0825,74.1737,32,true,true,true,4,2,197,197,376,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,0,0
+27029592814,ZP School KoliWadi 23,NDB01,Nandurbar,Taloda Block,256,20.9492,73.7634,41,false,false,true,2,13,128,128,231,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27022458204,ZP School BhorGaon 24,NDB01,Nandurbar,Navapur,384,21.6548,73.9354,42,false,true,true,4,18,192,192,419,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27026150812,ZP School WaghNagar 25,NDB01,Nandurbar,Akkalkuwa,205,20.8809,74.6619,41,true,false,true,5,23,102,102,241,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27021237778,ZP School KoliNagar 26,NDB01,Nandurbar,Navapur,392,21.2942,74.6668,25,true,false,true,8,39,196,196,440,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,0,0,1
+27028293255,ZP School KoliNagar 27,NDB01,Nandurbar,Taloda Block,151,21.2019,73.9024,20,false,true,false,8,37,75,75,155,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,1,0
+27027812913,ZP School MaliGaon 28,NDB01,Nandurbar,Navapur,256,21.0132,74.6712,48,false,false,false,9,39,128,128,272,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,1,0
+27027836529,ZP School AmbaNagar 29,NDB01,Nandurbar,Taloda Block,387,20.9189,73.7996,45,false,true,false,7,7,193,193,349,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,1,0,0,1
+27021205648,ZP School MaliKhed 30,NDB01,Nandurbar,Akkalkuwa,63,21.5593,73.818,59,true,false,false,8,19,31,31,51,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27029858666,ZP School MaliNagar 31,NDB01,Nandurbar,Shahada Rural,326,21.6661,74.5797,32,false,false,false,5,35,163,163,319,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27023208779,ZP School DhanKhed 32,NDB01,Nandurbar,Nandurbar Urban,149,21.4272,74.6308,35,true,true,false,6,22,74,74,163,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27023251325,ZP School MaliGaon 33,NDB01,Nandurbar,Shahada Rural,272,21.058,74.1678,58,true,false,false,3,21,136,136,231,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,1,0,0,0
+27024055715,ZP School WaghGaon 34,NDB01,Nandurbar,Nandurbar Urban,57,20.8339,74.2295,59,true,false,false,2,24,28,28,61,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,1
+27024071258,ZP School KoliWadi 35,NDB01,Nandurbar,Shahada Rural,257,20.9808,73.7089,46,true,false,false,9,7,128,128,232,45.5,Marathi,Primary,Government,Shahada Rural Center,0,1,0,1,0,0
+27025680699,ZP School PimpalNagar 36,NDB01,Nandurbar,Akrani,274,21.3054,74.6038,34,false,false,false,5,14,137,137,310,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27026106240,ZP School PimpalGaon 37,NDB01,Nandurbar,Akrani,86,21.3033,74.4987,60,false,true,true,6,39,43,43,97,45.5,Marathi,Primary,Government,Akrani Center,0,0,1,0,0,0
+27022983406,ZP School DhanWadi 38,NDB01,Nandurbar,Navapur,336,21.2693,74.5644,58,true,false,false,6,22,168,168,359,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27023930251,ZP School BhorNagar 39,NDB01,Nandurbar,Akrani,193,21.7598,73.8508,43,false,true,false,7,27,96,96,205,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27029984917,ZP School KoliPura 40,NDB01,Nandurbar,Navapur,201,21.4886,74.3248,35,false,true,false,6,1,100,100,165,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27027019417,ZP School MaliKhed 41,NDB01,Nandurbar,Nandurbar Urban,201,21.6545,74.3876,54,true,false,false,3,24,100,100,230,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,1,0
+27027788386,ZP School AmbaKhed 42,NDB01,Nandurbar,Nandurbar Urban,169,21.0739,74.1864,22,true,false,false,4,37,84,84,135,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27023872139,ZP School AmbaNagar 43,NDB01,Nandurbar,Akrani,371,21.0767,74.6767,43,true,false,true,6,15,185,185,398,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27027818442,ZP School PimpalNagar 44,NDB01,Nandurbar,Akkalkuwa,315,21.4497,74.4395,38,true,false,true,6,33,157,157,288,45.5,Marathi,Primary,Government,Akkalkuwa Center,1,0,0,0,0,0
+27029755093,ZP School PimpalWadi 45,NDB01,Nandurbar,Taloda Block,218,21.3448,74.6579,50,true,false,false,10,26,109,109,232,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,1,0
+27021338528,ZP School WaghWadi 46,NDB01,Nandurbar,Shahada Rural,251,21.526,74.4057,25,true,true,true,4,17,125,125,282,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27026395494,ZP School PimpalPura 47,NDB01,Nandurbar,Nandurbar Urban,345,21.1582,74.4974,44,true,true,true,3,1,172,172,360,45.5,Marathi,Primary,Government,Nandurbar Urban Center,1,1,0,0,0,0
+27029186902,ZP School DhanPura 48,NDB01,Nandurbar,Akrani,257,21.4928,74.5632,55,true,true,false,8,36,128,128,231,45.5,Marathi,Primary,Government,Akrani Center,0,0,1,0,0,0
+27028188839,ZP School MaliWadi 49,NDB01,Nandurbar,Nandurbar Urban,258,20.8122,73.9979,56,false,true,true,6,27,129,129,233,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,1,0,0,0
+27022267868,ZP School KoliPura 50,NDB01,Nandurbar,Akkalkuwa,158,21.2327,74.1446,47,true,false,true,10,6,79,79,154,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27021759409,ZP School AmbaPura 51,NDB01,Nandurbar,Akkalkuwa,230,21.6854,73.8912,39,false,true,true,4,11,115,115,203,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,1,0
+27029394193,ZP School DhanPura 52,NDB01,Nandurbar,Nandurbar Urban,118,20.9999,74.1833,25,true,true,true,5,31,59,59,125,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,1,0,0,0,1
+27021434447,ZP School BhorGaon 53,NDB01,Nandurbar,Shahada Rural,71,21.7377,74.1533,51,false,false,true,8,38,35,35,84,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,1,0,0,0
+27021329438,ZP School PimpalKhed 54,NDB01,Nandurbar,Navapur,239,20.8719,74.2757,38,true,false,false,6,4,119,119,217,45.5,Marathi,Primary,Government,Navapur Center,1,0,1,0,0,0
+27021083996,ZP School PimpalKhed 55,NDB01,Nandurbar,Akrani,84,21.6825,74.3642,47,false,false,true,2,25,42,42,70,45.5,Marathi,Primary,Government,Akrani Center,0,0,1,0,0,0
+27029595708,ZP School DhanKhed 56,NDB01,Nandurbar,Nandurbar Urban,230,21.5158,73.8955,23,true,true,true,4,35,115,115,198,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27025570773,ZP School DhanNagar 57,NDB01,Nandurbar,Navapur,214,21.6215,73.8483,23,false,true,true,10,19,107,107,171,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27025520978,ZP School AmbaWadi 58,NDB01,Nandurbar,Akrani,305,21.3393,74.5299,56,false,true,true,8,39,152,152,253,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27028302212,ZP School KoliKhed 59,NDB01,Nandurbar,Akrani,141,21.0112,74.1095,41,true,false,true,8,27,70,70,113,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27024685275,ZP School WaghPura 60,NDB01,Nandurbar,Shahada Rural,349,21.1844,74.5134,43,false,true,false,5,13,174,174,288,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27028525482,ZP School DhanPura 61,NDB01,Nandurbar,Akkalkuwa,197,21.3132,74.3833,34,true,false,false,8,15,98,98,215,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,1,0,0,0,0
+27025201431,ZP School BhorPura 62,NDB01,Nandurbar,Taloda Block,115,21.5003,73.8398,53,false,false,false,5,5,57,57,99,45.5,Marathi,Primary,Government,Taloda Block Center,0,1,0,0,0,0
+27028900615,ZP School MaliWadi 63,NDB01,Nandurbar,Navapur,205,21.5688,73.977,54,false,false,false,3,1,102,102,180,45.5,Marathi,Primary,Government,Navapur Center,0,0,1,0,0,0
+27029092249,ZP School WaghKhed 64,NDB01,Nandurbar,Akkalkuwa,218,21.3985,74.0792,38,false,false,false,2,31,109,109,200,45.5,Marathi,Primary,Government,Akkalkuwa Center,1,0,1,0,0,0
+27021971707,ZP School WaghWadi 65,NDB01,Nandurbar,Shahada Rural,265,21.4232,74.6021,25,true,true,true,2,25,132,132,236,45.5,Marathi,Primary,Government,Shahada Rural Center,1,1,0,0,0,0
+27023626976,ZP School BhorNagar 66,NDB01,Nandurbar,Akkalkuwa,200,21.117,73.764,43,false,false,false,2,35,100,100,208,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27029057191,ZP School KoliPura 67,NDB01,Nandurbar,Akkalkuwa,383,21.0756,74.3243,43,true,false,true,5,37,191,191,339,45.5,Marathi,Primary,Government,Akkalkuwa Center,1,0,0,0,1,0
+27024427086,ZP School MaliGaon 68,NDB01,Nandurbar,Shahada Rural,168,21.6448,73.751,23,true,true,false,10,26,84,84,139,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,0,0
+27024546440,ZP School AmbaKhed 69,NDB01,Nandurbar,Akkalkuwa,202,21.3983,73.8608,51,false,true,false,6,3,101,101,172,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27026024969,ZP School WaghPura 70,NDB01,Nandurbar,Navapur,388,21.1587,73.7229,44,false,true,false,2,38,194,194,419,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27029359930,ZP School PimpalGaon 71,NDB01,Nandurbar,Navapur,221,20.8378,74.1301,21,false,false,true,4,7,110,110,189,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,1
+27021545020,ZP School KoliPura 72,NDB01,Nandurbar,Navapur,240,21.6369,73.7264,22,false,true,false,8,10,120,120,206,45.5,Marathi,Primary,Government,Navapur Center,0,1,0,0,0,0
+27024899585,ZP School DhanGaon 73,NDB01,Nandurbar,Akkalkuwa,368,20.9051,73.7706,34,false,false,true,2,3,184,184,324,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,1,0,0
+27027780633,ZP School PimpalGaon 74,NDB01,Nandurbar,Nandurbar Urban,314,21.4278,74.5274,47,false,true,false,4,9,157,157,355,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,1,0,0,0,0
+27023405909,ZP School MaliWadi 75,NDB01,Nandurbar,Nandurbar Urban,157,21.77,74.4649,60,false,true,true,9,6,78,78,174,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27021216715,ZP School BhorKhed 76,NDB01,Nandurbar,Nandurbar Urban,240,21.7395,73.8224,43,true,true,true,3,14,120,120,206,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27025256443,ZP School WaghWadi 77,NDB01,Nandurbar,Taloda Block,87,21.4662,73.841,60,false,false,true,3,2,43,43,76,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27022544420,ZP School BhorKhed 78,NDB01,Nandurbar,Navapur,126,20.8946,73.7406,52,false,false,false,7,6,63,63,103,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27027330553,ZP School AmbaKhed 79,NDB01,Nandurbar,Akkalkuwa,250,21.2701,73.9317,31,false,false,true,6,36,125,125,209,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27027718671,ZP School AmbaNagar 80,NDB01,Nandurbar,Taloda Block,62,21.6595,74.411,56,true,false,true,5,35,31,31,66,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27021489677,ZP School PimpalKhed 81,NDB01,Nandurbar,Nandurbar Urban,390,21.1918,73.7387,34,false,true,true,9,40,195,195,367,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,1,0,0
+27026575762,ZP School BhorNagar 82,NDB01,Nandurbar,Akrani,183,21.111,73.7698,20,true,true,true,8,38,91,91,152,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27027793474,ZP School DhanKhed 83,NDB01,Nandurbar,Navapur,202,21.7692,74.2217,57,true,false,true,9,36,101,101,177,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27027310632,ZP School BhorNagar 84,NDB01,Nandurbar,Shahada Rural,377,21.0218,74.5701,40,true,true,true,6,2,188,188,403,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27028633041,ZP School DhanWadi 85,NDB01,Nandurbar,Akrani,263,21.0747,74.106,29,true,false,true,4,34,131,131,219,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27025900634,ZP School KoliPura 86,NDB01,Nandurbar,Shahada Rural,95,21.7146,74.2456,20,true,true,true,7,39,47,47,81,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27025268500,ZP School KoliPura 87,NDB01,Nandurbar,Navapur,280,20.8788,74.481,54,true,true,false,8,1,140,140,270,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,0,1,0
+27028791941,ZP School BhorPura 88,NDB01,Nandurbar,Taloda Block,71,21.6133,74.4191,46,true,false,false,8,35,35,35,80,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27021296409,ZP School AmbaKhed 89,NDB01,Nandurbar,Nandurbar Urban,352,21.4343,73.7942,49,false,true,false,8,9,176,176,298,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27021491300,ZP School KoliKhed 90,NDB01,Nandurbar,Taloda Block,195,21.6623,74.5177,60,false,false,false,9,2,97,97,218,45.5,Marathi,Primary,Government,Taloda Block Center,0,1,1,0,0,0
+27024355867,ZP School KoliPura 91,NDB01,Nandurbar,Nandurbar Urban,334,20.9748,74.2732,43,false,true,true,9,8,167,167,343,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27024606328,ZP School WaghPura 92,NDB01,Nandurbar,Nandurbar Urban,263,20.9531,74.0667,54,true,false,true,2,25,131,131,225,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27029202912,ZP School BhorGaon 93,NDB01,Nandurbar,Akkalkuwa,279,21.0463,73.9355,42,false,true,false,2,40,139,139,275,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27021195217,ZP School DhanWadi 94,NDB01,Nandurbar,Shahada Rural,197,21.745,74.1815,47,true,true,true,4,35,98,98,232,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,1
+27026003844,ZP School PimpalNagar 95,NDB01,Nandurbar,Taloda Block,268,21.5177,73.9892,55,true,false,false,7,27,134,134,248,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,1,0,0,0
+27027564161,ZP School AmbaPura 96,NDB01,Nandurbar,Akrani,340,21.1392,74.0989,54,true,false,true,6,6,170,170,336,45.5,Marathi,Primary,Government,Akrani Center,0,0,1,0,0,0
+27022322283,ZP School MaliWadi 97,NDB01,Nandurbar,Taloda Block,320,21.1566,74.6185,26,false,true,false,8,33,160,160,383,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27026003688,ZP School PimpalKhed 98,NDB01,Nandurbar,Taloda Block,229,21.6294,74.154,45,true,true,false,8,34,114,114,237,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27027279441,ZP School DhanNagar 99,NDB01,Nandurbar,Akkalkuwa,301,21.4959,74.6776,30,false,false,false,6,37,150,150,298,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27023164387,ZP School WaghPura 100,NDB01,Nandurbar,Shahada Rural,391,21.7478,74.5227,35,false,true,false,2,5,195,195,382,45.5,Marathi,Primary,Government,Shahada Rural Center,0,1,0,0,0,0
+27022238570,ZP School WaghPura 101,NDB01,Nandurbar,Akkalkuwa,137,21.1385,74.2254,26,false,true,false,4,32,68,68,163,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,1
+27026379368,ZP School KoliNagar 102,NDB01,Nandurbar,Shahada Rural,215,20.9142,73.9552,30,true,true,true,4,25,107,107,195,45.5,Marathi,Primary,Government,Shahada Rural Center,1,1,0,0,0,1
+27026908745,ZP School WaghKhed 103,NDB01,Nandurbar,Akkalkuwa,368,21.6024,73.7643,35,false,true,true,10,4,184,184,319,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,1,0,1
+27028950781,ZP School MaliPura 104,NDB01,Nandurbar,Taloda Block,263,21.741,73.8744,21,false,false,true,2,20,131,131,248,45.5,Marathi,Primary,Government,Taloda Block Center,0,1,0,0,0,0
+27026181691,ZP School BhorPura 105,NDB01,Nandurbar,Shahada Rural,213,21.3886,74.3575,60,false,false,true,6,18,106,106,234,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27021022488,ZP School BhorNagar 106,NDB01,Nandurbar,Nandurbar Urban,348,20.8227,73.7831,46,false,true,true,6,23,174,174,387,45.5,Marathi,Primary,Government,Nandurbar Urban Center,1,0,0,0,0,0
+27022149690,ZP School PimpalNagar 107,NDB01,Nandurbar,Shahada Rural,103,21.3995,73.926,48,true,true,true,4,17,51,51,107,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,1
+27024815075,ZP School MaliKhed 108,NDB01,Nandurbar,Nandurbar Urban,258,21.0377,74.4973,54,false,false,true,8,31,129,129,221,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27023061157,ZP School KoliKhed 109,NDB01,Nandurbar,Taloda Block,179,21.2744,73.8195,30,false,true,true,6,9,89,89,207,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,1,0
+27025442125,ZP School KoliWadi 110,NDB01,Nandurbar,Taloda Block,220,21.2635,73.7235,51,true,false,true,10,24,110,110,206,45.5,Marathi,Primary,Government,Taloda Block Center,0,1,0,0,0,0
+27026016721,ZP School PimpalGaon 111,NDB01,Nandurbar,Akrani,330,21.3609,74.4015,23,false,false,false,4,18,165,165,285,45.5,Marathi,Primary,Government,Akrani Center,0,0,1,0,0,0
+27024752638,ZP School WaghPura 112,NDB01,Nandurbar,Navapur,392,21.3467,74.4024,51,true,false,false,5,10,196,196,393,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27027007892,ZP School KoliPura 113,NDB01,Nandurbar,Shahada Rural,277,21.524,74.3911,57,false,false,false,6,20,138,138,314,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,1
+27029034986,ZP School BhorNagar 114,NDB01,Nandurbar,Akkalkuwa,152,21.0614,73.7973,40,true,false,false,7,27,76,76,158,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27029669197,ZP School MaliPura 115,NDB01,Nandurbar,Akrani,84,21.6917,74.5875,46,false,true,false,9,31,42,42,68,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27029241827,ZP School MaliWadi 116,NDB01,Nandurbar,Akkalkuwa,280,21.7716,73.9426,36,false,true,true,5,40,140,140,313,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27025520005,ZP School MaliGaon 117,NDB01,Nandurbar,Taloda Block,373,21.7298,73.7664,51,false,true,true,2,3,186,186,438,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,0,0
+27022352279,ZP School AmbaPura 118,NDB01,Nandurbar,Shahada Rural,60,21.63,74.6463,47,true,false,false,9,9,30,30,63,45.5,Marathi,Primary,Government,Shahada Rural Center,0,1,1,0,0,0
+27024544030,ZP School AmbaKhed 119,NDB01,Nandurbar,Navapur,374,21.5805,74.3557,40,false,true,true,10,10,187,187,432,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27025729225,ZP School PimpalNagar 120,NDB01,Nandurbar,Shahada Rural,342,21.1419,74.1001,43,false,false,true,6,37,171,171,363,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,1,0
+27027060276,ZP School KoliNagar 121,NDB01,Nandurbar,Nandurbar Urban,345,20.9651,74.2394,54,true,true,false,2,24,172,172,294,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27029375794,ZP School AmbaGaon 122,NDB01,Nandurbar,Nandurbar Urban,231,21.1257,74.0298,35,false,false,true,5,40,115,115,233,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27026940666,ZP School WaghGaon 123,NDB01,Nandurbar,Akrani,400,21.518,73.7709,38,false,true,false,10,27,200,200,472,45.5,Marathi,Primary,Government,Akrani Center,0,1,0,0,0,0
+27021860429,ZP School WaghNagar 124,NDB01,Nandurbar,Akrani,136,21.392,74.3127,22,true,false,false,9,26,68,68,109,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27026418569,ZP School DhanPura 125,NDB01,Nandurbar,Akkalkuwa,225,21.2314,74.2846,49,true,false,false,4,37,112,112,204,45.5,Marathi,Primary,Government,Akkalkuwa Center,1,0,0,0,0,1
+27029019964,ZP School PimpalKhed 126,NDB01,Nandurbar,Nandurbar Urban,68,20.9792,74.0263,53,false,false,false,2,23,34,34,70,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27028717330,ZP School AmbaWadi 127,NDB01,Nandurbar,Taloda Block,332,21.0775,74.3318,20,true,false,false,2,26,166,166,271,45.5,Marathi,Primary,Government,Taloda Block Center,0,1,0,0,0,0
+27028048791,ZP School KoliGaon 128,NDB01,Nandurbar,Akrani,78,20.9115,74.3783,42,true,false,false,2,35,39,39,78,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,1
+27028374363,ZP School AmbaWadi 129,NDB01,Nandurbar,Navapur,235,21.2675,74.0819,39,true,true,false,3,32,117,117,218,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,0,0,0
+27029092467,ZP School AmbaKhed 130,NDB01,Nandurbar,Akkalkuwa,370,21.0146,74.1795,56,false,false,false,6,8,185,185,321,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,1,0
+27026646396,ZP School PimpalNagar 131,NDB01,Nandurbar,Nandurbar Urban,209,21.7399,73.9542,39,false,false,false,6,33,104,104,198,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27025170712,ZP School AmbaPura 132,NDB01,Nandurbar,Akrani,321,21.1335,74.2372,39,true,false,true,10,1,160,160,286,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27024890092,ZP School DhanWadi 133,NDB01,Nandurbar,Nandurbar Urban,237,21.6701,74.508,53,true,false,false,3,22,118,118,253,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27025849432,ZP School PimpalKhed 134,NDB01,Nandurbar,Akkalkuwa,348,21.7265,74.351,40,true,true,false,5,39,174,174,335,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27023190948,ZP School WaghGaon 135,NDB01,Nandurbar,Akrani,392,21.712,74.1458,49,true,true,false,4,27,196,196,389,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27023336441,ZP School MaliKhed 136,NDB01,Nandurbar,Taloda Block,387,21.2767,73.8711,53,true,false,false,2,21,193,193,383,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,1,0,0,0
+27028163256,ZP School WaghGaon 137,NDB01,Nandurbar,Akkalkuwa,87,21.0996,73.805,53,true,true,true,10,8,43,43,74,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27026927126,ZP School MaliKhed 138,NDB01,Nandurbar,Akkalkuwa,130,21.2635,74.1231,55,true,true,true,10,33,65,65,123,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,1,0,0,0,0
+27022292471,ZP School AmbaKhed 139,NDB01,Nandurbar,Shahada Rural,384,20.9981,73.7134,50,true,false,true,5,33,192,192,333,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27021700179,ZP School AmbaGaon 140,NDB01,Nandurbar,Navapur,303,21.7454,73.7092,44,false,false,true,5,18,151,151,329,45.5,Marathi,Primary,Government,Navapur Center,0,0,1,0,0,1
+27027742706,ZP School WaghWadi 141,NDB01,Nandurbar,Akrani,102,21.133,74.029,44,false,true,false,7,29,51,51,93,45.5,Marathi,Primary,Government,Akrani Center,0,0,1,0,0,0
+27022603109,ZP School DhanKhed 142,NDB01,Nandurbar,Akkalkuwa,184,21.7321,73.8554,26,true,false,false,9,23,92,92,205,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27027371185,ZP School MaliPura 143,NDB01,Nandurbar,Akkalkuwa,125,21.1844,74.2496,41,false,true,true,7,17,62,62,123,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27025827445,ZP School BhorNagar 144,NDB01,Nandurbar,Nandurbar Urban,216,20.8613,74.1647,23,true,false,false,5,19,108,108,192,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27022986573,ZP School AmbaNagar 145,NDB01,Nandurbar,Shahada Rural,145,21.6186,73.9524,50,true,false,false,10,8,72,72,155,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,0,0
+27024919173,ZP School DhanPura 146,NDB01,Nandurbar,Akrani,389,21.3475,73.7562,53,false,false,false,2,37,194,194,406,45.5,Marathi,Primary,Government,Akrani Center,0,0,1,0,0,0
+27025551605,ZP School AmbaPura 147,NDB01,Nandurbar,Taloda Block,84,21.656,74.6268,42,false,true,false,3,5,42,42,97,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27025615943,ZP School WaghPura 148,NDB01,Nandurbar,Shahada Rural,362,21.4649,74.2418,47,true,false,true,8,26,181,181,389,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,1,0,0,0
+27024148105,ZP School WaghWadi 149,NDB01,Nandurbar,Akkalkuwa,301,21.4401,74.0097,50,false,true,true,2,35,150,150,333,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27026969783,ZP School PimpalWadi 150,NDB01,Nandurbar,Shahada Rural,249,21.1088,74.6921,28,false,true,true,9,3,124,124,273,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27024557766,ZP School BhorGaon 151,NDB01,Nandurbar,Akkalkuwa,77,21.5562,74.2471,37,true,true,true,3,10,38,38,77,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27021148883,ZP School DhanNagar 152,NDB01,Nandurbar,Navapur,163,21.0452,74.4765,47,false,true,false,5,36,81,81,158,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27028838222,ZP School DhanWadi 153,NDB01,Nandurbar,Nandurbar Urban,330,21.4726,73.7297,40,false,false,true,3,19,165,165,372,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,1,0,0
+27021634059,ZP School AmbaGaon 154,NDB01,Nandurbar,Navapur,175,21.565,73.7738,48,true,false,true,9,12,87,87,186,45.5,Marathi,Primary,Government,Navapur Center,0,1,0,0,0,0
+27024692135,ZP School AmbaKhed 155,NDB01,Nandurbar,Shahada Rural,204,21.0801,74.2185,56,false,true,false,4,34,102,102,175,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,0,0
+27028932176,ZP School BhorNagar 156,NDB01,Nandurbar,Shahada Rural,91,21.3488,73.8007,49,true,true,false,7,36,45,45,88,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,1,0,0,1
+27023907479,ZP School AmbaGaon 157,NDB01,Nandurbar,Akrani,208,20.919,74.6669,30,true,true,true,6,36,104,104,184,45.5,Marathi,Primary,Government,Akrani Center,0,0,1,0,0,0
+27027884006,ZP School BhorKhed 158,NDB01,Nandurbar,Navapur,258,21.2307,73.7896,57,false,true,false,5,37,129,129,248,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27028663600,ZP School DhanPura 159,NDB01,Nandurbar,Akrani,335,20.9399,73.7495,31,false,true,true,6,2,167,167,298,45.5,Marathi,Primary,Government,Akrani Center,1,0,0,0,0,0
+27023773142,ZP School PimpalKhed 160,NDB01,Nandurbar,Navapur,399,21.7338,74.4723,23,false,true,false,3,32,199,199,331,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27023543031,ZP School MaliWadi 161,NDB01,Nandurbar,Akrani,377,21.7595,73.9478,55,true,true,true,7,30,188,188,306,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27021043863,ZP School WaghKhed 162,NDB01,Nandurbar,Akkalkuwa,237,20.8251,73.8231,35,true,true,true,2,37,118,118,224,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27024454336,ZP School WaghGaon 163,NDB01,Nandurbar,Navapur,70,21.6853,74.3569,48,false,false,false,7,26,35,35,62,45.5,Marathi,Primary,Government,Navapur Center,0,0,1,0,0,0
+27023019463,ZP School BhorNagar 164,NDB01,Nandurbar,Nandurbar Urban,229,21.4738,74.4991,60,true,false,false,5,28,114,114,242,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,1
+27024918188,ZP School KoliPura 165,NDB01,Nandurbar,Akkalkuwa,261,21.737,74.6576,31,false,true,true,3,31,130,130,224,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27025140562,ZP School MaliPura 166,NDB01,Nandurbar,Navapur,327,21.7328,74.0202,35,false,true,true,8,15,163,163,309,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,1,0
+27026734671,ZP School BhorWadi 167,NDB01,Nandurbar,Shahada Rural,216,21.7386,74.5812,48,false,true,false,8,12,108,108,222,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27027373247,ZP School WaghKhed 168,NDB01,Nandurbar,Taloda Block,398,21.5764,74.2435,57,false,true,false,7,2,199,199,462,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,1,0
+27027057013,ZP School BhorPura 169,NDB01,Nandurbar,Shahada Rural,54,21.6877,74.4755,24,true,false,false,7,17,27,27,64,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27022146995,ZP School DhanKhed 170,NDB01,Nandurbar,Akkalkuwa,270,20.9811,73.9299,46,true,false,false,4,5,135,135,223,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27025874567,ZP School MaliNagar 171,NDB01,Nandurbar,Shahada Rural,223,21.0344,74.6735,43,true,true,true,2,38,111,111,263,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,0,0
+27025539045,ZP School PimpalNagar 172,NDB01,Nandurbar,Taloda Block,347,20.9187,74.5495,28,true,false,false,8,9,173,173,304,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,1,0
+27022585974,ZP School KoliGaon 173,NDB01,Nandurbar,Shahada Rural,361,21.6558,73.8551,51,false,true,false,9,9,180,180,289,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27022119219,ZP School KoliPura 174,NDB01,Nandurbar,Shahada Rural,392,20.9009,74.558,23,false,true,true,10,16,196,196,335,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27024017174,ZP School WaghPura 175,NDB01,Nandurbar,Akkalkuwa,313,21.6496,73.824,24,false,true,true,2,3,156,156,363,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27021192266,ZP School AmbaWadi 176,NDB01,Nandurbar,Akrani,113,21.1228,74.3692,56,false,true,true,10,29,56,56,112,45.5,Marathi,Primary,Government,Akrani Center,0,0,1,0,0,1
+27028113694,ZP School MaliGaon 177,NDB01,Nandurbar,Shahada Rural,373,21.1167,74.3976,41,false,true,true,3,21,186,186,441,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,1,0,0
+27027287950,ZP School KoliNagar 178,NDB01,Nandurbar,Akrani,199,21.5894,74.1062,35,false,true,true,7,36,99,99,232,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,1,0
+27029274483,ZP School AmbaNagar 179,NDB01,Nandurbar,Navapur,259,21.6616,74.5524,53,false,false,true,4,33,129,129,226,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27024698206,ZP School PimpalKhed 180,NDB01,Nandurbar,Taloda Block,281,20.9306,74.2155,34,true,true,true,4,5,140,140,317,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,0,0
+27024489837,ZP School PimpalKhed 181,NDB01,Nandurbar,Akkalkuwa,206,21.4688,73.9029,20,true,true,false,5,27,103,103,210,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27026140835,ZP School PimpalKhed 182,NDB01,Nandurbar,Akkalkuwa,56,21.7109,74.5756,53,true,true,true,7,25,28,28,57,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27028370311,ZP School MaliGaon 183,NDB01,Nandurbar,Nandurbar Urban,387,21.2882,74.5519,48,true,true,false,10,10,193,193,333,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,1,0
+27024261634,ZP School WaghGaon 184,NDB01,Nandurbar,Akkalkuwa,398,21.5117,74.0824,20,true,true,false,7,26,199,199,431,45.5,Marathi,Primary,Government,Akkalkuwa Center,1,0,0,0,0,0
+27027009702,ZP School DhanWadi 185,NDB01,Nandurbar,Taloda Block,220,20.873,74.6599,52,false,true,true,4,18,110,110,200,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27029903308,ZP School PimpalGaon 186,NDB01,Nandurbar,Shahada Rural,129,21.2222,74.6382,51,true,false,false,4,16,64,64,135,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27021005411,ZP School PimpalKhed 187,NDB01,Nandurbar,Shahada Rural,291,21.775,73.9635,38,false,false,false,2,15,145,145,300,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27021517201,ZP School MaliWadi 188,NDB01,Nandurbar,Navapur,158,21.0936,74.1562,43,true,true,true,10,20,79,79,161,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27021697322,ZP School KoliKhed 189,NDB01,Nandurbar,Taloda Block,337,21.6212,74.223,25,true,true,false,10,24,168,168,270,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27029096821,ZP School MaliNagar 190,NDB01,Nandurbar,Navapur,291,21.1384,73.9564,37,true,true,true,5,39,145,145,236,45.5,Marathi,Primary,Government,Navapur Center,0,0,1,0,1,0
+27029229475,ZP School PimpalNagar 191,NDB01,Nandurbar,Taloda Block,391,20.9924,74.4871,29,false,false,true,3,31,195,195,379,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,0,0
+27028663479,ZP School MaliNagar 192,NDB01,Nandurbar,Taloda Block,378,21.0183,74.6502,55,false,true,false,8,7,189,189,386,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,1,0,0,0
+27027279029,ZP School WaghNagar 193,NDB01,Nandurbar,Shahada Rural,125,21.6352,74.315,50,false,true,false,6,40,62,62,110,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,1,0
+27021623785,ZP School MaliGaon 194,NDB01,Nandurbar,Taloda Block,214,21.464,73.8695,28,true,false,false,4,15,107,107,211,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27027588091,ZP School DhanWadi 195,NDB01,Nandurbar,Akrani,271,21.5555,73.7421,44,false,false,true,9,15,135,135,228,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27026090385,ZP School MaliPura 196,NDB01,Nandurbar,Taloda Block,276,21.4422,73.7641,43,true,true,true,9,29,138,138,250,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27023753632,ZP School DhanPura 197,NDB01,Nandurbar,Akkalkuwa,360,21.2791,74.4255,52,true,false,true,7,22,180,180,362,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27026035630,ZP School KoliGaon 198,NDB01,Nandurbar,Akkalkuwa,320,21.4794,74.561,27,false,true,true,9,31,160,160,312,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27022809279,ZP School WaghNagar 199,NDB01,Nandurbar,Taloda Block,64,21.1227,74.075,50,true,false,false,7,8,32,32,61,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27024371079,ZP School BhorNagar 200,NDB01,Nandurbar,Taloda Block,291,21.586,73.9593,57,false,false,true,6,29,145,145,289,45.5,Marathi,Primary,Government,Taloda Block Center,0,1,0,0,0,0
+27025484051,ZP School KoliPura 201,NDB01,Nandurbar,Shahada Rural,324,20.8792,74.5359,21,false,false,false,9,25,162,162,292,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27026131927,ZP School AmbaPura 202,NDB01,Nandurbar,Nandurbar Urban,67,21.7058,74.3827,23,false,false,false,10,7,33,33,53,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27029537649,ZP School AmbaKhed 203,NDB01,Nandurbar,Nandurbar Urban,279,21.0389,73.7786,40,false,false,true,5,14,139,139,315,45.5,Marathi,Primary,Government,Nandurbar Urban Center,1,0,0,0,0,0
+27022138106,ZP School PimpalNagar 204,NDB01,Nandurbar,Akrani,341,21.0529,73.7748,31,true,false,true,3,31,170,170,327,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,1,0
+27029184157,ZP School MaliPura 205,NDB01,Nandurbar,Shahada Rural,176,20.8794,73.9929,29,false,true,true,7,5,88,88,188,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,1
+27028686727,ZP School PimpalKhed 206,NDB01,Nandurbar,Akkalkuwa,317,20.9313,74.5189,20,false,true,true,3,25,158,158,283,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27029239970,ZP School BhorGaon 207,NDB01,Nandurbar,Taloda Block,299,21.1253,73.9052,58,false,true,true,7,2,149,149,254,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,0,0
+27028066017,ZP School MaliGaon 208,NDB01,Nandurbar,Taloda Block,361,21.1654,74.1079,47,true,true,false,3,32,180,180,338,45.5,Marathi,Primary,Government,Taloda Block Center,0,1,0,0,0,0
+27027523565,ZP School AmbaKhed 209,NDB01,Nandurbar,Navapur,219,20.9632,74.0554,24,false,false,true,4,21,109,109,199,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27029947938,ZP School MaliPura 210,NDB01,Nandurbar,Shahada Rural,354,21.3333,74.3932,32,false,false,false,3,26,177,177,335,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,1,0
+27025348120,ZP School BhorGaon 211,NDB01,Nandurbar,Akrani,354,21.4699,74.069,36,false,true,false,4,34,177,177,396,45.5,Marathi,Primary,Government,Akrani Center,0,1,0,0,0,0
+27022400006,ZP School AmbaKhed 212,NDB01,Nandurbar,Akrani,193,21.184,74.1207,59,true,false,true,6,18,96,96,202,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,1,0
+27024905436,ZP School WaghWadi 213,NDB01,Nandurbar,Akrani,296,20.9461,74.2955,59,true,false,true,5,36,148,148,260,45.5,Marathi,Primary,Government,Akrani Center,1,0,0,0,0,0
+27029276214,ZP School AmbaKhed 214,NDB01,Nandurbar,Nandurbar Urban,190,21.0183,74.025,46,false,false,false,9,19,95,95,181,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27028570015,ZP School MaliPura 215,NDB01,Nandurbar,Navapur,92,21.2485,73.7813,24,true,false,false,2,1,46,46,76,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27028267099,ZP School DhanPura 216,NDB01,Nandurbar,Akrani,394,21.798,74.4332,51,true,false,true,10,13,197,197,437,45.5,Marathi,Primary,Government,Akrani Center,0,0,1,0,0,0
+27025719193,ZP School PimpalPura 217,NDB01,Nandurbar,Shahada Rural,319,21.1265,74.3258,33,false,true,true,4,35,159,159,345,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27025070756,ZP School MaliPura 218,NDB01,Nandurbar,Shahada Rural,153,21.4467,73.9498,47,false,false,false,5,9,76,76,151,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,1,0
+27022224675,ZP School WaghGaon 219,NDB01,Nandurbar,Taloda Block,140,21.7892,73.8387,22,true,false,true,8,32,70,70,151,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27025716971,ZP School DhanKhed 220,NDB01,Nandurbar,Akkalkuwa,145,21.5248,74.1249,47,false,false,false,8,21,72,72,172,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27022470835,ZP School MaliGaon 221,NDB01,Nandurbar,Navapur,91,20.9312,73.779,33,false,true,true,5,21,45,45,106,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,1
+27021593407,ZP School KoliNagar 222,NDB01,Nandurbar,Navapur,381,20.8773,74.6221,60,true,false,true,10,10,190,190,328,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27023760280,ZP School AmbaKhed 223,NDB01,Nandurbar,Shahada Rural,253,20.9329,74.1104,30,true,false,true,4,14,126,126,290,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27023959514,ZP School WaghGaon 224,NDB01,Nandurbar,Navapur,255,21.2948,74.1091,32,false,true,false,4,21,127,127,210,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27022826083,ZP School WaghNagar 225,NDB01,Nandurbar,Nandurbar Urban,197,21.4047,74.625,41,false,true,true,5,4,98,98,235,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,1,0,0,1,0
+27021154271,ZP School PimpalPura 226,NDB01,Nandurbar,Taloda Block,50,21.7691,74.3207,22,true,true,false,8,34,25,25,56,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27024890555,ZP School AmbaNagar 227,NDB01,Nandurbar,Shahada Rural,330,21.3143,74.135,23,false,true,false,4,28,165,165,352,45.5,Marathi,Primary,Government,Shahada Rural Center,0,1,0,0,0,0
+27025583595,ZP School WaghWadi 228,NDB01,Nandurbar,Navapur,144,21.363,74.5276,60,true,false,false,6,1,72,72,136,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,1,0,0
+27023058460,ZP School KoliKhed 229,NDB01,Nandurbar,Taloda Block,288,21.2693,74.0364,46,false,false,false,3,27,144,144,275,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27025958115,ZP School DhanKhed 230,NDB01,Nandurbar,Navapur,312,21.4036,73.9701,40,false,false,true,6,26,156,156,254,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,0,0,0
+27025826791,ZP School PimpalNagar 231,NDB01,Nandurbar,Akrani,57,21.6991,74.0942,47,false,false,false,6,37,28,28,57,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27029506240,ZP School BhorKhed 232,NDB01,Nandurbar,Akrani,234,21.4852,74.5988,47,true,true,false,9,20,117,117,220,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27021104590,ZP School AmbaNagar 233,NDB01,Nandurbar,Akkalkuwa,217,21.6054,73.7904,50,false,false,true,7,1,108,108,239,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27021684929,ZP School KoliPura 234,NDB01,Nandurbar,Akrani,188,21.051,73.8228,34,false,true,false,8,16,94,94,152,45.5,Marathi,Primary,Government,Akrani Center,1,0,0,0,0,0
+27021745544,ZP School MaliGaon 235,NDB01,Nandurbar,Akkalkuwa,336,21.3588,74.1712,26,true,true,false,9,20,168,168,357,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27022059104,ZP School DhanWadi 236,NDB01,Nandurbar,Shahada Rural,157,20.8753,73.928,26,false,false,true,5,1,78,78,166,45.5,Marathi,Primary,Government,Shahada Rural Center,0,1,1,0,0,0
+27025085314,ZP School MaliGaon 237,NDB01,Nandurbar,Akkalkuwa,300,21.245,73.7129,44,true,true,true,9,9,150,150,352,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27022122985,ZP School MaliGaon 238,NDB01,Nandurbar,Taloda Block,251,21.6203,74.1504,27,false,true,false,9,1,125,125,247,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27026622149,ZP School WaghGaon 239,NDB01,Nandurbar,Nandurbar Urban,139,21.0831,74.3333,44,false,true,true,7,16,69,69,163,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,1,0,0,0,0
+27028418044,ZP School AmbaNagar 240,NDB01,Nandurbar,Shahada Rural,108,21.4355,73.8934,43,true,true,false,8,29,54,54,103,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,1,0,0
+27025568167,ZP School BhorKhed 241,NDB01,Nandurbar,Akrani,242,21.6799,73.9041,57,false,false,true,8,28,121,121,195,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27028934589,ZP School MaliNagar 242,NDB01,Nandurbar,Shahada Rural,134,21.1415,74.4997,46,true,false,false,8,24,67,67,157,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,0,0
+27021752680,ZP School AmbaPura 243,NDB01,Nandurbar,Akrani,376,20.9787,73.8236,22,true,false,false,10,28,188,188,390,45.5,Marathi,Primary,Government,Akrani Center,0,1,0,0,0,0
+27022597732,ZP School AmbaGaon 244,NDB01,Nandurbar,Taloda Block,102,21.009,73.8585,34,true,true,false,7,24,51,51,99,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27028178615,ZP School BhorGaon 245,NDB01,Nandurbar,Akkalkuwa,94,21.7183,74.5312,30,true,true,false,10,37,47,47,86,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,1,0,0,0
+27024913689,ZP School PimpalPura 246,NDB01,Nandurbar,Akrani,298,21.1737,73.8164,58,true,true,true,10,23,149,149,345,45.5,Marathi,Primary,Government,Akrani Center,0,0,1,0,1,0
+27021623637,ZP School WaghNagar 247,NDB01,Nandurbar,Nandurbar Urban,355,20.9974,74.1284,38,true,false,true,4,2,177,177,318,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27027668609,ZP School PimpalWadi 248,NDB01,Nandurbar,Akrani,329,21.2975,73.951,26,true,true,true,3,25,164,164,315,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27021752930,ZP School BhorWadi 249,NDB01,Nandurbar,Akrani,386,21.6739,74.2322,49,true,false,false,3,16,193,193,313,45.5,Marathi,Primary,Government,Akrani Center,0,0,1,0,0,0
+27026872342,ZP School KoliWadi 250,NDB01,Nandurbar,Akrani,351,20.9766,73.7094,29,false,true,true,6,29,175,175,336,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27023730851,ZP School AmbaWadi 251,NDB01,Nandurbar,Shahada Rural,77,21.3241,74.5542,34,true,false,false,5,34,38,38,77,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,1,0,0
+27029714410,ZP School AmbaGaon 252,NDB01,Nandurbar,Taloda Block,221,21.3015,73.981,48,false,true,false,6,30,110,110,193,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27022767094,ZP School DhanWadi 253,NDB01,Nandurbar,Shahada Rural,201,21.7659,73.7128,58,true,false,true,3,31,100,100,227,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27028515951,ZP School WaghGaon 254,NDB01,Nandurbar,Nandurbar Urban,179,21.5991,74.0067,55,true,false,false,9,23,89,89,149,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27028679707,ZP School PimpalGaon 255,NDB01,Nandurbar,Taloda Block,286,21.2203,74.3733,22,true,true,true,2,32,143,143,324,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,1,0
+27029405326,ZP School WaghPura 256,NDB01,Nandurbar,Akrani,183,20.9586,74.2472,50,false,false,true,7,26,91,91,185,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,1,0
+27024750508,ZP School BhorGaon 257,NDB01,Nandurbar,Nandurbar Urban,160,21.4272,74.6067,47,true,true,false,2,33,80,80,135,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27022005636,ZP School WaghPura 258,NDB01,Nandurbar,Nandurbar Urban,335,21.2371,73.7443,55,true,false,false,8,5,167,167,359,45.5,Marathi,Primary,Government,Nandurbar Urban Center,1,0,0,0,0,0
+27029856550,ZP School AmbaKhed 259,NDB01,Nandurbar,Akrani,256,21.4855,74.3854,27,false,false,false,2,13,128,128,271,45.5,Marathi,Primary,Government,Akrani Center,1,0,0,0,0,0
+27028177516,ZP School PimpalWadi 260,NDB01,Nandurbar,Taloda Block,321,21.3161,74.4464,35,false,false,true,8,14,160,160,300,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,1
+27027866587,ZP School WaghKhed 261,NDB01,Nandurbar,Navapur,389,21.0723,74.2366,30,false,false,true,4,25,194,194,425,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27028117452,ZP School PimpalKhed 262,NDB01,Nandurbar,Nandurbar Urban,300,21.7666,74.0496,35,false,true,false,6,8,150,150,272,45.5,Marathi,Primary,Government,Nandurbar Urban Center,1,1,0,0,0,0
+27022311710,ZP School PimpalKhed 263,NDB01,Nandurbar,Akkalkuwa,171,21.2498,74.6056,46,true,true,false,4,27,85,85,199,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27025107716,ZP School AmbaPura 264,NDB01,Nandurbar,Nandurbar Urban,274,21.0042,74.1976,27,false,true,false,4,17,137,137,320,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,1,0,0,0,0
+27021686475,ZP School KoliPura 265,NDB01,Nandurbar,Akrani,349,21.2109,73.7625,43,true,true,false,3,22,174,174,353,45.5,Marathi,Primary,Government,Akrani Center,0,0,1,0,0,0
+27025687992,ZP School AmbaWadi 266,NDB01,Nandurbar,Navapur,135,20.8473,74.1711,30,false,false,false,4,19,67,67,124,45.5,Marathi,Primary,Government,Navapur Center,0,1,0,0,0,0
+27023624947,ZP School DhanGaon 267,NDB01,Nandurbar,Nandurbar Urban,215,21.6015,74.5657,26,false,true,true,9,20,107,107,225,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27027083862,ZP School DhanGaon 268,NDB01,Nandurbar,Nandurbar Urban,106,21.6701,73.7558,60,true,true,false,5,14,53,53,114,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27026634989,ZP School PimpalWadi 269,NDB01,Nandurbar,Nandurbar Urban,171,21.7813,74.544,46,false,false,true,3,37,85,85,186,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,1
+27022294681,ZP School BhorPura 270,NDB01,Nandurbar,Shahada Rural,342,21.5615,73.7872,37,false,false,false,8,15,171,171,303,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27025903797,ZP School AmbaKhed 271,NDB01,Nandurbar,Shahada Rural,59,21.343,73.8296,52,true,true,false,6,4,29,29,48,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,1,0
+27024132020,ZP School BhorWadi 272,NDB01,Nandurbar,Shahada Rural,94,20.8625,74.4977,56,true,false,true,3,29,47,47,99,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,1,0,0
+27026851409,ZP School BhorPura 273,NDB01,Nandurbar,Nandurbar Urban,373,21.6165,74.693,20,false,false,true,10,7,186,186,358,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27025741869,ZP School AmbaWadi 274,NDB01,Nandurbar,Nandurbar Urban,154,20.8555,74.3584,54,true,true,false,3,21,77,77,157,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,1,0,0,0,0
+27025237873,ZP School WaghGaon 275,NDB01,Nandurbar,Nandurbar Urban,303,20.868,73.7727,55,false,false,true,8,26,151,151,285,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27023990451,ZP School PimpalPura 276,NDB01,Nandurbar,Shahada Rural,332,21.2375,73.8641,46,false,false,false,8,11,166,166,350,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27025090923,ZP School BhorWadi 277,NDB01,Nandurbar,Nandurbar Urban,216,21.7536,73.7475,50,true,false,false,4,17,108,108,254,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27021296349,ZP School PimpalGaon 278,NDB01,Nandurbar,Nandurbar Urban,190,21.6749,74.6222,39,false,false,false,10,37,95,95,153,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27024201785,ZP School KoliNagar 279,NDB01,Nandurbar,Navapur,205,20.8954,73.9883,31,true,true,true,5,3,102,102,207,45.5,Marathi,Primary,Government,Navapur Center,0,1,0,0,0,0
+27026788216,ZP School MaliWadi 280,NDB01,Nandurbar,Nandurbar Urban,352,20.8774,73.803,55,false,true,false,9,32,176,176,304,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27023419867,ZP School MaliPura 281,NDB01,Nandurbar,Akrani,83,21.2373,74.6636,23,false,true,false,4,16,41,41,98,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27022980537,ZP School KoliPura 282,NDB01,Nandurbar,Taloda Block,322,21.4756,74.1542,33,false,true,false,4,18,161,161,370,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27028749405,ZP School PimpalGaon 283,NDB01,Nandurbar,Taloda Block,186,21.4714,74.2342,46,false,false,true,6,18,93,93,190,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27022327583,ZP School AmbaKhed 284,NDB01,Nandurbar,Shahada Rural,272,21.207,74.0309,20,true,false,true,8,33,136,136,267,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,1
+27025491703,ZP School DhanKhed 285,NDB01,Nandurbar,Akkalkuwa,207,21.0235,74.0756,26,false,true,false,4,14,103,103,176,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27023025390,ZP School KoliGaon 286,NDB01,Nandurbar,Nandurbar Urban,226,21.7106,73.7927,54,false,false,true,5,1,113,113,223,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27026566623,ZP School AmbaGaon 287,NDB01,Nandurbar,Taloda Block,133,20.8211,73.737,33,true,false,true,7,25,66,66,155,45.5,Marathi,Primary,Government,Taloda Block Center,0,1,0,0,0,0
+27025623108,ZP School AmbaPura 288,NDB01,Nandurbar,Akkalkuwa,347,21.2623,74.1784,45,false,false,true,3,37,173,173,367,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,1,0
+27029673887,ZP School BhorKhed 289,NDB01,Nandurbar,Shahada Rural,385,21.2738,73.9904,33,true,false,false,9,3,192,192,454,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,0,0
+27024268658,ZP School BhorPura 290,NDB01,Nandurbar,Taloda Block,95,21.0079,73.9167,20,false,false,false,9,3,47,47,112,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,1
+27027112054,ZP School WaghWadi 291,NDB01,Nandurbar,Akrani,326,21.2683,74.1378,38,false,true,false,7,11,163,163,354,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27027249564,ZP School KoliGaon 292,NDB01,Nandurbar,Navapur,353,21.2103,74.2378,26,false,false,true,9,30,176,176,315,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27025208983,ZP School BhorGaon 293,NDB01,Nandurbar,Nandurbar Urban,105,21.4872,74.4292,21,false,true,false,9,23,52,52,93,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27024014672,ZP School DhanWadi 294,NDB01,Nandurbar,Taloda Block,175,21.2618,73.8056,35,true,false,true,6,9,87,87,157,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27026898574,ZP School DhanPura 295,NDB01,Nandurbar,Taloda Block,276,21.1475,74.401,27,true,true,false,10,31,138,138,241,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,1,0
+27029089344,ZP School KoliGaon 296,NDB01,Nandurbar,Taloda Block,396,21.548,74.6516,53,false,true,false,9,17,198,198,350,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27021941881,ZP School PimpalKhed 297,NDB01,Nandurbar,Taloda Block,350,21.6216,74.6382,38,false,false,false,9,33,175,175,410,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27026784384,ZP School MaliPura 298,NDB01,Nandurbar,Navapur,152,21.0837,74.0595,40,true,true,false,3,8,76,76,138,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27028248406,ZP School KoliGaon 299,NDB01,Nandurbar,Akkalkuwa,308,21.4163,74.6605,47,true,true,true,9,19,154,154,311,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,1,0,0,1
+27028753851,ZP School KoliKhed 300,NDB01,Nandurbar,Nandurbar Urban,153,21.0284,74.2468,42,false,false,true,2,23,76,76,143,45.5,Marathi,Primary,Government,Nandurbar Urban Center,1,1,0,0,0,0
+27022497723,ZP School PimpalWadi 301,NDB01,Nandurbar,Taloda Block,63,21.2309,73.9488,35,true,true,false,9,39,31,31,75,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27028278305,ZP School WaghWadi 302,NDB01,Nandurbar,Taloda Block,303,21.6937,74.6549,42,false,true,false,5,2,151,151,328,45.5,Marathi,Primary,Government,Taloda Block Center,0,1,0,0,0,0
+27025693386,ZP School MaliGaon 303,NDB01,Nandurbar,Shahada Rural,270,21.1366,74.6853,38,true,true,true,2,37,135,135,250,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27028602097,ZP School AmbaGaon 304,NDB01,Nandurbar,Taloda Block,102,20.9108,74.3472,23,false,true,true,3,25,51,51,99,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27024760957,ZP School MaliPura 305,NDB01,Nandurbar,Navapur,392,21.4407,74.5868,51,false,false,true,10,18,196,196,464,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27022857801,ZP School KoliGaon 306,NDB01,Nandurbar,Akrani,200,21.6196,74.3122,29,true,false,false,4,25,100,100,215,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27026691838,ZP School AmbaPura 307,NDB01,Nandurbar,Nandurbar Urban,266,21.6667,74.2494,33,false,false,true,2,39,133,133,288,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27026894873,ZP School MaliKhed 308,NDB01,Nandurbar,Nandurbar Urban,146,21.1668,74.4602,53,false,false,true,4,20,73,73,119,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,1,0
+27023047437,ZP School PimpalPura 309,NDB01,Nandurbar,Akrani,379,21.1216,74.6315,53,true,true,false,7,28,189,189,329,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27025882150,ZP School WaghWadi 310,NDB01,Nandurbar,Nandurbar Urban,347,21.7156,74.5721,30,false,false,false,7,14,173,173,376,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27028275281,ZP School BhorGaon 311,NDB01,Nandurbar,Akkalkuwa,387,21.5455,73.7747,58,false,true,false,8,15,193,193,379,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,1,0
+27027029210,ZP School KoliKhed 312,NDB01,Nandurbar,Navapur,249,21.2731,74.2057,50,true,true,false,10,20,124,124,266,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27021581481,ZP School WaghGaon 313,NDB01,Nandurbar,Navapur,265,21.7415,74.2448,30,false,false,false,3,12,132,132,305,45.5,Marathi,Primary,Government,Navapur Center,0,0,1,0,0,0
+27025779162,ZP School KoliGaon 314,NDB01,Nandurbar,Akkalkuwa,361,21.4752,74.1648,56,true,true,false,3,34,180,180,349,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27026559256,ZP School KoliGaon 315,NDB01,Nandurbar,Navapur,352,21.6275,74.0016,45,false,false,false,5,8,176,176,418,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27024942783,ZP School KoliNagar 316,NDB01,Nandurbar,Shahada Rural,64,21.4597,74.1078,37,false,true,false,5,7,32,32,60,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,0,0
+27028236079,ZP School KoliGaon 317,NDB01,Nandurbar,Navapur,363,21.3209,74.1662,35,false,false,false,4,14,181,181,386,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27024341428,ZP School BhorKhed 318,NDB01,Nandurbar,Akkalkuwa,186,21.7719,74.1629,48,false,false,false,5,13,93,93,213,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,1,0,0,0,0
+27026132413,ZP School PimpalPura 319,NDB01,Nandurbar,Shahada Rural,179,21.1792,74.2155,31,true,false,false,3,29,89,89,205,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,0,0
+27021676891,ZP School MaliGaon 320,NDB01,Nandurbar,Shahada Rural,140,21.5131,74.5673,53,true,false,false,8,19,70,70,143,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,1,1
+27028971383,ZP School MaliGaon 321,NDB01,Nandurbar,Navapur,320,21.4648,73.7907,50,false,false,false,8,29,160,160,314,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27023005319,ZP School KoliNagar 322,NDB01,Nandurbar,Akrani,322,20.9631,74.0975,58,false,true,false,8,18,161,161,307,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27026091598,ZP School KoliPura 323,NDB01,Nandurbar,Taloda Block,84,21.6831,74.0076,56,true,true,false,5,1,42,42,85,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,0,0
+27028635365,ZP School KoliPura 324,NDB01,Nandurbar,Nandurbar Urban,167,20.9272,74.3864,56,true,true,true,10,24,83,83,160,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27025636597,ZP School DhanPura 325,NDB01,Nandurbar,Nandurbar Urban,331,20.9114,74.6298,43,false,true,false,8,14,165,165,363,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27024638445,ZP School WaghPura 326,NDB01,Nandurbar,Shahada Rural,251,21.7412,73.9477,35,true,false,false,2,31,125,125,265,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27024461938,ZP School BhorNagar 327,NDB01,Nandurbar,Navapur,256,21.1117,74.0677,58,false,false,false,3,32,128,128,236,45.5,Marathi,Primary,Government,Navapur Center,0,0,1,0,0,0
+27027997098,ZP School BhorNagar 328,NDB01,Nandurbar,Nandurbar Urban,343,21.5014,74.0165,60,false,false,false,9,22,171,171,291,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,1,0,0,0
+27027087968,ZP School WaghWadi 329,NDB01,Nandurbar,Navapur,273,20.9016,73.9717,32,false,false,true,5,17,136,136,295,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27029631140,ZP School MaliNagar 330,NDB01,Nandurbar,Taloda Block,167,21.3308,73.8581,35,true,false,false,7,17,83,83,152,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,1
+27021589900,ZP School KoliWadi 331,NDB01,Nandurbar,Taloda Block,364,21.7206,74.1647,33,false,true,false,5,26,182,182,421,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27025796610,ZP School KoliPura 332,NDB01,Nandurbar,Nandurbar Urban,54,20.8469,74.5931,22,false,false,true,7,18,27,27,56,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27022144695,ZP School PimpalKhed 333,NDB01,Nandurbar,Akkalkuwa,185,21.752,74.0718,44,true,true,false,3,6,92,92,212,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,1,0,0,0
+27027947747,ZP School BhorPura 334,NDB01,Nandurbar,Nandurbar Urban,232,21.1486,74.4444,51,false,false,false,4,11,116,116,228,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,1,1,1,0,0
+27029732917,ZP School MaliKhed 335,NDB01,Nandurbar,Taloda Block,387,20.8446,74.409,27,false,true,true,7,23,193,193,390,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27026674765,ZP School BhorGaon 336,NDB01,Nandurbar,Akkalkuwa,201,21.6034,74.284,28,true,true,false,4,10,100,100,211,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,1,1,0,1,0
+27029658295,ZP School MaliWadi 337,NDB01,Nandurbar,Taloda Block,96,20.8197,73.8533,59,false,true,true,9,2,48,48,87,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27026943141,ZP School WaghPura 338,NDB01,Nandurbar,Navapur,389,21.2847,74.2588,31,false,false,true,10,26,194,194,316,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,0,0,0
+27026573448,ZP School DhanKhed 339,NDB01,Nandurbar,Taloda Block,267,21.6953,74.3672,25,false,false,false,5,22,133,133,315,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27021103869,ZP School KoliKhed 340,NDB01,Nandurbar,Nandurbar Urban,67,21.7972,74.1349,45,false,false,false,10,39,33,33,66,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,1,0,0,0,1
+27024936594,ZP School MaliKhed 341,NDB01,Nandurbar,Nandurbar Urban,227,21.1978,73.8466,52,false,false,true,4,24,113,113,269,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27029477929,ZP School DhanGaon 342,NDB01,Nandurbar,Navapur,207,21.012,74.3367,39,false,false,false,3,19,103,103,241,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,1
+27026396736,ZP School MaliNagar 343,NDB01,Nandurbar,Nandurbar Urban,368,21.4543,73.8209,27,true,false,false,4,1,184,184,392,45.5,Marathi,Primary,Government,Nandurbar Urban Center,1,0,0,0,0,0
+27026887505,ZP School BhorNagar 344,NDB01,Nandurbar,Navapur,95,20.8066,73.9031,41,true,true,false,10,2,47,47,93,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27028946101,ZP School BhorWadi 345,NDB01,Nandurbar,Nandurbar Urban,340,21.1458,73.8774,20,true,true,false,8,1,170,170,342,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27026297079,ZP School PimpalWadi 346,NDB01,Nandurbar,Taloda Block,191,21.6031,74.0268,41,true,false,true,8,40,95,95,222,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27026943790,ZP School PimpalGaon 347,NDB01,Nandurbar,Shahada Rural,73,21.1013,73.8214,40,false,true,false,4,38,36,36,77,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27024524290,ZP School AmbaKhed 348,NDB01,Nandurbar,Navapur,187,21.2428,74.181,30,false,false,true,4,6,93,93,154,45.5,Marathi,Primary,Government,Navapur Center,0,0,1,0,0,0
+27022106996,ZP School DhanWadi 349,NDB01,Nandurbar,Navapur,368,21.0791,74.2582,43,true,true,true,4,7,184,184,435,45.5,Marathi,Primary,Government,Navapur Center,0,0,1,0,0,0
+27021056912,ZP School BhorKhed 350,NDB01,Nandurbar,Shahada Rural,137,21.7855,74.45,37,true,true,false,5,16,68,68,134,45.5,Marathi,Primary,Government,Shahada Rural Center,0,1,0,1,0,0
+27025975599,ZP School KoliGaon 351,NDB01,Nandurbar,Taloda Block,70,21.4738,74.1032,35,false,false,false,9,11,35,35,61,45.5,Marathi,Primary,Government,Taloda Block Center,0,1,0,0,0,0
+27028141867,ZP School WaghKhed 352,NDB01,Nandurbar,Shahada Rural,163,21.5185,74.1505,33,true,true,false,3,38,81,81,174,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27025269643,ZP School MaliGaon 353,NDB01,Nandurbar,Akrani,281,20.8698,74.5699,32,false,true,false,7,23,140,140,269,45.5,Marathi,Primary,Government,Akrani Center,1,0,0,0,0,0
+27028910317,ZP School BhorKhed 354,NDB01,Nandurbar,Taloda Block,230,21.7657,74.6346,51,false,true,false,6,21,115,115,216,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,0,0
+27027546905,ZP School BhorNagar 355,NDB01,Nandurbar,Akrani,154,21.4013,74.2189,53,false,false,true,3,17,77,77,166,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27024871928,ZP School AmbaKhed 356,NDB01,Nandurbar,Akkalkuwa,158,21.2219,74.3079,27,false,false,true,6,9,79,79,150,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27025096414,ZP School PimpalKhed 357,NDB01,Nandurbar,Taloda Block,264,21.5159,74.26,24,true,false,true,6,19,132,132,257,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27026424542,ZP School BhorKhed 358,NDB01,Nandurbar,Taloda Block,268,21.5978,74.3624,29,true,false,false,6,36,134,134,270,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27029992451,ZP School MaliKhed 359,NDB01,Nandurbar,Nandurbar Urban,127,21.1308,74.3357,28,true,false,false,2,10,63,63,105,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,1
+27022636242,ZP School KoliPura 360,NDB01,Nandurbar,Nandurbar Urban,225,21.7503,74.4898,25,true,false,false,8,10,112,112,246,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,1,0,0,0,0
+27029737459,ZP School MaliPura 361,NDB01,Nandurbar,Nandurbar Urban,353,21.2055,73.7168,39,true,false,false,5,12,176,176,337,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27026283903,ZP School DhanKhed 362,NDB01,Nandurbar,Akkalkuwa,121,21.1348,74.3586,59,true,false,true,7,9,60,60,139,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,1,0,0,0
+27021490520,ZP School AmbaWadi 363,NDB01,Nandurbar,Akrani,140,20.9064,74.0981,57,false,true,false,10,29,70,70,150,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27027670727,ZP School PimpalWadi 364,NDB01,Nandurbar,Akkalkuwa,358,21.5903,74.2579,37,true,true,true,3,7,179,179,313,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27027627636,ZP School PimpalKhed 365,NDB01,Nandurbar,Shahada Rural,82,21.5631,74.1193,49,false,false,false,7,7,41,41,80,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27028611260,ZP School AmbaKhed 366,NDB01,Nandurbar,Nandurbar Urban,177,21.0287,74.6741,29,false,true,false,9,19,88,88,175,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27024688892,ZP School BhorWadi 367,NDB01,Nandurbar,Shahada Rural,117,21.18,74.6984,50,false,false,false,5,34,58,58,125,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,1,0
+27025074976,ZP School AmbaNagar 368,NDB01,Nandurbar,Shahada Rural,300,21.6217,73.7299,43,true,false,false,2,31,150,150,275,45.5,Marathi,Primary,Government,Shahada Rural Center,0,1,0,1,0,0
+27026677851,ZP School PimpalPura 369,NDB01,Nandurbar,Taloda Block,83,20.8128,73.9274,53,false,true,true,5,7,41,41,79,45.5,Marathi,Primary,Government,Taloda Block Center,0,1,0,0,0,0
+27022352703,ZP School PimpalNagar 370,NDB01,Nandurbar,Akkalkuwa,365,21.1483,73.7679,48,false,false,false,3,28,182,182,387,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27028189419,ZP School BhorKhed 371,NDB01,Nandurbar,Akrani,365,21.1252,74.4025,38,false,true,false,8,13,182,182,313,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,1,0,0
+27023689736,ZP School PimpalPura 372,NDB01,Nandurbar,Taloda Block,214,20.8162,74.2192,52,false,false,false,9,13,107,107,233,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,0,0
+27023197919,ZP School KoliWadi 373,NDB01,Nandurbar,Navapur,289,20.8398,74.554,55,true,false,false,6,9,144,144,334,45.5,Marathi,Primary,Government,Navapur Center,0,0,1,1,0,0
+27026500832,ZP School AmbaPura 374,NDB01,Nandurbar,Nandurbar Urban,385,20.9553,73.7843,44,true,true,false,3,20,192,192,389,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,1
+27021139587,ZP School WaghWadi 375,NDB01,Nandurbar,Akkalkuwa,307,21.4223,73.8179,48,true,false,false,9,3,153,153,291,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,1,0,0
+27028465069,ZP School KoliWadi 376,NDB01,Nandurbar,Taloda Block,303,20.9575,74.3648,29,true,true,false,9,28,151,151,279,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27027127541,ZP School BhorGaon 377,NDB01,Nandurbar,Nandurbar Urban,158,21.3083,74.3826,24,false,false,true,10,38,79,79,179,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,1,0,0,0,1
+27029971412,ZP School AmbaKhed 378,NDB01,Nandurbar,Shahada Rural,103,21.7255,74.5808,28,false,false,false,2,19,51,51,97,45.5,Marathi,Primary,Government,Shahada Rural Center,0,1,0,0,0,0
+27028150903,ZP School AmbaNagar 379,NDB01,Nandurbar,Navapur,82,21.6498,74.1185,20,false,true,false,7,26,41,41,98,45.5,Marathi,Primary,Government,Navapur Center,0,0,1,0,0,0
+27024344602,ZP School KoliNagar 380,NDB01,Nandurbar,Taloda Block,253,20.8554,74.2376,54,true,true,false,6,27,126,126,237,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,1,0
+27023467627,ZP School BhorNagar 381,NDB01,Nandurbar,Navapur,400,21.6853,73.912,28,false,true,false,3,4,200,200,378,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,0,0,0
+27026921561,ZP School MaliGaon 382,NDB01,Nandurbar,Nandurbar Urban,73,21.5944,74.3316,35,false,false,true,3,4,36,36,86,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27028098404,ZP School MaliNagar 383,NDB01,Nandurbar,Akkalkuwa,50,21.5528,74.2232,26,true,true,false,2,7,25,25,53,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27027331159,ZP School MaliNagar 384,NDB01,Nandurbar,Shahada Rural,133,21.1267,74.3531,47,true,false,true,7,16,66,66,153,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27025657983,ZP School AmbaPura 385,NDB01,Nandurbar,Nandurbar Urban,211,21.1064,73.8297,50,false,true,false,8,36,105,105,240,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27026047688,ZP School DhanGaon 386,NDB01,Nandurbar,Taloda Block,162,21.2121,74.6389,24,false,true,false,2,2,81,81,193,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27029242781,ZP School WaghWadi 387,NDB01,Nandurbar,Shahada Rural,388,21.3052,74.2268,34,false,true,false,2,37,194,194,385,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27024270616,ZP School BhorWadi 388,NDB01,Nandurbar,Akkalkuwa,340,21.2546,74.645,27,true,false,true,7,16,170,170,388,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27025263073,ZP School DhanNagar 389,NDB01,Nandurbar,Akrani,323,21.6042,74.4029,20,false,false,true,2,23,161,161,311,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,1,0
+27023164931,ZP School MaliNagar 390,NDB01,Nandurbar,Shahada Rural,263,20.9507,73.7347,26,true,false,false,4,17,131,131,255,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,1,0,0,0
+27025526359,ZP School DhanGaon 391,NDB01,Nandurbar,Nandurbar Urban,357,21.0131,74.2782,20,false,true,true,8,14,178,178,299,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27027800607,ZP School DhanGaon 392,NDB01,Nandurbar,Akkalkuwa,60,21.0284,74.2047,26,false,true,false,6,21,30,30,66,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,1,0
+27027888892,ZP School KoliWadi 393,NDB01,Nandurbar,Navapur,265,21.2614,74.3691,21,true,false,false,4,20,132,132,286,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27022488617,ZP School WaghGaon 394,NDB01,Nandurbar,Nandurbar Urban,250,21.1055,74.6856,57,true,true,false,7,6,125,125,280,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27027353878,ZP School AmbaWadi 395,NDB01,Nandurbar,Navapur,287,21.6403,73.7288,47,true,false,true,6,21,143,143,293,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,1,0
+27028751752,ZP School MaliWadi 396,NDB01,Nandurbar,Shahada Rural,101,21.6092,73.7776,49,false,false,false,9,22,50,50,120,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,1,0
+27023907205,ZP School BhorPura 397,NDB01,Nandurbar,Shahada Rural,314,20.9689,74.5172,27,true,true,true,6,24,157,157,339,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27024634844,ZP School MaliKhed 398,NDB01,Nandurbar,Akkalkuwa,392,21.5434,74.1127,24,false,false,true,5,4,196,196,316,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,1,0
+27027210017,ZP School PimpalPura 399,NDB01,Nandurbar,Taloda Block,330,21.0675,74.2743,39,true,true,false,5,31,165,165,282,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27027456653,ZP School KoliKhed 400,NDB01,Nandurbar,Taloda Block,262,21.0611,73.9217,41,true,true,true,4,9,131,131,288,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,1,0,0,0
+27025552004,ZP School MaliNagar 401,NDB01,Nandurbar,Taloda Block,107,21.0857,73.8802,24,true,true,false,9,12,53,53,123,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27028419790,ZP School KoliWadi 402,NDB01,Nandurbar,Nandurbar Urban,244,20.9801,74.1724,46,true,false,true,5,12,122,122,254,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,1,0,1,0
+27023280012,ZP School KoliKhed 403,NDB01,Nandurbar,Akkalkuwa,322,21.4344,73.7531,39,false,false,false,8,15,161,161,320,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27022203043,ZP School AmbaGaon 404,NDB01,Nandurbar,Navapur,182,21.554,74.6089,37,false,true,true,2,28,91,91,149,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27028468043,ZP School MaliPura 405,NDB01,Nandurbar,Akkalkuwa,332,21.5129,74.0128,55,false,false,true,5,29,166,166,350,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27025265063,ZP School DhanKhed 406,NDB01,Nandurbar,Navapur,99,21.128,74.6729,40,false,true,false,5,7,49,49,81,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,1
+27023404844,ZP School KoliWadi 407,NDB01,Nandurbar,Akrani,254,20.8095,74.0738,45,true,true,false,10,19,127,127,210,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27021307906,ZP School WaghGaon 408,NDB01,Nandurbar,Navapur,289,21.1469,73.9497,59,false,true,false,6,25,144,144,305,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27026858889,ZP School WaghWadi 409,NDB01,Nandurbar,Shahada Rural,178,21.0057,74.3182,53,true,false,true,10,32,89,89,154,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27022766644,ZP School AmbaGaon 410,NDB01,Nandurbar,Akkalkuwa,82,21.6502,74.5431,57,false,false,false,2,30,41,41,93,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27029276616,ZP School DhanNagar 411,NDB01,Nandurbar,Taloda Block,225,21.2767,74.0245,30,true,false,true,8,13,112,112,213,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,1,0,0,0
+27026388448,ZP School AmbaWadi 412,NDB01,Nandurbar,Nandurbar Urban,135,21.1569,74.373,58,false,true,true,6,8,67,67,134,45.5,Marathi,Primary,Government,Nandurbar Urban Center,1,1,0,0,0,0
+27025634904,ZP School AmbaWadi 413,NDB01,Nandurbar,Akrani,329,21.4708,74.317,43,true,false,false,5,37,164,164,280,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,1
+27028233644,ZP School AmbaPura 414,NDB01,Nandurbar,Akkalkuwa,242,21.3424,73.832,24,true,true,true,5,19,121,121,225,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27023027275,ZP School DhanKhed 415,NDB01,Nandurbar,Akkalkuwa,288,20.9509,74.5819,40,true,false,true,9,5,144,144,311,45.5,Marathi,Primary,Government,Akkalkuwa Center,1,0,0,0,0,0
+27023208631,ZP School PimpalKhed 416,NDB01,Nandurbar,Nandurbar Urban,126,21.2504,73.7144,30,true,false,true,4,11,63,63,108,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27029568476,ZP School WaghPura 417,NDB01,Nandurbar,Taloda Block,164,20.9941,74.2551,41,false,false,true,7,15,82,82,149,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,1,0,1
+27028371217,ZP School BhorKhed 418,NDB01,Nandurbar,Nandurbar Urban,168,21.1742,74.1134,36,true,true,true,8,19,84,84,185,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27025023986,ZP School KoliGaon 419,NDB01,Nandurbar,Navapur,373,21.4169,73.8206,32,true,false,false,4,9,186,186,406,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27027914252,ZP School WaghKhed 420,NDB01,Nandurbar,Akrani,114,21.0092,73.8346,35,false,false,false,10,24,57,57,129,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27021898846,ZP School BhorNagar 421,NDB01,Nandurbar,Akkalkuwa,199,21.1715,73.7696,59,false,true,true,9,40,99,99,160,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27022925717,ZP School PimpalGaon 422,NDB01,Nandurbar,Shahada Rural,85,21.6915,74.0597,46,true,true,true,6,10,42,42,95,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27022188381,ZP School BhorKhed 423,NDB01,Nandurbar,Shahada Rural,219,21.3538,73.722,37,false,false,false,4,16,109,109,219,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27023610548,ZP School PimpalWadi 424,NDB01,Nandurbar,Akkalkuwa,324,20.9812,74.394,39,false,false,true,7,18,162,162,310,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,1
+27028901177,ZP School PimpalWadi 425,NDB01,Nandurbar,Navapur,138,21.6662,74.1602,33,false,false,false,2,15,69,69,131,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,1,0
+27028967784,ZP School DhanKhed 426,NDB01,Nandurbar,Akkalkuwa,319,21.343,73.9111,24,false,true,false,5,35,159,159,303,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27026709532,ZP School DhanPura 427,NDB01,Nandurbar,Akrani,183,21.7045,74.6348,33,false,false,false,5,10,91,91,185,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27021784762,ZP School WaghKhed 428,NDB01,Nandurbar,Nandurbar Urban,182,21.0047,74.4665,42,true,true,true,6,18,91,91,148,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,1,0,0,1
+27026849894,ZP School DhanKhed 429,NDB01,Nandurbar,Navapur,252,20.8364,74.2828,52,false,true,false,8,16,126,126,294,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27022561208,ZP School AmbaWadi 430,NDB01,Nandurbar,Nandurbar Urban,208,21.0811,73.9847,30,false,true,true,6,20,104,104,180,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,1,0,0,0
+27023120757,ZP School BhorNagar 431,NDB01,Nandurbar,Taloda Block,109,21.0963,74.5334,23,false,false,false,2,15,54,54,118,45.5,Marathi,Primary,Government,Taloda Block Center,1,1,0,0,0,0
+27023661945,ZP School PimpalPura 432,NDB01,Nandurbar,Akrani,338,21.2814,73.9411,42,false,true,false,10,16,169,169,337,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27021392027,ZP School BhorWadi 433,NDB01,Nandurbar,Navapur,173,21.6813,74.2914,52,true,false,true,5,30,86,86,153,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,1,0,0
+27028003617,ZP School MaliWadi 434,NDB01,Nandurbar,Taloda Block,252,21.6931,74.5707,34,false,true,true,9,17,126,126,244,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27029041925,ZP School WaghKhed 435,NDB01,Nandurbar,Taloda Block,143,21.2948,74.2489,35,false,true,false,5,6,71,71,135,45.5,Marathi,Primary,Government,Taloda Block Center,0,1,0,0,0,0
+27025007346,ZP School WaghWadi 436,NDB01,Nandurbar,Shahada Rural,296,21.3765,74.1825,29,false,false,true,2,22,148,148,330,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27022286773,ZP School PimpalNagar 437,NDB01,Nandurbar,Navapur,147,21.4507,73.8126,42,false,true,true,10,20,73,73,133,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,1,0
+27022816483,ZP School AmbaPura 438,NDB01,Nandurbar,Akrani,127,21.5,74.5106,48,true,false,true,6,11,63,63,113,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27024572330,ZP School PimpalWadi 439,NDB01,Nandurbar,Akkalkuwa,98,20.9351,73.9257,52,false,true,true,7,32,49,49,107,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27026025659,ZP School WaghPura 440,NDB01,Nandurbar,Taloda Block,96,21.1084,73.7745,28,true,false,true,6,8,48,48,90,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27029717504,ZP School WaghNagar 441,NDB01,Nandurbar,Taloda Block,128,21.2687,74.2974,60,false,false,true,8,19,64,64,123,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27022575125,ZP School PimpalGaon 442,NDB01,Nandurbar,Taloda Block,287,20.801,74.4407,59,true,true,false,3,31,143,143,264,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27023200789,ZP School WaghPura 443,NDB01,Nandurbar,Nandurbar Urban,240,21.6296,74.6229,57,true,false,true,2,10,120,120,249,45.5,Marathi,Primary,Government,Nandurbar Urban Center,1,0,0,0,0,0
+27028837066,ZP School MaliKhed 444,NDB01,Nandurbar,Navapur,301,21.2234,74.3463,20,true,false,true,10,40,150,150,292,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27022468791,ZP School WaghWadi 445,NDB01,Nandurbar,Nandurbar Urban,204,20.8127,74.6513,23,true,true,false,6,1,102,102,193,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27026569166,ZP School DhanWadi 446,NDB01,Nandurbar,Akrani,54,20.8833,73.8013,38,false,true,false,10,16,27,27,44,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27029493940,ZP School BhorWadi 447,NDB01,Nandurbar,Navapur,192,21.3329,74.5452,50,true,false,false,3,13,96,96,170,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27022931448,ZP School BhorWadi 448,NDB01,Nandurbar,Akkalkuwa,76,21.2973,74.474,20,false,true,true,8,33,38,38,79,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27025404284,ZP School KoliWadi 449,NDB01,Nandurbar,Shahada Rural,76,21.6293,74.6318,52,true,true,true,9,13,38,38,78,45.5,Marathi,Primary,Government,Shahada Rural Center,0,1,1,0,0,1
+27021584712,ZP School BhorKhed 450,NDB01,Nandurbar,Navapur,127,20.8174,74.3185,34,true,true,true,10,2,63,63,102,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27023143939,ZP School PimpalKhed 451,NDB01,Nandurbar,Navapur,300,21.4566,73.934,24,true,false,false,10,38,150,150,279,45.5,Marathi,Primary,Government,Navapur Center,0,1,0,1,0,0
+27025699827,ZP School KoliWadi 452,NDB01,Nandurbar,Navapur,56,21.0866,74.0942,20,true,false,false,5,25,28,28,63,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27028752453,ZP School KoliKhed 453,NDB01,Nandurbar,Shahada Rural,101,21.6901,74.3787,30,true,false,false,8,16,50,50,80,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,1,0,0,1
+27028856044,ZP School PimpalPura 454,NDB01,Nandurbar,Shahada Rural,355,21.1738,74.5519,23,false,true,false,4,12,177,177,415,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27023921358,ZP School AmbaPura 455,NDB01,Nandurbar,Akrani,155,21.5466,74.5409,42,false,true,true,6,14,77,77,145,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27023674659,ZP School DhanNagar 456,NDB01,Nandurbar,Navapur,371,21.2595,73.9184,38,true,false,true,8,23,185,185,376,45.5,Marathi,Primary,Government,Navapur Center,0,0,1,0,0,0
+27027488809,ZP School DhanNagar 457,NDB01,Nandurbar,Navapur,204,21.5809,74.4834,29,false,true,false,10,11,102,102,181,45.5,Marathi,Primary,Government,Navapur Center,1,0,1,0,0,0
+27025939740,ZP School KoliGaon 458,NDB01,Nandurbar,Nandurbar Urban,142,20.8195,73.8972,25,true,false,false,2,24,71,71,128,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27023874771,ZP School KoliNagar 459,NDB01,Nandurbar,Nandurbar Urban,144,21.2717,74.377,44,false,false,true,7,24,72,72,160,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27026235247,ZP School MaliWadi 460,NDB01,Nandurbar,Taloda Block,93,21.3953,73.9377,22,false,false,true,7,2,46,46,83,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27023950996,ZP School BhorKhed 461,NDB01,Nandurbar,Taloda Block,386,21.1839,74.2312,20,true,false,true,3,14,193,193,407,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,0,0
+27025339570,ZP School BhorGaon 462,NDB01,Nandurbar,Nandurbar Urban,129,21.4452,74.6039,39,true,true,false,10,7,64,64,145,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,1
+27027771982,ZP School BhorKhed 463,NDB01,Nandurbar,Akkalkuwa,341,21.4451,74.0966,52,true,false,true,10,20,170,170,331,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27024850240,ZP School AmbaWadi 464,NDB01,Nandurbar,Shahada Rural,267,21.62,74.3512,59,true,false,true,10,9,133,133,274,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,1,0,0
+27027985889,ZP School AmbaNagar 465,NDB01,Nandurbar,Taloda Block,285,20.8866,74.6691,46,false,true,true,2,5,142,142,341,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27021441282,ZP School DhanKhed 466,NDB01,Nandurbar,Akkalkuwa,121,21.4644,73.9222,54,false,true,true,4,38,60,60,120,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27027388651,ZP School PimpalGaon 467,NDB01,Nandurbar,Shahada Rural,68,21.1805,73.9721,37,true,false,false,7,10,34,34,79,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,1,0,0,0
+27021237940,ZP School KoliNagar 468,NDB01,Nandurbar,Navapur,300,20.8622,74.4213,46,false,false,false,7,40,150,150,294,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27021991809,ZP School PimpalNagar 469,NDB01,Nandurbar,Shahada Rural,321,20.9592,74.1391,20,false,true,true,3,17,160,160,308,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27029640154,ZP School MaliGaon 470,NDB01,Nandurbar,Nandurbar Urban,167,21.4898,74.0398,39,true,false,false,10,13,83,83,137,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,1,0,0,0
+27026047014,ZP School AmbaKhed 471,NDB01,Nandurbar,Navapur,186,21.4758,73.9385,45,true,false,true,9,21,93,93,170,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,0,0,0
+27021835600,ZP School MaliGaon 472,NDB01,Nandurbar,Navapur,269,20.8002,73.8161,23,true,false,true,10,26,134,134,224,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27028044150,ZP School KoliWadi 473,NDB01,Nandurbar,Akrani,264,21.7696,74.0716,43,true,false,true,10,1,132,132,310,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27027228521,ZP School KoliPura 474,NDB01,Nandurbar,Akkalkuwa,342,20.8481,74.4138,27,false,true,false,2,4,171,171,339,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27028948914,ZP School AmbaPura 475,NDB01,Nandurbar,Navapur,148,20.8534,73.706,25,true,true,true,9,26,74,74,155,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,1,0
+27023867590,ZP School MaliNagar 476,NDB01,Nandurbar,Taloda Block,380,20.9516,74.0151,51,false,false,false,10,15,190,190,346,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27021672203,ZP School PimpalKhed 477,NDB01,Nandurbar,Navapur,84,20.9316,74.3143,59,true,false,true,10,40,42,42,91,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,1,0,0
+27029201434,ZP School WaghWadi 478,NDB01,Nandurbar,Shahada Rural,177,21.3257,74.177,39,false,true,false,10,1,88,88,169,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27022309664,ZP School KoliKhed 479,NDB01,Nandurbar,Taloda Block,149,21.1004,73.7478,59,true,false,false,7,37,74,74,144,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,1,1
+27029642055,ZP School KoliPura 480,NDB01,Nandurbar,Akkalkuwa,119,21.1511,74.0635,38,false,false,false,6,38,59,59,118,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,1,0,0
+27027539792,ZP School KoliWadi 481,NDB01,Nandurbar,Taloda Block,273,21.6918,73.9061,47,true,false,false,10,14,136,136,326,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27021646555,ZP School BhorNagar 482,NDB01,Nandurbar,Taloda Block,148,21.0009,74.1379,21,true,true,false,9,15,74,74,140,45.5,Marathi,Primary,Government,Taloda Block Center,0,1,1,0,0,0
+27023426949,ZP School KoliKhed 483,NDB01,Nandurbar,Akrani,72,21.5911,74.482,25,true,false,true,9,34,36,36,66,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27024547012,ZP School AmbaGaon 484,NDB01,Nandurbar,Nandurbar Urban,241,21.1994,74.4649,52,false,true,true,6,29,120,120,233,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27022012140,ZP School MaliPura 485,NDB01,Nandurbar,Taloda Block,395,21.3552,74.1877,38,true,false,true,9,18,197,197,407,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27024131983,ZP School PimpalNagar 486,NDB01,Nandurbar,Taloda Block,340,20.8673,73.7471,54,true,true,false,10,11,170,170,374,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,0,0
+27029207426,ZP School BhorGaon 487,NDB01,Nandurbar,Akrani,373,21.1245,74.0928,33,false,false,false,3,23,186,186,446,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27029019034,ZP School BhorWadi 488,NDB01,Nandurbar,Nandurbar Urban,207,21.6126,74.2423,52,false,false,false,10,39,103,103,222,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27029908127,ZP School AmbaNagar 489,NDB01,Nandurbar,Navapur,239,21.6195,74.4274,39,true,false,true,3,14,119,119,285,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27022982356,ZP School AmbaNagar 490,NDB01,Nandurbar,Shahada Rural,196,20.9565,74.4905,27,false,false,false,7,32,98,98,178,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27024511149,ZP School BhorPura 491,NDB01,Nandurbar,Akkalkuwa,188,21.0999,74.1634,24,true,false,true,5,3,94,94,185,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27025613402,ZP School KoliNagar 492,NDB01,Nandurbar,Taloda Block,160,21.7458,73.8761,25,true,false,true,9,39,80,80,187,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27022700535,ZP School PimpalGaon 493,NDB01,Nandurbar,Nandurbar Urban,294,21.6584,73.9518,49,true,false,true,8,21,147,147,333,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,1,0,0,0
+27024176472,ZP School BhorPura 494,NDB01,Nandurbar,Akrani,229,21.0306,73.924,33,true,false,false,8,24,114,114,246,45.5,Marathi,Primary,Government,Akrani Center,0,0,1,0,0,0
+27026244755,ZP School WaghGaon 495,NDB01,Nandurbar,Taloda Block,57,21.2311,74.3407,41,true,true,true,6,30,28,28,52,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,0,0
+27022123589,ZP School DhanPura 496,NDB01,Nandurbar,Akrani,79,21.6951,74.1558,50,true,false,true,7,19,39,39,87,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27023871906,ZP School BhorGaon 497,NDB01,Nandurbar,Shahada Rural,306,21.2446,73.9675,45,false,false,false,5,6,153,153,354,45.5,Marathi,Primary,Government,Shahada Rural Center,0,1,0,0,1,0
+27024699849,ZP School BhorNagar 498,NDB01,Nandurbar,Akrani,171,20.9868,74.1785,55,false,false,false,9,2,85,85,185,45.5,Marathi,Primary,Government,Akrani Center,1,0,0,0,0,1
+27021857314,ZP School DhanPura 499,NDB01,Nandurbar,Navapur,161,21.1866,74.1108,52,true,true,false,6,40,80,80,183,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,0,1,0
+27025231135,ZP School AmbaWadi 500,NDB01,Nandurbar,Nandurbar Urban,296,21.1385,74.0334,33,false,true,true,2,10,148,148,247,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27027940786,ZP School BhorGaon 501,NDB01,Nandurbar,Akrani,90,21.7026,73.8142,53,false,true,false,4,15,45,45,102,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27025413662,ZP School AmbaPura 502,NDB01,Nandurbar,Shahada Rural,206,21.3125,74.1799,41,false,true,false,10,33,103,103,168,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27025289096,ZP School AmbaKhed 503,NDB01,Nandurbar,Navapur,298,20.9399,74.486,59,true,false,false,5,3,149,149,286,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,0,0,0
+27026161237,ZP School DhanGaon 504,NDB01,Nandurbar,Navapur,345,21.0486,74.3155,58,true,false,false,3,31,172,172,354,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27026459887,ZP School DhanGaon 505,NDB01,Nandurbar,Nandurbar Urban,110,21.002,74.0743,27,false,false,true,9,35,55,55,105,45.5,Marathi,Primary,Government,Nandurbar Urban Center,1,0,0,0,0,0
+27023950945,ZP School BhorWadi 506,NDB01,Nandurbar,Nandurbar Urban,60,21.5102,73.9077,55,true,true,true,4,8,30,30,61,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27027887535,ZP School PimpalNagar 507,NDB01,Nandurbar,Akkalkuwa,304,21.1878,73.885,24,false,true,false,9,15,152,152,295,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27027000169,ZP School DhanNagar 508,NDB01,Nandurbar,Akkalkuwa,193,21.3095,74.5316,20,false,false,true,6,1,96,96,158,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27021729418,ZP School MaliNagar 509,NDB01,Nandurbar,Akkalkuwa,295,21.2785,73.9347,44,true,true,false,3,19,147,147,326,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27028005828,ZP School WaghNagar 510,NDB01,Nandurbar,Nandurbar Urban,275,21.7624,74.4178,56,true,true,true,5,36,137,137,232,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,1,0,0,0
+27022371734,ZP School PimpalPura 511,NDB01,Nandurbar,Akrani,164,21.5291,74.3471,41,true,true,false,8,6,82,82,143,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27029100971,ZP School PimpalKhed 512,NDB01,Nandurbar,Taloda Block,97,21.3945,74.683,29,true,true,true,3,36,48,48,89,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,0,0
+27029175181,ZP School BhorGaon 513,NDB01,Nandurbar,Navapur,78,20.9568,73.9514,52,true,false,true,5,32,39,39,76,45.5,Marathi,Primary,Government,Navapur Center,0,1,0,0,0,0
+27021260587,ZP School KoliGaon 514,NDB01,Nandurbar,Akrani,175,21.7858,74.2043,43,true,true,true,2,31,87,87,141,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27022119257,ZP School BhorGaon 515,NDB01,Nandurbar,Akrani,221,20.9674,74.5062,46,true,false,true,10,10,110,110,246,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27021904307,ZP School DhanKhed 516,NDB01,Nandurbar,Navapur,304,21.5782,73.8811,52,false,true,false,10,36,152,152,362,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27025488708,ZP School KoliWadi 517,NDB01,Nandurbar,Shahada Rural,82,21.1186,74.085,21,false,true,false,3,14,41,41,79,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27025401810,ZP School MaliKhed 518,NDB01,Nandurbar,Akkalkuwa,209,21.678,74.3988,44,true,false,false,4,10,104,104,171,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27026052053,ZP School MaliGaon 519,NDB01,Nandurbar,Shahada Rural,101,21.001,73.8806,35,false,true,false,10,17,50,50,110,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27022861732,ZP School WaghPura 520,NDB01,Nandurbar,Shahada Rural,196,21.7256,73.9103,49,false,false,true,7,4,98,98,228,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,1,0,0
+27024636116,ZP School MaliWadi 521,NDB01,Nandurbar,Shahada Rural,252,20.8238,74.0255,55,true,false,false,7,5,126,126,267,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27029316643,ZP School PimpalNagar 522,NDB01,Nandurbar,Nandurbar Urban,382,21.6664,74.0971,28,true,false,false,6,11,191,191,398,45.5,Marathi,Primary,Government,Nandurbar Urban Center,1,0,0,0,0,0
+27021366208,ZP School MaliPura 523,NDB01,Nandurbar,Taloda Block,69,21.6344,73.7639,55,false,true,true,9,11,34,34,79,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,1,0,0,0
+27023593288,ZP School KoliNagar 524,NDB01,Nandurbar,Navapur,187,21.6432,74.115,42,true,true,false,3,22,93,93,168,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27022763788,ZP School BhorPura 525,NDB01,Nandurbar,Akrani,252,21.4798,74.4973,29,false,false,false,2,21,126,126,253,45.5,Marathi,Primary,Government,Akrani Center,1,0,0,0,0,0
+27024498482,ZP School WaghKhed 526,NDB01,Nandurbar,Shahada Rural,158,21.0964,73.9569,23,false,true,true,7,1,79,79,178,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,1,0
+27023842452,ZP School AmbaNagar 527,NDB01,Nandurbar,Nandurbar Urban,286,21.4927,74.0935,50,false,false,false,9,25,143,143,268,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,1
+27026746625,ZP School MaliWadi 528,NDB01,Nandurbar,Taloda Block,348,21.4438,74.0817,58,true,true,false,10,11,174,174,377,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27024059016,ZP School BhorPura 529,NDB01,Nandurbar,Akkalkuwa,354,21.6035,74.4833,28,false,false,true,6,6,177,177,394,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27024079028,ZP School KoliNagar 530,NDB01,Nandurbar,Nandurbar Urban,199,21.4107,74.3449,46,true,false,true,9,9,99,99,203,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27022380073,ZP School DhanNagar 531,NDB01,Nandurbar,Shahada Rural,112,21.1245,74.1032,41,true,false,true,9,5,56,56,124,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,1,0
+27026090405,ZP School MaliNagar 532,NDB01,Nandurbar,Nandurbar Urban,332,21.6983,74.5131,20,true,false,false,2,32,166,166,269,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27022715444,ZP School WaghKhed 533,NDB01,Nandurbar,Shahada Rural,312,20.9342,74.6142,57,true,true,true,10,33,156,156,346,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,0,0
+27026748300,ZP School DhanPura 534,NDB01,Nandurbar,Akrani,53,21.7274,73.7724,60,true,true,false,10,32,26,26,42,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27025492533,ZP School AmbaKhed 535,NDB01,Nandurbar,Taloda Block,80,21.1246,74.0712,36,true,true,true,10,32,40,40,71,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,1
+27025338150,ZP School AmbaPura 536,NDB01,Nandurbar,Taloda Block,185,21.346,74.5693,53,true,false,false,2,22,92,92,178,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,1,0,0,0
+27028461527,ZP School MaliPura 537,NDB01,Nandurbar,Nandurbar Urban,285,21.6242,74.6043,27,true,true,false,2,29,142,142,293,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27021491401,ZP School DhanPura 538,NDB01,Nandurbar,Shahada Rural,272,21.6698,74.3797,34,false,true,true,4,16,136,136,323,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27025415294,ZP School MaliPura 539,NDB01,Nandurbar,Akkalkuwa,248,21.7572,74.3964,53,true,true,true,3,16,124,124,215,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,1,0,0,0,0
+27029803339,ZP School MaliGaon 540,NDB01,Nandurbar,Shahada Rural,88,20.8337,74.5971,54,false,false,true,4,16,44,44,73,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,1,0,1
+27024384125,ZP School MaliWadi 541,NDB01,Nandurbar,Shahada Rural,113,21.0033,74.6349,46,false,true,false,2,13,56,56,116,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27029983029,ZP School PimpalWadi 542,NDB01,Nandurbar,Shahada Rural,254,20.901,74.2877,20,false,false,false,7,15,127,127,210,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27026251534,ZP School PimpalGaon 543,NDB01,Nandurbar,Akrani,68,21.6819,74.2572,54,false,true,true,7,34,34,34,68,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27029992812,ZP School KoliWadi 544,NDB01,Nandurbar,Akrani,261,20.9241,73.8589,48,false,true,true,3,31,130,130,283,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27022847883,ZP School MaliNagar 545,NDB01,Nandurbar,Taloda Block,127,21.0442,74.3798,41,false,false,false,3,37,63,63,102,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,1
+27026275860,ZP School WaghKhed 546,NDB01,Nandurbar,Shahada Rural,66,21.187,73.801,32,false,true,false,7,15,33,33,55,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27027847410,ZP School PimpalKhed 547,NDB01,Nandurbar,Shahada Rural,244,21.6908,73.7913,34,false,true,true,2,5,122,122,233,45.5,Marathi,Primary,Government,Shahada Rural Center,0,1,0,0,0,1
+27025633018,ZP School WaghWadi 548,NDB01,Nandurbar,Akkalkuwa,217,21.0205,73.8602,51,false,false,true,4,7,108,108,206,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,1,0,1,0
+27027469191,ZP School MaliNagar 549,NDB01,Nandurbar,Navapur,344,21.0765,74.2356,44,true,true,false,3,17,172,172,359,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,0,0,0
+27027973410,ZP School PimpalKhed 550,NDB01,Nandurbar,Shahada Rural,192,21.6949,73.9018,32,false,true,true,5,27,96,96,182,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,1,0,0
+27028829175,ZP School KoliWadi 551,NDB01,Nandurbar,Nandurbar Urban,86,21.0357,74.3781,47,false,true,false,3,40,43,43,80,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27026281667,ZP School AmbaGaon 552,NDB01,Nandurbar,Akkalkuwa,214,21.1372,74.5271,25,false,false,true,9,1,107,107,184,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,1,0
+27028965928,ZP School PimpalNagar 553,NDB01,Nandurbar,Nandurbar Urban,187,21.7719,73.8153,25,false,false,true,7,25,93,93,161,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,1,0,0,0,1
+27027658383,ZP School PimpalKhed 554,NDB01,Nandurbar,Akrani,332,21.3265,73.7115,51,false,true,false,10,39,166,166,267,45.5,Marathi,Primary,Government,Akrani Center,1,0,0,0,0,0
+27023589224,ZP School MaliWadi 555,NDB01,Nandurbar,Navapur,332,21.1201,73.9634,50,true,false,true,6,32,166,166,323,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,0,0,1
+27023731440,ZP School MaliGaon 556,NDB01,Nandurbar,Navapur,179,21.5599,74.5928,44,false,true,true,4,15,89,89,158,45.5,Marathi,Primary,Government,Navapur Center,0,1,0,1,0,0
+27021674289,ZP School MaliNagar 557,NDB01,Nandurbar,Nandurbar Urban,98,21.6926,74.2352,39,false,false,false,10,5,49,49,100,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27027589054,ZP School DhanNagar 558,NDB01,Nandurbar,Shahada Rural,163,21.4302,74.1497,45,true,false,false,6,4,81,81,166,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,0,0
+27025983856,ZP School PimpalWadi 559,NDB01,Nandurbar,Nandurbar Urban,166,21.21,74.0348,24,true,true,true,4,21,83,83,163,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27022976197,ZP School WaghKhed 560,NDB01,Nandurbar,Shahada Rural,203,21.1155,74.5925,22,true,false,false,10,6,101,101,216,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,1,0
+27022983511,ZP School KoliKhed 561,NDB01,Nandurbar,Navapur,171,21.5497,74.2603,29,true,false,false,7,4,85,85,143,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,0,0,0
+27028599562,ZP School WaghPura 562,NDB01,Nandurbar,Akrani,242,21.5748,74.58,59,true,false,true,2,36,121,121,245,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27029604427,ZP School MaliWadi 563,NDB01,Nandurbar,Navapur,249,20.8449,73.9289,56,false,false,true,4,17,124,124,290,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,1
+27023796071,ZP School KoliNagar 564,NDB01,Nandurbar,Akkalkuwa,379,21.3037,74.5685,38,false,false,false,9,9,189,189,311,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,1,0,0
+27028705945,ZP School AmbaWadi 565,NDB01,Nandurbar,Taloda Block,339,21.3408,74.0927,25,false,true,true,2,12,169,169,321,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27021962407,ZP School WaghWadi 566,NDB01,Nandurbar,Nandurbar Urban,214,20.8201,74.0294,47,true,true,true,10,37,107,107,208,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27024010543,ZP School MaliWadi 567,NDB01,Nandurbar,Akkalkuwa,306,21.2306,73.776,42,false,true,false,2,28,153,153,337,45.5,Marathi,Primary,Government,Akkalkuwa Center,1,0,0,0,0,0
+27027968297,ZP School WaghGaon 568,NDB01,Nandurbar,Akrani,359,21.6499,74.153,45,true,true,true,6,37,179,179,301,45.5,Marathi,Primary,Government,Akrani Center,1,0,0,0,0,0
+27021238542,ZP School AmbaPura 569,NDB01,Nandurbar,Akkalkuwa,166,21.0502,74.0549,31,true,false,true,4,1,83,83,159,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27027092852,ZP School BhorPura 570,NDB01,Nandurbar,Taloda Block,260,20.9636,74.3827,54,false,true,true,10,31,130,130,253,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27023366406,ZP School KoliGaon 571,NDB01,Nandurbar,Shahada Rural,131,21.343,73.9045,23,false,true,true,6,22,65,65,125,45.5,Marathi,Primary,Government,Shahada Rural Center,0,1,0,0,0,0
+27026651850,ZP School DhanKhed 572,NDB01,Nandurbar,Shahada Rural,95,21.35,73.7166,43,true,true,false,8,18,47,47,113,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27022192973,ZP School MaliNagar 573,NDB01,Nandurbar,Akkalkuwa,360,20.9015,73.9066,36,false,true,true,3,21,180,180,378,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27025203018,ZP School AmbaWadi 574,NDB01,Nandurbar,Nandurbar Urban,170,21.1585,74.2961,60,false,false,true,7,15,85,85,195,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27023300101,ZP School KoliGaon 575,NDB01,Nandurbar,Akrani,334,21.5304,74.66,21,true,false,false,9,16,167,167,346,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27024036764,ZP School DhanGaon 576,NDB01,Nandurbar,Navapur,354,21.3362,73.8222,51,false,false,false,9,22,177,177,409,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27024062218,ZP School KoliWadi 577,NDB01,Nandurbar,Shahada Rural,60,21.0671,73.9853,31,false,true,true,3,16,30,30,63,45.5,Marathi,Primary,Government,Shahada Rural Center,0,1,0,1,0,0
+27021693761,ZP School KoliKhed 578,NDB01,Nandurbar,Navapur,96,21.5087,73.7755,46,true,false,false,2,8,48,48,91,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27028685981,ZP School PimpalKhed 579,NDB01,Nandurbar,Taloda Block,333,21.6716,73.8154,24,true,true,false,9,5,166,166,343,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27025089059,ZP School AmbaKhed 580,NDB01,Nandurbar,Taloda Block,97,21.4515,73.9502,53,false,false,true,8,7,48,48,80,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,1,0,0,0
+27022453554,ZP School AmbaWadi 581,NDB01,Nandurbar,Shahada Rural,191,21.2622,74.3636,34,false,false,true,4,24,95,95,210,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27029810767,ZP School KoliWadi 582,NDB01,Nandurbar,Shahada Rural,277,21.3803,74.6616,29,true,true,false,5,10,138,138,328,45.5,Marathi,Primary,Government,Shahada Rural Center,0,1,0,0,0,0
+27027384179,ZP School PimpalWadi 583,NDB01,Nandurbar,Nandurbar Urban,355,21.5866,73.9285,43,true,true,false,10,16,177,177,360,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,1,0,0,0
+27028534442,ZP School MaliKhed 584,NDB01,Nandurbar,Akkalkuwa,190,21.7199,73.9284,41,false,false,false,2,21,95,95,224,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27028341361,ZP School AmbaWadi 585,NDB01,Nandurbar,Akrani,323,21.4252,74.3712,48,false,true,false,8,26,161,161,261,45.5,Marathi,Primary,Government,Akrani Center,1,0,0,0,0,0
+27022771594,ZP School KoliPura 586,NDB01,Nandurbar,Shahada Rural,320,21.217,74.6849,41,false,true,false,7,12,160,160,277,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,1,0
+27028815417,ZP School BhorNagar 587,NDB01,Nandurbar,Taloda Block,342,21.0262,74.2842,26,true,true,true,7,15,171,171,311,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,0,0
+27025967949,ZP School AmbaKhed 588,NDB01,Nandurbar,Nandurbar Urban,292,21.2129,74.1332,32,true,true,false,5,30,146,146,251,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27028513368,ZP School KoliWadi 589,NDB01,Nandurbar,Navapur,274,20.9482,74.5186,54,true,false,true,8,27,137,137,280,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,0,0,0
+27022770853,ZP School PimpalPura 590,NDB01,Nandurbar,Akrani,277,21.6703,74.3499,57,true,true,false,3,2,138,138,274,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27026274737,ZP School WaghNagar 591,NDB01,Nandurbar,Akkalkuwa,302,21.1989,74.3594,44,false,true,true,3,32,151,151,320,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27027096546,ZP School WaghKhed 592,NDB01,Nandurbar,Nandurbar Urban,123,21.5316,74.2215,24,false,false,false,5,23,61,61,109,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27026348815,ZP School WaghPura 593,NDB01,Nandurbar,Navapur,135,20.842,73.9659,50,true,false,false,2,10,67,67,147,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27023339506,ZP School MaliPura 594,NDB01,Nandurbar,Taloda Block,327,21.0662,74.6819,21,false,true,true,3,27,163,163,367,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27029320550,ZP School BhorWadi 595,NDB01,Nandurbar,Nandurbar Urban,172,20.9183,74.4437,40,true,true,false,2,29,86,86,192,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,1,0,0,0,0
+27024261904,ZP School PimpalNagar 596,NDB01,Nandurbar,Taloda Block,151,21.5612,74.3995,28,true,true,true,10,5,75,75,174,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,1,0,0,0
+27025715204,ZP School KoliNagar 597,NDB01,Nandurbar,Taloda Block,384,21.5564,74.4783,49,false,true,false,8,37,192,192,391,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27026933176,ZP School PimpalGaon 598,NDB01,Nandurbar,Akkalkuwa,115,21.6593,74.6952,55,true,false,false,6,18,57,57,114,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27021954312,ZP School KoliGaon 599,NDB01,Nandurbar,Akrani,273,21.4249,73.7692,45,true,true,false,10,18,136,136,248,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27025245962,ZP School BhorGaon 600,NDB01,Nandurbar,Akkalkuwa,274,21.6366,73.9932,38,true,false,true,6,27,137,137,275,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27025732188,ZP School BhorNagar 601,NDB01,Nandurbar,Akkalkuwa,99,21.0284,73.8113,26,false,true,true,2,15,49,49,95,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27028120333,ZP School MaliNagar 602,NDB01,Nandurbar,Akrani,324,21.1,74.405,34,false,false,false,4,38,162,162,385,45.5,Marathi,Primary,Government,Akrani Center,0,1,0,0,1,0
+27027757827,ZP School BhorNagar 603,NDB01,Nandurbar,Akrani,85,21.4693,73.974,48,false,true,true,3,17,42,42,71,45.5,Marathi,Primary,Government,Akrani Center,0,1,0,0,0,0
+27021523190,ZP School KoliNagar 604,NDB01,Nandurbar,Shahada Rural,72,21.4129,74.1974,53,true,true,true,9,36,36,36,81,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27024780016,ZP School WaghGaon 605,NDB01,Nandurbar,Nandurbar Urban,257,21.3211,73.838,56,false,false,false,3,17,128,128,301,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27023860953,ZP School AmbaGaon 606,NDB01,Nandurbar,Akrani,88,21.6448,73.7338,47,false,false,true,4,35,44,44,78,45.5,Marathi,Primary,Government,Akrani Center,1,0,0,0,0,0
+27024205900,ZP School MaliGaon 607,NDB01,Nandurbar,Taloda Block,220,20.9405,74.494,45,true,false,false,6,5,110,110,201,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27021950130,ZP School KoliNagar 608,NDB01,Nandurbar,Akrani,396,20.9799,74.249,47,true,true,false,2,14,198,198,429,45.5,Marathi,Primary,Government,Akrani Center,1,0,0,0,0,0
+27028852989,ZP School WaghGaon 609,NDB01,Nandurbar,Navapur,244,21.3775,73.9656,54,true,false,false,3,34,122,122,242,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27029293317,ZP School MaliGaon 610,NDB01,Nandurbar,Navapur,187,21.7651,73.7349,56,false,false,true,9,18,93,93,163,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27025383489,ZP School AmbaKhed 611,NDB01,Nandurbar,Navapur,352,20.853,73.7421,23,false,false,true,8,6,176,176,300,45.5,Marathi,Primary,Government,Navapur Center,1,1,0,0,0,0
+27022350097,ZP School AmbaWadi 612,NDB01,Nandurbar,Taloda Block,106,21.7206,74.6892,38,true,true,true,9,12,53,53,107,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,1
+27021673497,ZP School MaliPura 613,NDB01,Nandurbar,Akkalkuwa,174,21.5369,74.4793,53,false,true,false,10,8,87,87,142,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,1,0,0,0
+27028584731,ZP School WaghKhed 614,NDB01,Nandurbar,Taloda Block,52,21.1098,74.4428,40,true,true,true,5,1,26,26,60,45.5,Marathi,Primary,Government,Taloda Block Center,0,1,0,1,0,0
+27023459503,ZP School AmbaGaon 615,NDB01,Nandurbar,Nandurbar Urban,78,20.8907,74.2805,25,true,true,true,8,22,39,39,70,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,1
+27023103769,ZP School BhorGaon 616,NDB01,Nandurbar,Taloda Block,92,21.1407,74.3483,48,false,false,true,2,15,46,46,73,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27029750590,ZP School DhanGaon 617,NDB01,Nandurbar,Taloda Block,377,21.3105,74.5446,50,false,true,true,4,4,188,188,424,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,0,0
+27024040306,ZP School AmbaNagar 618,NDB01,Nandurbar,Akkalkuwa,377,21.7164,73.9071,48,true,false,false,8,19,188,188,424,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,1,0,0,0,0
+27025302339,ZP School WaghPura 619,NDB01,Nandurbar,Navapur,171,21.6867,73.74,54,false,false,true,4,39,85,85,155,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27023324085,ZP School AmbaWadi 620,NDB01,Nandurbar,Navapur,392,20.8098,73.9497,60,false,true,true,5,24,196,196,323,45.5,Marathi,Primary,Government,Navapur Center,1,1,0,0,0,0
+27021832998,ZP School BhorNagar 621,NDB01,Nandurbar,Akrani,244,21.1974,74.3014,51,true,true,false,8,36,122,122,249,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27026611462,ZP School KoliNagar 622,NDB01,Nandurbar,Shahada Rural,74,21.1296,74.3809,43,true,true,true,5,32,37,37,85,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27021500893,ZP School MaliPura 623,NDB01,Nandurbar,Nandurbar Urban,242,21.1208,74.503,58,false,false,true,4,11,121,121,278,45.5,Marathi,Primary,Government,Nandurbar Urban Center,1,0,0,0,0,0
+27025498542,ZP School WaghKhed 624,NDB01,Nandurbar,Navapur,294,20.8923,73.8118,52,false,false,false,3,13,147,147,338,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,0,0,0
+27025196438,ZP School KoliGaon 625,NDB01,Nandurbar,Taloda Block,304,21.3107,73.8685,33,true,false,false,7,19,152,152,322,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27022018025,ZP School PimpalPura 626,NDB01,Nandurbar,Akrani,229,20.8263,74.3097,25,false,false,false,5,27,114,114,195,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27028072799,ZP School BhorNagar 627,NDB01,Nandurbar,Nandurbar Urban,353,21.1446,74.3808,39,false,true,true,9,15,176,176,415,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27023336453,ZP School MaliGaon 628,NDB01,Nandurbar,Nandurbar Urban,247,21.0065,74.1782,32,true,false,true,7,18,123,123,201,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,1,0,0,0,0
+27028540916,ZP School MaliPura 629,NDB01,Nandurbar,Nandurbar Urban,226,21.5256,73.8439,31,true,false,true,9,13,113,113,235,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,1
+27027068560,ZP School PimpalNagar 630,NDB01,Nandurbar,Nandurbar Urban,87,21.297,74.0049,45,true,false,true,10,24,43,43,91,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,1,0,0
+27029879212,ZP School DhanWadi 631,NDB01,Nandurbar,Taloda Block,109,21.3987,74.4988,32,true,false,true,9,11,54,54,121,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27027735474,ZP School MaliPura 632,NDB01,Nandurbar,Nandurbar Urban,164,21.5577,74.3644,39,false,true,false,6,8,82,82,164,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27029631911,ZP School WaghPura 633,NDB01,Nandurbar,Navapur,342,21.2387,74.4776,37,true,false,false,9,36,171,171,340,45.5,Marathi,Primary,Government,Navapur Center,0,0,1,0,0,0
+27021779724,ZP School PimpalKhed 634,NDB01,Nandurbar,Shahada Rural,287,21.1084,74.2411,42,true,true,true,6,7,143,143,286,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,0,0
+27028035765,ZP School KoliGaon 635,NDB01,Nandurbar,Akkalkuwa,71,20.8345,74.2042,31,false,false,true,9,35,35,35,72,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,1,0,1,0,0
+27027966955,ZP School KoliWadi 636,NDB01,Nandurbar,Nandurbar Urban,111,21.6274,73.9195,25,false,true,true,5,7,55,55,129,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,1,0,0,0,0
+27022443312,ZP School BhorNagar 637,NDB01,Nandurbar,Taloda Block,201,21.2211,74.1191,59,false,false,false,2,10,100,100,225,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27024920523,ZP School DhanPura 638,NDB01,Nandurbar,Akrani,172,21.4234,74.2939,29,true,false,false,3,17,86,86,166,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27027009143,ZP School BhorPura 639,NDB01,Nandurbar,Shahada Rural,126,20.9177,73.7184,52,true,true,false,8,32,63,63,123,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,1
+27023777469,ZP School KoliGaon 640,NDB01,Nandurbar,Shahada Rural,129,21.213,74.3432,55,true,true,true,6,33,64,64,130,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27027381514,ZP School AmbaWadi 641,NDB01,Nandurbar,Shahada Rural,164,21.7633,73.8456,25,true,false,true,6,18,82,82,191,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27021054289,ZP School BhorKhed 642,NDB01,Nandurbar,Navapur,179,20.8714,74.3681,30,false,false,true,6,2,89,89,143,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27029968365,ZP School WaghWadi 643,NDB01,Nandurbar,Nandurbar Urban,228,21.4684,74.3199,42,false,false,false,3,30,114,114,207,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27021666075,ZP School KoliGaon 644,NDB01,Nandurbar,Shahada Rural,185,21.0655,73.93,52,true,false,true,9,6,92,92,173,45.5,Marathi,Primary,Government,Shahada Rural Center,1,1,0,0,0,0
+27024114984,ZP School KoliPura 645,NDB01,Nandurbar,Shahada Rural,222,21.081,74.3241,44,false,false,true,5,4,111,111,203,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,0,0
+27023609558,ZP School KoliPura 646,NDB01,Nandurbar,Akrani,322,21.1736,74.1905,42,false,true,true,10,9,161,161,298,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27021190372,ZP School BhorKhed 647,NDB01,Nandurbar,Akrani,155,21.7263,74.1352,21,true,true,true,4,35,77,77,164,45.5,Marathi,Primary,Government,Akrani Center,1,0,0,0,0,0
+27022587389,ZP School AmbaPura 648,NDB01,Nandurbar,Navapur,370,20.9341,73.8026,32,false,false,true,2,24,185,185,301,45.5,Marathi,Primary,Government,Navapur Center,0,0,1,0,0,0
+27024235463,ZP School AmbaGaon 649,NDB01,Nandurbar,Taloda Block,121,20.9096,73.7392,44,true,false,false,7,24,60,60,97,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27022342377,ZP School BhorGaon 650,NDB01,Nandurbar,Taloda Block,168,21.4769,74.2591,36,false,true,true,4,36,84,84,165,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27021683157,ZP School BhorGaon 651,NDB01,Nandurbar,Navapur,393,21.2603,74.3937,28,false,true,true,10,31,196,196,372,45.5,Marathi,Primary,Government,Navapur Center,0,0,1,0,0,0
+27025191983,ZP School KoliNagar 652,NDB01,Nandurbar,Akkalkuwa,139,21.1762,74.6907,23,false,true,true,2,7,69,69,120,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27029306381,ZP School AmbaKhed 653,NDB01,Nandurbar,Taloda Block,225,21.787,74.5036,35,true,false,true,7,6,112,112,260,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,0,0
+27024899542,ZP School KoliPura 654,NDB01,Nandurbar,Akkalkuwa,112,20.8554,74.4425,51,true,false,false,4,21,56,56,128,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,1,0,0,0,0
+27025618240,ZP School PimpalKhed 655,NDB01,Nandurbar,Akkalkuwa,111,21.5846,74.0241,26,false,true,true,6,18,55,55,109,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27025086379,ZP School DhanGaon 656,NDB01,Nandurbar,Akkalkuwa,158,21.5647,73.9336,24,false,true,false,9,1,79,79,138,45.5,Marathi,Primary,Government,Akkalkuwa Center,1,0,1,0,0,0
+27029313483,ZP School KoliKhed 657,NDB01,Nandurbar,Akkalkuwa,309,21.4923,74.1548,53,false,false,true,10,27,154,154,346,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27028108609,ZP School BhorPura 658,NDB01,Nandurbar,Akkalkuwa,51,21.613,74.4677,36,false,false,true,10,11,25,25,53,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27025624437,ZP School AmbaKhed 659,NDB01,Nandurbar,Navapur,358,20.9594,73.8627,22,true,true,true,4,36,179,179,404,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27025792093,ZP School PimpalKhed 660,NDB01,Nandurbar,Akkalkuwa,295,21.4453,74.4324,30,true,false,false,2,8,147,147,271,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27027219684,ZP School WaghWadi 661,NDB01,Nandurbar,Taloda Block,94,21.4178,74.2496,42,false,true,false,3,25,47,47,80,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,1,0
+27024143898,ZP School WaghPura 662,NDB01,Nandurbar,Shahada Rural,184,21.088,74.15,34,true,true,false,7,23,92,92,193,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27027492963,ZP School MaliKhed 663,NDB01,Nandurbar,Akkalkuwa,360,21.5506,74.0541,48,true,true,true,7,37,180,180,302,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,1,0,0,0,0
+27029100161,ZP School AmbaWadi 664,NDB01,Nandurbar,Akrani,319,21.2112,74.1566,52,false,false,true,7,3,159,159,343,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27024229056,ZP School AmbaKhed 665,NDB01,Nandurbar,Shahada Rural,199,21.3101,73.8005,20,false,false,true,2,22,99,99,213,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27022631717,ZP School KoliGaon 666,NDB01,Nandurbar,Akrani,120,21.0455,74.5809,43,true,false,true,8,5,60,60,105,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27021940386,ZP School MaliKhed 667,NDB01,Nandurbar,Taloda Block,64,21.2632,74.6159,27,false,true,false,10,21,32,32,69,45.5,Marathi,Primary,Government,Taloda Block Center,0,1,0,0,0,0
+27023612539,ZP School KoliWadi 668,NDB01,Nandurbar,Akrani,317,21.0694,74.6519,45,false,false,true,6,2,158,158,361,45.5,Marathi,Primary,Government,Akrani Center,1,1,0,0,0,1
+27022627464,ZP School KoliPura 669,NDB01,Nandurbar,Akkalkuwa,91,21.1487,74.1077,53,true,true,true,8,25,45,45,89,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27023664509,ZP School AmbaGaon 670,NDB01,Nandurbar,Nandurbar Urban,54,20.945,73.768,56,false,false,true,3,32,27,27,63,45.5,Marathi,Primary,Government,Nandurbar Urban Center,1,0,0,0,0,0
+27021676992,ZP School PimpalPura 671,NDB01,Nandurbar,Akrani,318,21.7114,74.6737,59,true,false,true,8,3,159,159,370,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27021740452,ZP School BhorWadi 672,NDB01,Nandurbar,Taloda Block,81,21.3689,74.65,21,false,false,true,7,9,40,40,76,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27021500363,ZP School MaliKhed 673,NDB01,Nandurbar,Taloda Block,400,21.4058,74.5031,48,false,true,true,3,11,200,200,343,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27024175405,ZP School BhorWadi 674,NDB01,Nandurbar,Taloda Block,356,21.3549,73.8176,43,true,false,true,10,9,178,178,322,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27025376903,ZP School MaliNagar 675,NDB01,Nandurbar,Akkalkuwa,131,21.1137,73.7778,38,true,false,false,6,28,65,65,126,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27023054145,ZP School AmbaGaon 676,NDB01,Nandurbar,Akkalkuwa,93,21.6788,73.8953,36,false,true,true,4,20,46,46,86,45.5,Marathi,Primary,Government,Akkalkuwa Center,1,0,0,0,0,0
+27024946658,ZP School BhorNagar 677,NDB01,Nandurbar,Taloda Block,230,20.8093,74.5813,58,false,true,true,4,15,115,115,258,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27028221153,ZP School KoliNagar 678,NDB01,Nandurbar,Akkalkuwa,292,21.7433,74.0219,38,false,false,true,9,20,146,146,244,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,1,0,0,0,0
+27029052476,ZP School AmbaGaon 679,NDB01,Nandurbar,Akrani,53,21.0707,74.5282,23,true,true,true,4,33,26,26,53,45.5,Marathi,Primary,Government,Akrani Center,1,1,0,0,0,0
+27027477551,ZP School AmbaGaon 680,NDB01,Nandurbar,Navapur,158,20.8718,74.0055,43,true,false,true,2,31,79,79,156,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27023024587,ZP School BhorPura 681,NDB01,Nandurbar,Nandurbar Urban,96,21.6961,74.358,42,true,true,true,5,13,48,48,104,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27029134958,ZP School KoliWadi 682,NDB01,Nandurbar,Taloda Block,223,21.7681,73.8001,33,false,true,true,2,2,111,111,218,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,1,0,0
+27028112352,ZP School WaghWadi 683,NDB01,Nandurbar,Shahada Rural,265,20.9686,73.8215,28,true,false,true,2,22,132,132,267,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27024578550,ZP School KoliKhed 684,NDB01,Nandurbar,Akrani,185,20.9822,73.9727,31,true,false,true,5,21,92,92,177,45.5,Marathi,Primary,Government,Akrani Center,0,1,0,0,0,0
+27021123514,ZP School PimpalNagar 685,NDB01,Nandurbar,Akrani,238,21.296,74.5195,33,true,false,false,3,22,119,119,197,45.5,Marathi,Primary,Government,Akrani Center,0,1,0,0,0,0
+27021474930,ZP School WaghNagar 686,NDB01,Nandurbar,Navapur,325,21.3977,73.979,55,true,false,false,3,26,162,162,377,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,1,0,0
+27024447512,ZP School PimpalGaon 687,NDB01,Nandurbar,Nandurbar Urban,255,20.8313,74.4289,20,true,false,false,8,7,127,127,258,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27025714264,ZP School DhanKhed 688,NDB01,Nandurbar,Nandurbar Urban,253,21.0337,74.4022,36,true,true,true,9,15,126,126,286,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,1,0,0,0,0
+27021913931,ZP School DhanWadi 689,NDB01,Nandurbar,Navapur,127,21.5309,74.0345,58,true,true,false,2,30,63,63,118,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,0,0,0
+27028004748,ZP School DhanKhed 690,NDB01,Nandurbar,Shahada Rural,143,20.9195,74.5847,37,false,true,true,10,11,71,71,150,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27025102957,ZP School PimpalKhed 691,NDB01,Nandurbar,Navapur,65,21.0726,73.8212,44,true,true,false,4,6,32,32,67,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27028547876,ZP School AmbaWadi 692,NDB01,Nandurbar,Nandurbar Urban,279,21.0349,73.8158,48,false,true,false,8,2,139,139,280,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27027880441,ZP School MaliKhed 693,NDB01,Nandurbar,Akrani,372,21.1384,74.2046,48,true,false,true,9,17,186,186,302,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27027401223,ZP School BhorNagar 694,NDB01,Nandurbar,Akrani,394,21.797,73.9511,42,false,false,true,5,25,197,197,414,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27026778380,ZP School AmbaPura 695,NDB01,Nandurbar,Taloda Block,333,21.3548,74.5176,32,true,true,true,8,20,166,166,362,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,1,0
+27026878021,ZP School BhorWadi 696,NDB01,Nandurbar,Akkalkuwa,277,21.2449,74.5881,51,true,false,true,10,38,138,138,242,45.5,Marathi,Primary,Government,Akkalkuwa Center,1,0,0,0,0,0
+27026567320,ZP School DhanKhed 697,NDB01,Nandurbar,Akkalkuwa,185,20.8014,74.1921,20,false,true,true,6,20,92,92,209,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,1,0,0,0
+27022132532,ZP School BhorPura 698,NDB01,Nandurbar,Akkalkuwa,109,21.3062,73.7526,43,true,true,false,8,5,54,54,97,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27027914829,ZP School DhanPura 699,NDB01,Nandurbar,Akrani,321,20.8323,74.0506,50,false,true,false,10,12,160,160,273,45.5,Marathi,Primary,Government,Akrani Center,1,1,0,0,0,0
+27023913830,ZP School MaliNagar 700,NDB01,Nandurbar,Nandurbar Urban,103,20.957,74.2914,54,false,true,true,10,15,51,51,119,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27021912543,ZP School MaliPura 701,NDB01,Nandurbar,Akkalkuwa,207,21.0358,74.4776,35,true,true,true,2,9,103,103,187,45.5,Marathi,Primary,Government,Akkalkuwa Center,1,0,0,0,0,0
+27029706412,ZP School PimpalWadi 702,NDB01,Nandurbar,Taloda Block,344,21.0725,74.1233,30,true,true,true,6,37,172,172,401,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27026733497,ZP School KoliGaon 703,NDB01,Nandurbar,Navapur,334,20.8456,73.886,52,true,true,true,8,7,167,167,393,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27021255250,ZP School BhorKhed 704,NDB01,Nandurbar,Taloda Block,110,21.6487,74.1111,35,true,true,false,9,18,55,55,130,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,1,0,0
+27022035614,ZP School BhorWadi 705,NDB01,Nandurbar,Shahada Rural,220,21.6475,73.8994,54,true,true,false,8,13,110,110,188,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27022113358,ZP School PimpalWadi 706,NDB01,Nandurbar,Taloda Block,290,20.8305,73.9376,27,true,true,true,9,1,145,145,284,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27021401297,ZP School AmbaWadi 707,NDB01,Nandurbar,Shahada Rural,102,21.1162,73.8191,39,true,true,true,5,39,51,51,82,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27026528079,ZP School KoliGaon 708,NDB01,Nandurbar,Taloda Block,115,21.5358,73.7913,36,false,false,false,8,18,57,57,122,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,1,1
+27021856076,ZP School MaliNagar 709,NDB01,Nandurbar,Akkalkuwa,139,20.8604,74.3742,38,true,false,true,4,16,69,69,140,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27027809938,ZP School PimpalNagar 710,NDB01,Nandurbar,Taloda Block,339,21.237,73.7848,25,true,true,false,5,32,169,169,376,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27028863238,ZP School PimpalGaon 711,NDB01,Nandurbar,Akrani,171,20.9742,74.6137,45,true,true,true,9,38,85,85,188,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,1,0,0
+27025348157,ZP School KoliKhed 712,NDB01,Nandurbar,Akkalkuwa,145,21.0887,74.2734,23,true,false,true,5,36,72,72,127,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27027483285,ZP School DhanNagar 713,NDB01,Nandurbar,Shahada Rural,131,21.1479,74.2198,58,false,false,true,2,31,65,65,133,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,1
+27021697991,ZP School KoliNagar 714,NDB01,Nandurbar,Shahada Rural,352,21.5103,74.5242,28,false,true,true,3,13,176,176,397,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27022784054,ZP School MaliNagar 715,NDB01,Nandurbar,Akrani,202,20.8456,74.2436,48,true,false,true,3,2,101,101,187,45.5,Marathi,Primary,Government,Akrani Center,0,1,0,0,0,0
+27026251838,ZP School WaghWadi 716,NDB01,Nandurbar,Taloda Block,295,21.7137,74.176,57,true,true,false,7,17,147,147,342,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,0,0
+27026123430,ZP School KoliPura 717,NDB01,Nandurbar,Navapur,53,21.532,73.8343,24,true,false,true,9,32,26,26,52,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27028524437,ZP School KoliGaon 718,NDB01,Nandurbar,Taloda Block,104,21.7556,73.705,45,false,true,false,3,37,52,52,98,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27025438953,ZP School AmbaKhed 719,NDB01,Nandurbar,Akrani,255,21.1331,74.1649,21,false,true,false,10,36,127,127,263,45.5,Marathi,Primary,Government,Akrani Center,0,1,0,0,0,0
+27022649831,ZP School BhorKhed 720,NDB01,Nandurbar,Nandurbar Urban,81,21.512,74.0119,30,true,true,true,2,7,40,40,82,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27022494207,ZP School KoliNagar 721,NDB01,Nandurbar,Shahada Rural,233,21.2358,74.1165,56,false,true,false,2,22,116,116,232,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,0,0
+27021232443,ZP School KoliKhed 722,NDB01,Nandurbar,Akkalkuwa,287,21.5122,73.8329,48,false,false,true,10,39,143,143,319,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27026301415,ZP School KoliPura 723,NDB01,Nandurbar,Akkalkuwa,103,21.3202,74.2591,39,false,false,false,5,28,51,51,120,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,1,0,0
+27028950993,ZP School PimpalNagar 724,NDB01,Nandurbar,Shahada Rural,166,21.747,74.3176,31,false,false,true,5,24,83,83,171,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27023817245,ZP School DhanPura 725,NDB01,Nandurbar,Navapur,309,21.3703,73.9352,39,true,false,false,7,5,154,154,286,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27021038430,ZP School WaghNagar 726,NDB01,Nandurbar,Shahada Rural,293,20.9355,74.3801,47,true,true,true,8,16,146,146,345,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27028867311,ZP School DhanGaon 727,NDB01,Nandurbar,Navapur,169,21.2805,74.4145,24,true,false,false,10,29,84,84,198,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27027372458,ZP School AmbaPura 728,NDB01,Nandurbar,Shahada Rural,68,21.3804,74.4354,60,true,true,false,3,6,34,34,64,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27028763105,ZP School PimpalNagar 729,NDB01,Nandurbar,Taloda Block,304,21.7402,74.5285,37,false,false,true,9,11,152,152,290,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27023541729,ZP School PimpalPura 730,NDB01,Nandurbar,Taloda Block,167,21.0676,74.5623,36,false,true,true,3,25,83,83,183,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27023219195,ZP School DhanPura 731,NDB01,Nandurbar,Taloda Block,235,21.1577,74.6468,51,true,false,true,5,15,117,117,241,45.5,Marathi,Primary,Government,Taloda Block Center,0,1,0,0,0,0
+27025129994,ZP School PimpalGaon 732,NDB01,Nandurbar,Akkalkuwa,373,21.4783,74.4022,56,false,false,false,7,33,186,186,388,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27024120196,ZP School DhanPura 733,NDB01,Nandurbar,Akkalkuwa,103,21.3304,73.86,29,true,true,true,3,32,51,51,117,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,1
+27029670191,ZP School AmbaNagar 734,NDB01,Nandurbar,Akkalkuwa,146,21.2493,73.8525,45,false,false,true,2,6,73,73,122,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27021304557,ZP School BhorGaon 735,NDB01,Nandurbar,Shahada Rural,389,20.8363,73.9184,36,true,false,false,4,8,194,194,318,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27022341915,ZP School BhorGaon 736,NDB01,Nandurbar,Taloda Block,231,20.9237,73.8544,22,false,true,false,5,17,115,115,255,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,1
+27028418355,ZP School AmbaWadi 737,NDB01,Nandurbar,Akkalkuwa,250,21.4436,73.9639,50,true,false,true,8,28,125,125,203,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,1,0
+27026603079,ZP School DhanWadi 738,NDB01,Nandurbar,Akkalkuwa,188,21.1771,74.2602,38,true,false,true,3,39,94,94,164,45.5,Marathi,Primary,Government,Akkalkuwa Center,1,0,0,0,0,0
+27021186154,ZP School DhanGaon 739,NDB01,Nandurbar,Shahada Rural,214,20.9224,74.2364,56,true,true,false,2,19,107,107,240,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,0,0
+27025785301,ZP School MaliGaon 740,NDB01,Nandurbar,Shahada Rural,357,21.1467,74.3941,41,true,false,false,8,11,178,178,407,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27021032676,ZP School MaliGaon 741,NDB01,Nandurbar,Taloda Block,316,20.8838,73.9134,33,false,false,false,9,19,158,158,280,45.5,Marathi,Primary,Government,Taloda Block Center,0,1,0,0,0,0
+27029392857,ZP School KoliWadi 742,NDB01,Nandurbar,Akkalkuwa,347,21.0327,74.3242,44,true,false,false,9,9,173,173,397,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27029106486,ZP School KoliGaon 743,NDB01,Nandurbar,Nandurbar Urban,325,21.1747,73.9083,60,false,false,false,9,19,162,162,294,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27026403485,ZP School WaghGaon 744,NDB01,Nandurbar,Akkalkuwa,149,21.2453,74.479,32,true,true,false,2,9,74,74,130,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,1,0,0,0
+27021720264,ZP School AmbaKhed 745,NDB01,Nandurbar,Shahada Rural,362,20.9465,74.2809,31,false,true,true,8,29,181,181,352,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27028485449,ZP School AmbaKhed 746,NDB01,Nandurbar,Shahada Rural,169,20.8888,73.7173,42,true,true,true,2,13,84,84,161,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27028053746,ZP School MaliNagar 747,NDB01,Nandurbar,Akrani,339,21.393,74.5971,43,false,true,false,9,40,169,169,355,45.5,Marathi,Primary,Government,Akrani Center,0,1,0,0,0,0
+27026282669,ZP School MaliWadi 748,NDB01,Nandurbar,Akrani,171,20.8114,74.131,22,false,false,false,3,15,85,85,138,45.5,Marathi,Primary,Government,Akrani Center,1,0,0,0,0,0
+27028452976,ZP School DhanWadi 749,NDB01,Nandurbar,Shahada Rural,378,21.0,73.8874,52,false,false,false,10,10,189,189,369,45.5,Marathi,Primary,Government,Shahada Rural Center,0,1,0,0,0,0
+27027288703,ZP School WaghWadi 750,NDB01,Nandurbar,Navapur,280,20.8868,73.9899,53,true,false,true,6,5,140,140,311,45.5,Marathi,Primary,Government,Navapur Center,0,0,1,0,0,1
+27021190756,ZP School WaghKhed 751,NDB01,Nandurbar,Akrani,358,21.4757,73.9427,36,false,true,true,8,40,179,179,368,45.5,Marathi,Primary,Government,Akrani Center,1,0,0,0,1,0
+27029541848,ZP School PimpalKhed 752,NDB01,Nandurbar,Nandurbar Urban,114,20.8509,74.6707,20,false,true,true,10,11,57,57,133,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,1,1,0,0,0
+27027864215,ZP School PimpalPura 753,NDB01,Nandurbar,Shahada Rural,87,21.1295,74.3241,26,false,false,false,10,34,43,43,90,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,0,0
+27023560737,ZP School PimpalPura 754,NDB01,Nandurbar,Akrani,130,20.8187,74.0255,22,false,true,false,6,40,65,65,117,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,1
+27029603123,ZP School WaghKhed 755,NDB01,Nandurbar,Akrani,266,20.987,73.7467,48,false,false,true,10,20,133,133,256,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27025633250,ZP School PimpalKhed 756,NDB01,Nandurbar,Shahada Rural,50,21.0393,73.9445,22,true,true,true,4,1,25,25,54,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27022579368,ZP School PimpalGaon 757,NDB01,Nandurbar,Nandurbar Urban,328,21.353,74.4453,21,true,true,true,6,29,164,164,343,45.5,Marathi,Primary,Government,Nandurbar Urban Center,1,0,0,0,0,0
+27029602517,ZP School BhorKhed 758,NDB01,Nandurbar,Navapur,276,21.4064,73.9792,46,false,true,true,8,20,138,138,293,45.5,Marathi,Primary,Government,Navapur Center,0,1,0,0,0,0
+27024944055,ZP School MaliKhed 759,NDB01,Nandurbar,Taloda Block,66,21.0286,73.8058,53,false,false,false,3,14,33,33,68,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27021566126,ZP School AmbaNagar 760,NDB01,Nandurbar,Nandurbar Urban,395,21.5923,73.8397,22,true,true,false,8,33,197,197,378,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,1
+27026748200,ZP School DhanGaon 761,NDB01,Nandurbar,Shahada Rural,372,21.0506,74.0583,31,false,false,false,5,8,186,186,341,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,1,0
+27023245997,ZP School BhorKhed 762,NDB01,Nandurbar,Navapur,154,21.7016,74.6091,51,true,true,true,8,7,77,77,169,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27025384978,ZP School WaghGaon 763,NDB01,Nandurbar,Shahada Rural,358,21.2799,74.1455,28,true,true,true,5,14,179,179,426,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27026741356,ZP School BhorNagar 764,NDB01,Nandurbar,Navapur,336,21.3076,74.4087,24,false,true,true,10,23,168,168,285,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,0,0,0
+27027998634,ZP School DhanPura 765,NDB01,Nandurbar,Akrani,323,21.0462,74.3497,24,true,false,false,4,10,161,161,376,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27026932844,ZP School BhorKhed 766,NDB01,Nandurbar,Taloda Block,67,21.3625,73.8565,51,false,false,false,2,4,33,33,73,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,1,0
+27028940542,ZP School WaghNagar 767,NDB01,Nandurbar,Nandurbar Urban,223,21.0879,74.4419,56,true,false,true,2,29,111,111,198,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,1
+27025233120,ZP School MaliNagar 768,NDB01,Nandurbar,Taloda Block,136,21.0004,73.916,49,true,false,true,7,14,68,68,156,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27022658553,ZP School KoliGaon 769,NDB01,Nandurbar,Akrani,210,21.0619,74.3387,41,true,false,true,3,1,105,105,181,45.5,Marathi,Primary,Government,Akrani Center,1,0,0,0,0,0
+27021474741,ZP School AmbaNagar 770,NDB01,Nandurbar,Nandurbar Urban,395,21.2102,74.5488,38,false,false,true,7,23,197,197,433,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,1,0
+27029884071,ZP School WaghWadi 771,NDB01,Nandurbar,Akrani,321,21.2879,73.7188,58,true,true,false,10,32,160,160,328,45.5,Marathi,Primary,Government,Akrani Center,0,1,0,0,0,0
+27023679103,ZP School BhorNagar 772,NDB01,Nandurbar,Akrani,302,21.2954,73.928,50,false,true,true,3,32,151,151,357,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27029505261,ZP School BhorPura 773,NDB01,Nandurbar,Navapur,166,21.1878,74.2843,28,true,true,false,4,33,83,83,156,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27027073330,ZP School AmbaWadi 774,NDB01,Nandurbar,Akrani,304,21.6883,74.5624,43,false,false,true,10,36,152,152,336,45.5,Marathi,Primary,Government,Akrani Center,0,1,0,0,0,0
+27027420813,ZP School PimpalWadi 775,NDB01,Nandurbar,Taloda Block,288,20.8537,74.054,56,false,true,true,3,30,144,144,332,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,0,0
+27022191519,ZP School PimpalWadi 776,NDB01,Nandurbar,Navapur,213,21.6311,73.9144,49,true,true,false,8,39,106,106,250,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27028366082,ZP School AmbaNagar 777,NDB01,Nandurbar,Akrani,400,21.5668,74.6192,46,true,false,false,2,20,200,200,417,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,1,0
+27026315934,ZP School DhanWadi 778,NDB01,Nandurbar,Akrani,52,21.1152,74.5392,49,false,false,true,10,36,26,26,44,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,1
+27024246534,ZP School WaghNagar 779,NDB01,Nandurbar,Akrani,388,21.4227,73.7466,36,true,false,true,8,26,194,194,361,45.5,Marathi,Primary,Government,Akrani Center,1,0,0,0,0,0
+27022755900,ZP School MaliKhed 780,NDB01,Nandurbar,Akkalkuwa,106,21.2772,74.0097,35,false,true,false,4,40,53,53,113,45.5,Marathi,Primary,Government,Akkalkuwa Center,1,0,0,0,0,0
+27022343264,ZP School WaghGaon 781,NDB01,Nandurbar,Nandurbar Urban,167,21.7407,74.657,49,true,false,true,9,25,83,83,171,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27024879303,ZP School MaliPura 782,NDB01,Nandurbar,Shahada Rural,242,20.9167,74.4029,60,false,true,false,6,9,121,121,211,45.5,Marathi,Primary,Government,Shahada Rural Center,0,1,0,0,0,0
+27026749100,ZP School KoliPura 783,NDB01,Nandurbar,Akrani,314,21.3097,74.5815,45,false,true,false,8,40,157,157,369,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,1
+27029222514,ZP School AmbaPura 784,NDB01,Nandurbar,Nandurbar Urban,353,20.9014,74.3885,36,true,false,true,5,4,176,176,386,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27024205195,ZP School AmbaPura 785,NDB01,Nandurbar,Navapur,282,20.8543,73.8824,46,true,false,true,6,7,141,141,239,45.5,Marathi,Primary,Government,Navapur Center,0,1,0,0,0,0
+27024848416,ZP School WaghWadi 786,NDB01,Nandurbar,Akrani,216,21.0807,74.2128,21,true,true,true,2,12,108,108,253,45.5,Marathi,Primary,Government,Akrani Center,0,1,0,0,0,0
+27023203620,ZP School AmbaWadi 787,NDB01,Nandurbar,Taloda Block,263,21.3974,73.8211,46,true,false,false,2,7,131,131,264,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27022878136,ZP School PimpalWadi 788,NDB01,Nandurbar,Akkalkuwa,275,21.0544,74.488,20,false,true,true,4,29,137,137,230,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,1,0,0,0,0
+27021392510,ZP School WaghGaon 789,NDB01,Nandurbar,Taloda Block,102,20.8252,73.9296,56,false,false,true,3,27,51,51,89,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27022712384,ZP School BhorPura 790,NDB01,Nandurbar,Akrani,133,21.6977,73.9424,49,false,true,true,9,24,66,66,126,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27027905549,ZP School DhanNagar 791,NDB01,Nandurbar,Akrani,189,21.5932,73.8406,36,true,false,true,5,10,94,94,166,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27025745639,ZP School MaliKhed 792,NDB01,Nandurbar,Nandurbar Urban,252,20.8429,74.5081,43,true,true,true,10,34,126,126,201,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,1,0,0,0,0
+27022641479,ZP School AmbaKhed 793,NDB01,Nandurbar,Akkalkuwa,120,20.9898,74.5385,54,false,true,false,7,14,60,60,114,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27029631229,ZP School PimpalWadi 794,NDB01,Nandurbar,Taloda Block,283,21.3636,74.1894,41,false,false,false,9,34,141,141,257,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,1,0,0,0
+27021980756,ZP School AmbaGaon 795,NDB01,Nandurbar,Shahada Rural,393,20.8644,74.2075,52,false,false,false,6,16,196,196,395,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,0,0
+27028889429,ZP School DhanKhed 796,NDB01,Nandurbar,Navapur,220,21.1629,74.534,37,false,false,false,7,4,110,110,180,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27024162485,ZP School PimpalNagar 797,NDB01,Nandurbar,Akrani,309,21.2635,73.7077,41,true,true,false,2,4,154,154,247,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,1
+27028833515,ZP School DhanPura 798,NDB01,Nandurbar,Akkalkuwa,92,21.2008,73.7237,23,false,false,true,10,4,46,46,87,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27023864508,ZP School AmbaGaon 799,NDB01,Nandurbar,Navapur,186,21.2952,74.1845,34,false,true,true,9,38,93,93,183,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27022556312,ZP School BhorGaon 800,NDB01,Nandurbar,Akkalkuwa,346,21.2648,74.5428,22,false,true,false,10,35,173,173,334,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27026771410,ZP School WaghNagar 801,NDB01,Nandurbar,Navapur,98,21.4832,73.9609,40,true,true,true,9,38,49,49,85,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27029011231,ZP School WaghWadi 802,NDB01,Nandurbar,Akrani,235,20.8472,74.1459,32,true,false,false,5,34,117,117,250,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27029046833,ZP School MaliPura 803,NDB01,Nandurbar,Akrani,249,21.7348,74.697,37,false,true,false,4,10,124,124,215,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27025395508,ZP School BhorPura 804,NDB01,Nandurbar,Shahada Rural,376,21.5026,74.0449,44,false,true,true,4,32,188,188,358,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27027074844,ZP School MaliWadi 805,NDB01,Nandurbar,Akrani,219,20.8054,74.1729,60,true,false,true,9,26,109,109,209,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,0,0
+27029219340,ZP School PimpalPura 806,NDB01,Nandurbar,Taloda Block,184,21.2742,73.8457,53,false,true,true,3,9,92,92,165,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,1,0,0
+27021739771,ZP School WaghPura 807,NDB01,Nandurbar,Akrani,85,21.024,74.1649,50,false,true,true,3,31,42,42,80,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,0,1,0
+27025996304,ZP School MaliKhed 808,NDB01,Nandurbar,Akrani,315,21.2853,73.7977,51,false,true,true,3,37,157,157,295,45.5,Marathi,Primary,Government,Akrani Center,0,1,0,0,0,0
+27021370899,ZP School AmbaNagar 809,NDB01,Nandurbar,Shahada Rural,258,21.3414,74.0598,32,true,true,true,3,23,129,129,217,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27022235243,ZP School DhanNagar 810,NDB01,Nandurbar,Navapur,255,21.2721,73.8067,52,true,false,false,3,22,127,127,287,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27028493922,ZP School WaghWadi 811,NDB01,Nandurbar,Shahada Rural,73,21.7264,73.7132,54,true,true,true,4,8,36,36,67,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27025518216,ZP School PimpalPura 812,NDB01,Nandurbar,Taloda Block,105,21.3347,74.2252,37,false,true,false,6,11,52,52,93,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,1,0,1,0
+27027673551,ZP School BhorNagar 813,NDB01,Nandurbar,Navapur,383,21.3091,74.3232,34,true,false,false,9,6,191,191,432,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,1,0,0
+27021462933,ZP School KoliPura 814,NDB01,Nandurbar,Akrani,171,21.416,74.4735,31,true,true,false,7,20,85,85,142,45.5,Marathi,Primary,Government,Akrani Center,0,1,0,0,0,0
+27028276869,ZP School KoliGaon 815,NDB01,Nandurbar,Shahada Rural,203,21.2493,74.2205,27,true,false,false,8,3,101,101,193,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,0,1
+27028754276,ZP School MaliWadi 816,NDB01,Nandurbar,Shahada Rural,135,21.5691,73.8792,39,true,false,false,10,38,67,67,149,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,0,1
+27024322617,ZP School DhanKhed 817,NDB01,Nandurbar,Nandurbar Urban,240,20.8029,74.3885,59,true,false,true,10,37,120,120,245,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27022968757,ZP School PimpalGaon 818,NDB01,Nandurbar,Taloda Block,118,21.4322,74.2124,21,true,true,true,3,18,59,59,133,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,1,0,0,0
+27025798701,ZP School PimpalGaon 819,NDB01,Nandurbar,Shahada Rural,121,21.7326,74.4722,42,true,true,false,3,7,60,60,120,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27028854691,ZP School MaliPura 820,NDB01,Nandurbar,Navapur,294,21.3026,74.0186,53,false,true,true,2,19,147,147,306,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,0,0,0
+27024545162,ZP School PimpalNagar 821,NDB01,Nandurbar,Navapur,139,21.0284,73.8022,39,false,true,false,8,8,69,69,133,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,0,0,0
+27029048182,ZP School BhorNagar 822,NDB01,Nandurbar,Shahada Rural,123,21.1153,74.0116,38,true,false,false,2,39,61,61,135,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27022504578,ZP School DhanPura 823,NDB01,Nandurbar,Nandurbar Urban,58,21.6018,74.5869,27,false,false,false,10,18,29,29,54,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27022855104,ZP School BhorWadi 824,NDB01,Nandurbar,Nandurbar Urban,298,21.6697,73.8559,26,true,true,true,10,2,149,149,311,45.5,Marathi,Primary,Government,Nandurbar Urban Center,1,1,0,0,0,0
+27024901776,ZP School AmbaPura 825,NDB01,Nandurbar,Akkalkuwa,126,20.8319,74.5414,39,true,false,true,9,35,63,63,108,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27029456646,ZP School DhanPura 826,NDB01,Nandurbar,Akkalkuwa,135,21.4003,73.9614,51,true,false,false,4,9,67,67,152,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,0,0
+27023729148,ZP School PimpalKhed 827,NDB01,Nandurbar,Nandurbar Urban,382,21.5372,74.6103,21,true,true,true,8,24,191,191,321,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27022656401,ZP School WaghWadi 828,NDB01,Nandurbar,Shahada Rural,256,20.972,74.4782,40,true,true,true,6,4,128,128,297,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,1,0,0
+27026916201,ZP School BhorNagar 829,NDB01,Nandurbar,Taloda Block,256,20.854,74.0363,41,false,true,false,8,24,128,128,293,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27027976836,ZP School WaghKhed 830,NDB01,Nandurbar,Shahada Rural,50,21.2418,74.0512,25,false,false,true,7,22,25,25,59,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27029308623,ZP School BhorPura 831,NDB01,Nandurbar,Shahada Rural,197,21.6678,74.4954,44,false,false,false,4,11,98,98,194,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27029259735,ZP School KoliWadi 832,NDB01,Nandurbar,Shahada Rural,311,21.4108,73.9571,29,true,true,true,6,13,155,155,336,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27029935906,ZP School AmbaNagar 833,NDB01,Nandurbar,Nandurbar Urban,355,21.2135,74.0222,33,true,true,true,3,2,177,177,308,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,0,0,0,0
+27027848938,ZP School BhorNagar 834,NDB01,Nandurbar,Navapur,200,21.6604,74.6052,35,true,false,true,10,26,100,100,236,45.5,Marathi,Primary,Government,Navapur Center,1,0,0,0,0,0
+27021246867,ZP School MaliWadi 835,NDB01,Nandurbar,Nandurbar Urban,240,21.5428,74.1655,27,false,true,false,8,38,120,120,201,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,1,0,0,0,0
+27022353759,ZP School WaghWadi 836,NDB01,Nandurbar,Navapur,260,21.2853,73.9522,48,true,true,false,3,4,130,130,306,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,0,0
+27023864785,ZP School WaghNagar 837,NDB01,Nandurbar,Navapur,266,21.6115,74.3,36,true,true,true,10,7,133,133,244,45.5,Marathi,Primary,Government,Navapur Center,0,0,0,0,1,0
+27024025464,ZP School DhanPura 838,NDB01,Nandurbar,Nandurbar Urban,185,21.7087,74.2253,49,true,true,true,10,23,92,92,216,45.5,Marathi,Primary,Government,Nandurbar Urban Center,0,0,1,0,0,0
+27024292102,ZP School BhorWadi 839,NDB01,Nandurbar,Shahada Rural,117,20.8901,74.107,56,false,false,false,2,24,58,58,100,45.5,Marathi,Primary,Government,Shahada Rural Center,1,0,0,0,0,0
+27027699978,ZP School WaghPura 840,NDB01,Nandurbar,Akkalkuwa,252,21.2581,74.138,33,false,false,false,6,19,126,126,263,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,1,0,0
+27028462208,ZP School KoliGaon 841,NDB01,Nandurbar,Akkalkuwa,156,21.5581,74.1042,29,true,false,false,9,29,78,78,186,45.5,Marathi,Primary,Government,Akkalkuwa Center,0,0,0,0,1,0
+27023422472,ZP School WaghPura 842,NDB01,Nandurbar,Akrani,269,21.7694,73.9938,37,false,false,true,8,23,134,134,233,45.5,Marathi,Primary,Government,Akrani Center,1,0,1,0,0,0
+27029802066,ZP School AmbaWadi 843,NDB01,Nandurbar,Taloda Block,172,21.2679,73.7214,32,true,true,true,7,12,86,86,185,45.5,Marathi,Primary,Government,Taloda Block Center,0,0,0,0,0,0
+27022001717,ZP School BhorPura 844,NDB01,Nandurbar,Taloda Block,364,21.1132,73.8557,52,true,false,false,7,38,182,182,389,45.5,Marathi,Primary,Government,Taloda Block Center,1,0,0,0,0,0
+27029702057,ZP School KoliKhed 845,NDB01,Nandurbar,Shahada Rural,96,21.7266,74.619,27,true,true,false,4,4,48,48,79,45.5,Marathi,Primary,Government,Shahada Rural Center,0,0,0,0,0,0
+27028504907,ZP School MaliWadi 846,NDB01,Nandurbar,Akrani,124,21.3349,73.9875,29,true,true,true,5,36,62,62,143,45.5,Marathi,Primary,Government,Akrani Center,0,0,0,1,0,0

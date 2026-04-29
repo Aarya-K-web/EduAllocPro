@@ -10,6 +10,9 @@ from dotenv import load_dotenv
 
 load_dotenv()  # Loads backend/.env in development; no-op in Cloud Run
 
+from utils.auth import setup_gcp_auth
+setup_gcp_auth()
+
 
 @dataclass(frozen=True)
 class Config:

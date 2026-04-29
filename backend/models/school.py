@@ -111,3 +111,8 @@ class SchoolListResponse(BaseModel):
     district_id: str
     filters_applied: dict = {}
     district_stats: Optional[DistrictStats] = None
+
+
+class SchoolDetailResponse(BaseModel):
+    """Full detail for a single school."""
+    school: SchoolDetail

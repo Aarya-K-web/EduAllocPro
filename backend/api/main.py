@@ -96,10 +96,14 @@ async def lifespan(app: FastAPI):
 
     # Shutdown
     logger.info("app.shutdown.begin")
-    bq.close()
-    vertex.close()
-    await maps.close()
+    if hasattr(app.state, "bq") and app.state.bq:
+        app.state.bq.close()
+    if hasattr(app.state, "vertex") and app.state.vertex:
+        app.state.vertex.close()
+    if hasattr(app.state, "maps") and app.state.maps:
+        await app.state.maps.close()
     logger.info("app.shutdown.done")
+
 
 
 # ── FastAPI App ──────────────────────────────────────────────────────────────

@@ -94,7 +94,7 @@ class BigQueryClient:
                 bigquery.SchemaField("total_vacancies", "INTEGER"),
                 bigquery.SchemaField("vacancy_subjects", "STRING"),
                 bigquery.SchemaField("enrollment_total", "INTEGER"),
-                bigquery.SchemaField("data_updated_at", "STRING"),
+                bigquery.SchemaField("data_updated_at", "TIMESTAMP"),
                 bigquery.SchemaField("is_synthetic", "BOOLEAN"),
                 bigquery.SchemaField("geocode_status", "STRING"),
                 bigquery.SchemaField("di_data_quality", "STRING"),
@@ -108,6 +108,8 @@ class BigQueryClient:
                 bigquery.SchemaField("nearest_town_km", "FLOAT"),
                 bigquery.SchemaField("enrollment_3yr_ago", "INTEGER"),
                 bigquery.SchemaField("district_aser_pct", "FLOAT"),
+                bigquery.SchemaField("di_computed_at", "TIMESTAMP"),
+                bigquery.SchemaField("di_breakdown_json", "STRING"),
             ],
             "teachers": [
                 bigquery.SchemaField("teacher_id", "STRING", mode="REQUIRED"),
@@ -127,7 +129,25 @@ class BigQueryClient:
                 bigquery.SchemaField("current_school_id", "STRING"),
                 bigquery.SchemaField("embedding", "JSON"),
                 bigquery.SchemaField("embedding_text", "STRING"),
-                bigquery.SchemaField("created_at", "STRING"),
+                bigquery.SchemaField("created_at", "TIMESTAMP"),
+            ],
+            "briefings": [
+                bigquery.SchemaField("briefing_id", "STRING", mode="REQUIRED"),
+                bigquery.SchemaField("district_code", "STRING"),
+                bigquery.SchemaField("briefing_json", "STRING"),
+                bigquery.SchemaField("generated_at", "TIMESTAMP"),
+                bigquery.SchemaField("gemini_prompt_hash", "STRING"),
+            ],
+            "deployments": [
+                bigquery.SchemaField("deployment_id", "STRING", mode="REQUIRED"),
+                bigquery.SchemaField("school_id", "STRING"),
+                bigquery.SchemaField("teacher_id", "STRING"),
+                bigquery.SchemaField("vacancy_subject", "STRING"),
+                bigquery.SchemaField("dvs_score", "FLOAT"),
+                bigquery.SchemaField("status", "STRING"),
+                bigquery.SchemaField("district_code", "STRING"),
+                bigquery.SchemaField("run_id", "STRING"),
+                bigquery.SchemaField("created_at", "TIMESTAMP"),
             ]
         }
 

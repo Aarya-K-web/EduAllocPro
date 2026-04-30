@@ -166,14 +166,10 @@ async def ingest_udise(bq, maps=None) -> dict:
             # Load jobs are allowed and free.
             table_id = f"{bq._project_id}.{bq._dataset}.schools"
             job_config = bigquery.LoadJobConfig(
-                schema=[
-                    bigquery.SchemaField("school_id", "STRING"),
-                    # ... rest of schema is auto-detected or ensured by initialize()
-                ],
                 write_disposition="WRITE_APPEND",
                 source_format=bigquery.SourceFormat.NEWLINE_DELIMITED_JSON,
                 ignore_unknown_values=True,
-                autodetect=True,
+                autodetect=False,
             )
             
             # BigQuery load jobs require newline-delimited JSON or a list of dicts for some methods

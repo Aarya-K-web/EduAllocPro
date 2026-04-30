@@ -39,15 +39,15 @@ async def compute_di_for_district(bq, district_id: str) -> int:
         updates = []
         for row in rows:
             school = UDISESchoolData(
-                school_id=str(row.get("school_id", "")),
+                school_id=str(row.get("school_id") or ""),
                 stu_tea_ratio=row.get("stu_tea_ratio"),
-                num_subject_vacancies=int(row.get("total_vacancies", 0)),
-                num_required_subjects=max(1, int(row.get("required_subjects_count", 1))),
-                toilet_boys=bool(row.get("toilet_boys", False)),
-                toilet_girls=bool(row.get("toilet_girls", False)),
-                has_electricity=bool(row.get("has_electricity", False)),
-                num_classrooms=max(1, int(row.get("num_classrooms", 1))),
-                enrollment_total=int(row.get("enrollment_total", 0)),
+                num_subject_vacancies=int(row.get("total_vacancies") or 0),
+                num_required_subjects=max(1, int(row.get("required_subjects_count") or 1)),
+                toilet_boys=bool(row.get("toilet_boys") or False),
+                toilet_girls=bool(row.get("toilet_girls") or False),
+                has_electricity=bool(row.get("has_electricity") or False),
+                num_classrooms=max(1, int(row.get("num_classrooms") or 1)),
+                enrollment_total=int(row.get("enrollment_total") or 0),
                 nearest_town_km=row.get("nearest_town_km"),
                 enrollment_3yr_ago=row.get("enrollment_3yr_ago"),
                 district_aser_pct=row.get("district_aser_pct"),

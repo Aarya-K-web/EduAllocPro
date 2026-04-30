@@ -451,12 +451,18 @@ class BigQueryClient:
             return []
 
     async def batch_update_di_scores(self, updates: list[dict]) -> None:
-        """Batch update DI scores for a list of schools."""
+        """
+        Batch update DI scores for a list of schools.
+        Uses a temporary staging table + MERGE to remain Free-Tier (Sandbox) compatible.
+        """
         if not self._client or not updates:
             return
 
-        def _update():
-            rows_to_insert = [
+        staging_table = f"{self._project_id}.{self._dataset}.tmp_di_updates_{int(datetime.utcnow().timestamp())}"
+        
+        def _perform_update():
+            # 1. Prepare data for staging
+            rows = [
                 {
                     "school_id": u["school_id"],
                     "di_score": u.get("composite_di"),
@@ -469,16 +475,42 @@ class BigQueryClient:
                 }
                 for u in updates
             ]
-            table_ref = self._client.dataset(self._dataset).table("schools")
-            errors = self._client.insert_rows_json(table_ref, rows_to_insert)
-            if errors:
-                logger.error("bq.batch_update_di.errors", errors=str(errors))
+
+            # 2. Load into staging table
+            job_config = bigquery.LoadJobConfig(
+                write_disposition="WRITE_TRUNCATE",
+                source_format=bigquery.SourceFormat.NEWLINE_DELIMITED_JSON,
+                autodetect=True
+            )
+            load_job = self._client.load_table_from_json(rows, staging_table, job_config=job_config)
+            load_job.result()
+
+            # 3. MERGE into main table
+            merge_query = f"""
+                MERGE {self._table('schools')} T
+                USING `{staging_table}` S
+                ON T.school_id = S.school_id
+                WHEN MATCHED THEN
+                  UPDATE SET 
+                    di_score = S.di_score,
+                    di_data_quality = S.di_data_quality,
+                    di_breakdown_json = S.di_breakdown_json,
+                    di_computed_at = CAST(S.di_computed_at AS TIMESTAMP)
+            """
+            self._client.query(merge_query).result()
+            
+            # 4. Cleanup
+            self._client.delete_table(staging_table, not_found_ok=True)
 
         try:
-            await self._run(_update)
+            await self._run(_perform_update)
             logger.info("bq.batch_update_di.done", count=len(updates))
         except Exception as e:
             logger.error("bq.batch_update_di.error", error=str(e))
+            # Ensure cleanup even on failure
+            try:
+                await self._run(lambda: self._client.delete_table(staging_table, not_found_ok=True))
+            except: pass
 
     async def save_optimization_result(self, result: Any, district_id: str) -> None:
         """Save optimizer result to BigQuery deployments table."""
@@ -501,8 +533,12 @@ class BigQueryClient:
                 for a in result.assignments
             ]
             if rows:
-                table_ref = self._client.dataset(self._dataset).table("deployments")
-                self._client.insert_rows_json(table_ref, rows)
+                table_id = f"{self._project_id}.{self._dataset}.deployments"
+                job_config = bigquery.LoadJobConfig(
+                    write_disposition="WRITE_APPEND",
+                    source_format=bigquery.SourceFormat.NEWLINE_DELIMITED_JSON,
+                )
+                self._client.load_table_from_json(rows, table_id, job_config=job_config).result()
 
         try:
             await self._run(_save)
@@ -556,8 +592,12 @@ class BigQueryClient:
                 "generated_at": datetime.utcnow().isoformat(),
                 "gemini_prompt_hash": briefing_data.get("prompt_version", "1.0.0"),
             }
-            table_ref = self._client.dataset(self._dataset).table("briefings")
-            self._client.insert_rows_json(table_ref, [row])
+            table_id = f"{self._project_id}.{self._dataset}.briefings"
+            job_config = bigquery.LoadJobConfig(
+                write_disposition="WRITE_APPEND",
+                source_format=bigquery.SourceFormat.NEWLINE_DELIMITED_JSON,
+            )
+            self._client.load_table_from_json([row], table_id, job_config=job_config).result()
 
         try:
             await self._run(_save)

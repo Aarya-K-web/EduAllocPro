@@ -135,13 +135,14 @@ async def compute_all_embeddings(bq, vertex):
         # 3. Update BQ
         # BigQuery doesn't support easy batch UPDATEs, so we use a temp table or CASE
         # For 300 rows, individual updates in the thread pool is acceptable if throttled
+        from google.cloud import bigquery
         for r, vec in zip(batch, vectors):
             update_query = f"UPDATE {bq._table('teachers')} SET embedding = @vec WHERE teacher_id = @id"
             params = [
-                bq.bigquery.ScalarQueryParameter("vec", "JSON", json.dumps(vec)),
-                bq.bigquery.ScalarQueryParameter("id", "STRING", r["teacher_id"])
+                bigquery.ScalarQueryParameter("vec", "JSON", json.dumps(vec)),
+                bigquery.ScalarQueryParameter("id", "STRING", r["teacher_id"])
             ]
-            await bq._run(bq._client.query, update_query, bq.bigquery.QueryJobConfig(query_parameters=params))
+            await bq._run(bq._client.query, update_query, bigquery.QueryJobConfig(query_parameters=params))
             
     logger.info("gen_teachers.compute_embeddings.done", count=len(rows))
 
